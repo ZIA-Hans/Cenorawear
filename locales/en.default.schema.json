@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "global": {
     "mobile": {
@@ -2250,10 +2259,6 @@
           "options__2": {
             "label": "Full width"
           }
-        },
-        "boxed_width": {
-          "label": "Boxed content width",
-          "info": "Set the exact width for boxed content. Leave empty to use full container width."
         },
         "enable_custom_height": {
           "label": "Enable custom minimal height"

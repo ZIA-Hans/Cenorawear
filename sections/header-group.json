@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "t:static_sections.header.name",
@@ -29,24 +38,6 @@
     "header": {
       "type": "header",
       "blocks": {
-        "usp_GxfRMR": {
-          "type": "usp",
-          "settings": {
-            "icon": "refresh",
-            "image_width": 40,
-            "usp": "<strong>Plug & Play</strong> Installation",
-            "link_styling": "underline"
-          }
-        },
-        "header-block-usp-1": {
-          "type": "usp",
-          "settings": {
-            "icon": "order",
-            "image_width": 40,
-            "usp": "<strong>4.8</strong> On Trustpilot",
-            "link_styling": "underline"
-          }
-        },
         "usp_AHV9gq": {
           "type": "usp",
           "settings": {
@@ -59,6 +50,7 @@
         "promo_banner": {
           "type": "promo_banners",
           "settings": {
+            "menu_item": "",
             "height": "size-l",
             "enable_custom_height": false,
             "custom_height": 300,
@@ -102,6 +94,8 @@
           "type": "promo_collection_list",
           "disabled": true,
           "settings": {
+            "menu_item": "",
+            "collections": [],
             "custom_image_ratio": 100,
             "show_in_circle": true,
             "fill_images": true,
@@ -126,8 +120,6 @@
         }
       },
       "block_order": [
-        "usp_GxfRMR",
-        "header-block-usp-1",
         "usp_AHV9gq",
         "promo_banner",
         "promo_collection_list"
@@ -140,10 +132,10 @@
         "enable_country_selector": true,
         "header_shadow": true,
         "header_height": "69px|55px",
-        "top_bar_color": "scheme-5",
-        "header_color": "white",
-        "search_color": "scheme-1",
-        "menubar_color": "scheme-1",
+        "top_bar_color": "scheme-9",
+        "header_color": "scheme-9",
+        "search_color": "scheme-9",
+        "menubar_color": "scheme-9",
         "show_top_bar": true,
         "top_bar_height": "35px|25px",
         "top_bar_font_size": "13px",
@@ -162,10 +154,11 @@
         "searchbar_font_size": "13px",
         "enable_sticky_header": true,
         "blur_opacity": 80,
-        "cart_icon": "cart-bag-wide|e965",
+        "cart_icon": "cart|e903",
         "cart_icon_color": "scheme-2",
         "header_icon_width": 24,
-        "darkmode_toggle": true,
+        "darkmode_toggle": false,
+        "menu": "main-menu",
         "menubar_height": "45px",
         "menu_layout": "dropdown",
         "show_dropdown_images": false,
@@ -192,7 +185,7 @@
         "enable_online_store": true,
         "enable_account_dropdown": true,
         "logo_height_mobile": 20,
-        "mobile_menu_color": "scheme-1"
+        "mobile_menu_color": "scheme-9"
       }
     }
   },

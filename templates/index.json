@@ -1,1 +1,1020 @@
-{"sections":{"section_slideshow_njdemC":{"type":"section-slideshow","blocks":{"slide_FyeUKW":{"type":"slide","settings":{"video":"shopify:\/\/files\/videos\/SY01-英-视频-1.mp4","show_play_button":false,"video_mute":true,"layout":"background","image_width":50,"overlay_opacity":25,"color_palette":"scheme-2","background_overlay_opacity":100,"text_position":"center","max_width":600,"title":"<h4><span style=\"text-decoration:underline\">Drive Smart. Drive Secure.<\/span><\/h4><h1>Premium Vehicle Tech for Safety & Control.<\/h1>","title_underline_style":"secondary_font_accent","text":"<p>Discover our hand-picked selection of dashcams, hands-free car kits, and keyless protectors, all designed to keep you safe and in control on the road.<\/p>","enable_custom_font_styling":false,"font_size":"16px","show_first_link":true,"first_link_text":"Explore","first_link_url":"shopify:\/\/products\/sy01-ring","first_button_style":"primary plain","show_second_link":false,"second_link_text":"More info","second_link_url":"\/","second_button_style":"primary inv"}}},"block_order":["slide_FyeUKW"],"name":"t:sections.slideshow.presets.name","settings":{"width":"wide","height":"adapt","enable_custom_height":false,"custom_height":1000,"autoplay":false,"autoplay_seconds":3,"enable_controls":false,"height_mobile":"l","spacing_desktop":-30,"spacing_mobile":-10,"fix_zindex":0}},"section_icon_text_blocks_N4FXQX":{"type":"section-icon-text-blocks","blocks":{"text_V6pFad":{"type":"text","settings":{"icon":"none","image_height":55,"image_border_radius":false,"title":"","text":"<h2>Where precision engineering meets <br\/>uncompromising reliability.<\/h2><p>100% safe & tested by experts, <a href=\"\/pages\/contact\" title=\"Contact\">Trusted by 100+ Happy Clients <\/a> ⭐⭐⭐⭐⭐<\/p>","show_link":true,"link_text":"Button","link_url":"","button_style":"primary plain"}},"text_cYLTTc":{"type":"text","settings":{"icon":"none","image_height":55,"image_border_radius":false,"title":"","text":"<p>Discover our hand-picked selection of dashcams, hands-free car kits, and keyless protectors, all designed to keep you safe and in control on the road. Need accurate trip tracking? Our advanced mileage registration systems and fleet solutions have you covered.<\/p>","show_link":true,"link_text":"Read more","link_url":"\/","button_style":"primary link"}}},"block_order":["text_V6pFad","text_cYLTTc"],"name":"t:sections.icon_text_blocks.presets.name","settings":{"items_width":3,"text_alignment":"start","color_palette":"scheme-2","background_overlay_opacity":100,"background_position":"left","background_width":100,"background_height":100,"background_color_section":true,"title":"","title_underline_style":"none","text":"","enable_custom_font_styling":false,"font_size":"16px","show_link":true,"link_text":"Button","link_url":"","button_style":"primary plain","blocks_text_alignment":"start","blocks_title_font":"primary","blocks_title_size":"h2","blocks_enable_custom_font_styling":false,"blocks_font_size":"16px","layout_mobile":"slider","mobile_blocks_text_alignment":"center","background_width_mobile":100,"background_height_mobile":100,"spacing_desktop":-30,"spacing_mobile":0,"fix_zindex":0}},"section_featured_products_PjzTCK":{"type":"section-featured-products","settings":{"products":[],"number_of_items":4,"text_alignment":"start","color_palette":"scheme-2","background_overlay_opacity":100,"background_position":"left","background_width":100,"background_height":100,"background_color_section":true,"title":"<h3>Best sellers<\/h3>","title_underline_style":"none","text":"","enable_custom_font_styling":false,"font_size":"16px","show_link":false,"link_text":"Show all Fashion","link_url":"\/","button_style":"tertiary plain","background_width_mobile":100,"background_height_mobile":100,"spacing_desktop":100,"spacing_mobile":30,"fix_zindex":0}},"c385e604-1b50-4426-9056-ee79db27eeb5":{"type":"section-masonry","blocks":{"template--21305038504227__c385e604-1b50-4426-9056-ee79db27eeb5-image-2":{"type":"image","settings":{"overlay_opacity":35,"enable_controls":false,"video_mute":true,"color_palette":"scheme-2","text_position":"align-start text-start","title":"<h2>Carkits<\/h2>","title_underline_style":"none","text":"<p>Stay connected, talk hands-free,<br\/>drive distraction-free.<br\/><br\/><br\/><br\/><\/p>","enable_custom_font_styling":false,"font_size":"18px","show_link":true,"link_text":"Shop now","link_url":"\/","button_style":"primary plain","show_overlay_link":true,"overlay_url":""}},"template--21305038504227__c385e604-1b50-4426-9056-ee79db27eeb5-image-3":{"type":"image","settings":{"overlay_opacity":20,"enable_controls":false,"video_mute":true,"color_palette":"scheme-2","text_position":"align-start text-start","title":"<h2>New arrivals<\/h2>","title_underline_style":"none","text":"<p>Explore our latest dashcams,<br\/>reverse cameras & hands-free systems.<br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><br\/><\/p>","enable_custom_font_styling":false,"font_size":"18px","show_link":true,"link_text":"Shop now","link_url":"\/","button_style":"primary solid","show_overlay_link":true,"overlay_url":""}},"image_xLKmmy":{"type":"image","settings":{"overlay_opacity":20,"enable_controls":false,"video_mute":true,"color_palette":"scheme-2","text_position":"align-start text-start","title":"<h2>Dashcams<\/h2>","title_underline_style":"none","text":"<p>Record every mile, protect what<br\/>matters most on the road.<br\/><br\/><br\/><br\/><\/p>","enable_custom_font_styling":false,"font_size":"16px","show_link":true,"link_text":"Shop now","link_url":"\/","button_style":"primary plain","show_overlay_link":true,"overlay_url":""}}},"block_order":["template--21305038504227__c385e604-1b50-4426-9056-ee79db27eeb5-image-2","template--21305038504227__c385e604-1b50-4426-9056-ee79db27eeb5-image-3","image_xLKmmy"],"settings":{"mirrored":false,"width":"boxed","space_between":20,"image_zoom":true,"layout_mobile":"rows","mobile_height":"size-s","spacing_desktop":90,"spacing_mobile":30,"fix_zindex":0}},"section_image_mask_4bx8CW":{"type":"section-image-mask","disabled":true,"settings":{"width":"wide","height":"s","enable_custom_height":false,"custom_height":250,"color_palette":"scheme-5","background_overlay_opacity":100,"background_position":"left","background_width":100,"background_height":100,"background_color_section":true,"text_alignment":"center","content_width":2000,"title":"<h4><strong>30-Day Free Trial Installation on All Trip Registration Systems. Try it now!<\/strong><\/h4>","title_underline_style":"accent","enable_custom_title_size":false,"custom_title_size":22,"line_height":125,"height_mobile":"xs","background_width_mobile":100,"background_height_mobile":100,"spacing_desktop":-30,"spacing_mobile":30,"fix_zindex":20}},"section_rich_text_4egdDV":{"type":"section-rich-text","blocks":{"title_4gnCAe":{"type":"title","settings":{"title":"<h4><span style=\"text-decoration:underline\">Trip Registrion<\/span><\/h4><h1>Always in real-time control,<br\/>anytime, anywhere.<\/h1>","title_underline_style":"secondary_font_accent"}},"content_7F7afb":{"type":"content","settings":{"page":"","text":"<p>Real-time insights, full compliance, and total peace of mind. Whether you're managing one vehicle or an entire fleet, we keep your mobility smart and effortless.<\/p>","font":"secondary","enable_custom_text_styling":false,"font_weight":"400","font_size":"16px"}},"image_GpwgmJ":{"type":"image","settings":{"image_width":980,"link_url":""}},"button_jfmHMx":{"type":"button","settings":{"link_text":"Discover now","link_url":"\/","button_style":"primary plain"}},"button_hQAWNC":{"type":"button","settings":{"link_text":"More info","link_url":"\/","button_style":"primary inv"}}},"block_order":["title_4gnCAe","content_7F7afb","image_GpwgmJ","button_jfmHMx","button_hQAWNC"],"disabled":true,"name":"t:sections.rich_text.presets.name","settings":{"width":"wide","height":"l","enable_custom_height":true,"custom_height":1000,"color_palette":"scheme-2","background_overlay_opacity":100,"background_position":"left","background_width":100,"background_height":100,"background_color_section":true,"text_position":"align-center text-center","content_width":640,"height_mobile":"xs","background_width_mobile":100,"background_height_mobile":100,"spacing_desktop":50,"spacing_mobile":30,"fix_zindex":0}},"05309379-e9cc-4d03-8159-e5ad6a3dad3f":{"type":"section-image-mask","settings":{"width":"wide","height":"s","enable_custom_height":false,"custom_height":490,"color_palette":"","background_overlay_opacity":0,"background_position":"left","background_width":50,"background_height":100,"background_color_section":true,"text_alignment":"center","content_width":2000,"title":"<h2>Always in control<\/h2>","title_underline_style":"none","enable_custom_title_size":true,"custom_title_size":67,"line_height":125,"height_mobile":"xs","background_width_mobile":100,"background_height_mobile":100,"spacing_desktop":-130,"spacing_mobile":-80,"fix_zindex":20}},"section_flexible_iCTgHc":{"type":"section-flexible","blocks":{"image_YWKNx3":{"type":"image","settings":{"fill_image":true,"image_opacity":100,"color_palette":"","overlay_opacity_img":0,"horizontal_position":0,"vertical_position":25,"image_width":43,"constrain":false,"image_height":68,"border_radius":30,"shape":"none","link_url":"","mobile_hide":false,"mobile_sizes":false,"image_width_mobile":50,"image_height_mobile":50}},"image_eyeqHV":{"type":"image","settings":{"fill_image":true,"image_opacity":100,"color_palette":"","overlay_opacity_img":0,"horizontal_position":41,"vertical_position":0,"image_width":25,"constrain":true,"image_height":50,"border_radius":30,"shape":"none","link_url":"","mobile_hide":true,"mobile_sizes":false,"image_width_mobile":50,"image_height_mobile":50}},"video_abBpYn":{"type":"video","settings":{"fill_video":true,"image_opacity":100,"enable_controls":false,"video_mute":true,"color_palette":"scheme-4","overlay_opacity_img":0,"horizontal_position":41,"vertical_position":50,"image_width":21,"constrain":false,"image_height":30,"border_radius":16,"mobile_hide":false,"mobile_sizes":false,"image_width_mobile":50,"image_height_mobile":50}},"image_6PAicG":{"type":"image","settings":{"fill_image":true,"image_opacity":100,"color_palette":"","overlay_opacity_img":0,"horizontal_position":4,"vertical_position":96,"image_width":25,"constrain":true,"image_height":50,"border_radius":16,"shape":"none","link_url":"","mobile_hide":false,"mobile_sizes":false,"image_width_mobile":50,"image_height_mobile":50}},"content_TbQbiX":{"type":"content","settings":{"text_alignment":"left","content_width":540,"content_opacity":100,"background_color_palette":"","enable_background":true,"background_overlay_opacity":0,"background_radius":0,"horizontal_position":100,"vertical_position":50,"title":"<h4><span style=\"text-decoration:underline\">Trip Registrion<\/span><\/h4><h1>Always in real-time control, anytime, anywhere.<\/h1>","title_underline_style":"secondary_font_accent","enable_custom_title_size":false,"custom_title_size":32,"text":"<p>Log every journey automatically and get instant, accurate mileage reports that meet all tax requirements. From solo drivers to full Next managers, our system keeps your data precise, your records organised, and your compliance effortless.<\/p>","enable_custom_font_styling":false,"text_font":"primary","font_size":"16px","show_first_link":true,"first_link_text":"Our plans","first_link_url":"\/","first_button_style":"primary plain","show_second_link":true,"second_link_text":"More info","second_link_url":"\/","second_button_style":"primary inv","background_color_palette_mobile":"","mobile_hide":false}}},"block_order":["image_YWKNx3","image_eyeqHV","video_abBpYn","image_6PAicG","content_TbQbiX"],"name":"t:sections.flexible.presets.name","settings":{"transparent":false,"background_color_palette":"scheme-3","background_overlay_opacity":75,"background_position":"left","background_width":50,"background_height":100,"width":"wide","custom_height":56,"custom_height_tablet":80,"layout_mobile":"slideshow","content_below_media":false,"media_mobile_height":"size-m","background_width_mobile":100,"background_height_mobile":100,"height_mobile":"xs","spacing_desktop":-30,"spacing_mobile":0,"fix_zindex":0}},"section_promo_gallery_rFHfEq":{"type":"section-promo-gallery","blocks":{"image_3wwVwn":{"type":"image","settings":{"overlay_opacity_img":0,"enable_controls":false,"video_mute":true,"color_palette":"scheme-1","overlay_opacity":100,"text_position":"text-start","title":"<h6><span style=\"text-decoration:underline\">Trip Registration<\/span><\/h6><h3>Car Plan<\/h3><p>Accurate mileage tracking for private and business use. Fully compliant with tax regulations.<br\/><br\/>📍 Real-time GPS tracking<br\/>• Plug & play installation<br\/>• Mobile app access<br\/>• Secure cloud storage.<br\/>* <strong>Includes a 30-day free trial installation<\/strong><\/p><h4>From: €249<\/h4>","title_underline_style":"secondary_font_accent","text":"","enable_custom_font_styling":false,"font_size":"16px","show_link":true,"link_text":"More info","link_url":"\/","button_style":"primary plain"}},"image_qPMCgq":{"type":"image","settings":{"overlay_opacity_img":0,"enable_controls":false,"video_mute":true,"color_palette":"scheme-1","overlay_opacity":100,"text_position":"text-start","title":"<h6><span style=\"text-decoration:underline\">Trip Registration<\/span><\/h6><h3>Truck Plan<\/h3><p>Robust trip logging solution for heavy-duty vehicles and fleet operations. <br\/><br\/>📍 Live location & route history<br\/>• KM logbooks reports<br\/>• Includes fleet dashboard<br\/>• 24V vehicle compatible<br\/>* <strong>Includes a 30-day free trial installation<\/strong><\/p><h4>From: €399<\/h4>","title_underline_style":"secondary_font_accent","text":"","enable_custom_font_styling":false,"font_size":"16px","show_link":true,"link_text":"More info","link_url":"\/","button_style":"primary plain"}},"image_GcKMJD":{"type":"image","settings":{"overlay_opacity_img":0,"enable_controls":false,"video_mute":true,"color_palette":"scheme-1","overlay_opacity":100,"text_position":"text-start","title":"<h6><span style=\"text-decoration:underline\">Trip Registration<\/span><\/h6><h3>Motorcycle Plan<\/h3><p>Lightweight, waterproof, and made for riders. Track your trips automatically.<\/p><p>📍 GPS tracking with smart start<br\/>• Compact & waterproof module<br\/>• GPS tracking with smart start<br\/>• Low-power standby mode<br\/><strong>Includes a 30-day free trial installation<\/strong><\/p><h4>From: €199<\/h4>","title_underline_style":"secondary_font_accent","text":"","enable_custom_font_styling":false,"font_size":"16px","show_link":true,"link_text":"More info","link_url":"\/","button_style":"primary plain"}}},"block_order":["image_3wwVwn","image_qPMCgq","image_GcKMJD"],"name":"t:sections.promo_gallery.presets.name","settings":{"items_width":3,"width":"boxed","height":"size-s","enable_custom_height":false,"custom_height":300,"space_between":20,"image_zoom":true,"layout_mobile":"compact","mobile_height":"size-m","spacing_desktop":80,"spacing_mobile":30,"fix_zindex":0}},"section_banner_columns_rQCz6d":{"type":"section-banner-columns","blocks":{"image_a7JQzp":{"type":"image","settings":{"overlay_opacity":15,"enable_controls":false,"video_mute":true,"color_palette":"scheme-2","text_position":"end start","title":"<h4><span style=\"text-decoration:underline\">Effortless Setup<\/span><\/h4><h2>Driving Innovation. Delivering Confidence.<\/h2>","title_underline_style":"secondary_font","text":"<p>We create smart vehicle technology for safer, smoother, and more connected journeys.<\/p>","enable_custom_font_styling":false,"font_size":"16px","show_link":true,"link_text":"Read more","link_url":"\/","button_style":"primary link","show_overlay_link":true,"overlay_url":""}}},"block_order":["image_a7JQzp"],"name":"t:sections.banner_columns.name","settings":{"items_width":2,"width":"boxed","height":"adapt","enable_custom_height":true,"custom_height":680,"space_between":16,"image_zoom":false,"show_content_below":false,"layout_mobile":"rows","mobile_height":"16\/9","spacing_desktop":100,"spacing_mobile":30,"fix_zindex":0}},"section_featured_products_b88Arj":{"type":"section-featured-products","settings":{"products":[],"number_of_items":3,"text_alignment":"start","color_palette":"scheme-1","background_overlay_opacity":100,"background_position":"left","background_width":100,"background_height":100,"background_color_section":false,"title":"<h3>New arrivals<\/h3>","title_underline_style":"secondary_font_accent","text":"","enable_custom_font_styling":false,"font_size":"16px","show_link":false,"link_text":"Show all Fashion","link_url":"\/","button_style":"tertiary plain","background_width_mobile":100,"background_height_mobile":100,"spacing_desktop":0,"spacing_mobile":0,"fix_zindex":0}},"section_testimonials_PCMhpx":{"type":"section-testimonials","blocks":{"testimonial_qBY6Ym":{"type":"testimonial","settings":{"initials":false,"initials_color_palette":"scheme-6","author":"David M","place":"Rotterdam","text":"Reliable, intuitive, and surprisingly affordable. I use Fleetassist for my personal car and it’s been a game changer. Trip overviews are crystal clear and the app works flawlessly.","score":5}},"testimonial_mFKffJ":{"type":"testimonial","settings":{"initials":false,"initials_color_palette":"","author":"Sophie L","place":"Utrecht","text":"I run a small delivery business and needed a system that’s both tax-compliant and easy to manage. Fleetassist delivers exactly that. The installation was quick, and the live tracking is spot-on.","score":5}},"testimonial_D3wEtc":{"type":"testimonial","settings":{"initials":false,"initials_color_palette":"","author":"Jamal K","place":"Canada","text":"As a self-employed electrician, I’m on the road a lot. With Fleetassist, I no longer have to think about logging my trips — it’s all done automatically. And the customer support? Top-notch.","score":5}}},"block_order":["testimonial_qBY6Ym","testimonial_mFKffJ","testimonial_D3wEtc"],"name":"t:sections.testimonials.presets.name","settings":{"color_palette":"","overlay_opacity":100,"testimonials_boxed_overlay_opacity":10,"color_palette_stars":"primary","layout":"rows","items_width":3,"autoplay":false,"autoplay_seconds":3,"text_alignment":"center","title":"<h4><span style=\"text-decoration:underline\">Reviews<\/span><\/h4><h2>What drivers say about<br\/>Next Assistent<\/h2>","title_underline_style":"secondary_font_accent","text":"100% safe & Growth Focused, <a href=\"\/pages\/contact\" title=\"Contact\">Trusted by 100+ Happy Clients<\/a> ⭐⭐⭐⭐⭐","enable_custom_font_styling":false,"font_size":"16px","show_link":true,"link_text":"More reviews","link_url":"\/","button_style":"primary plain","spacing_desktop":80,"spacing_mobile":30,"fix_zindex":0}},"b39409d1-233d-4d71-9962-ecf3ba269ac2":{"type":"section-blog-posts","settings":{"blog":"news","number_of_items":3,"text_alignment":"start","title":"<h3>News<\/h3>","title_underline_style":"none","show_link":false,"link_text":"More news","link_url":"\/","button_style":"tertiary plain","custom_image_ratio":130,"show_image":true,"show_tags":true,"show_date":true,"show_author":true,"show_excerpt":false,"button_style_post":"tertiary link","spacing_desktop":80,"spacing_mobile":30,"fix_zindex":0}},"section_banner_columns_pKQtxg":{"type":"section-banner-columns","blocks":{"image_Up6Fc6":{"type":"image","settings":{"overlay_opacity":0,"enable_controls":false,"video_mute":true,"color_palette":"scheme-2","text_position":"end start","title":"","title_underline_style":"none","text":"","enable_custom_font_styling":false,"font_size":"16px","show_link":true,"link_text":"Button","link_url":"","button_style":"primary plain","show_overlay_link":true,"overlay_url":""}},"image_cPgk6H":{"type":"image","settings":{"overlay_opacity":100,"enable_controls":false,"video_mute":true,"color_palette":"scheme-1","text_position":"end start","title":"<h4><span style=\"text-decoration:underline\">About us<\/span><\/h4><h2>Smarter Driving.<br\/>Real Control. Anytime, anywhere.<\/h2>","title_underline_style":"secondary_font_accent","text":"<p>At Next, we believe that modern drivers deserve modern solutions. Whether you're behind the wheel of a single car or managing a fleet of vehicles, our mission is simple: to give you the tools you need to drive safely, stay compliant, and remain fully in control.<strong> Anytime, anywhere<\/strong>.<\/p>","enable_custom_font_styling":false,"font_size":"16px","show_link":true,"link_text":"Read more","link_url":"\/","button_style":"primary link","show_overlay_link":true,"overlay_url":""}}},"block_order":["image_Up6Fc6","image_cPgk6H"],"name":"t:sections.banner_columns.name","settings":{"items_width":2,"width":"boxed","height":"1\/1","enable_custom_height":false,"custom_height":300,"space_between":16,"image_zoom":false,"show_content_below":false,"layout_mobile":"rows","mobile_height":"16\/9","spacing_desktop":20,"spacing_mobile":30,"fix_zindex":0}},"section_flexible_yrVCyH":{"type":"section-flexible","blocks":{"image_djGgpJ":{"type":"image","settings":{"fill_image":true,"image_opacity":100,"color_palette":"","overlay_opacity_img":0,"horizontal_position":69,"vertical_position":19,"image_width":22,"constrain":false,"image_height":41,"border_radius":16,"shape":"none","link_url":"","mobile_hide":false,"mobile_sizes":false,"image_width_mobile":50,"image_height_mobile":50}},"image_KjGpmw":{"type":"image","settings":{"fill_image":true,"image_opacity":100,"color_palette":"","overlay_opacity_img":0,"horizontal_position":100,"vertical_position":52,"image_width":22,"constrain":true,"image_height":50,"border_radius":16,"shape":"none","link_url":"","mobile_hide":false,"mobile_sizes":false,"image_width_mobile":50,"image_height_mobile":50}},"image_YJMVig":{"type":"image","settings":{"fill_image":true,"image_opacity":100,"color_palette":"","overlay_opacity_img":0,"horizontal_position":66,"vertical_position":80,"image_width":28,"constrain":false,"image_height":30,"border_radius":16,"shape":"none","link_url":"","mobile_hide":false,"mobile_sizes":false,"image_width_mobile":50,"image_height_mobile":50}},"content_UPYNww":{"type":"content","settings":{"text_alignment":"left","content_width":540,"content_opacity":100,"background_color_palette":"","enable_background":true,"background_overlay_opacity":0,"background_radius":0,"horizontal_position":0,"vertical_position":50,"title":"<h4><span style=\"text-decoration:underline\">Drive smarter<\/span><\/h4><h2>Plug & Play installation. Smart tech, and zero hassle.<\/h2>","title_underline_style":"secondary_font_accent","enable_custom_title_size":false,"custom_title_size":32,"text":"<p>From dashcams to keyless protectors, our products come ready to use and include professional installation at no extra cost.<br\/><br\/>Join thousands of satisfied drivers who upgraded their ride in minutes.<\/p>","enable_custom_font_styling":false,"text_font":"primary","font_size":"16px","show_first_link":true,"first_link_text":"Explore our shop","first_link_url":"\/","first_button_style":"primary plain","show_second_link":false,"second_link_text":"More info","second_link_url":"\/","second_button_style":"primary inv","background_color_palette_mobile":"","mobile_hide":false}}},"block_order":["image_djGgpJ","image_KjGpmw","image_YJMVig","content_UPYNww"],"name":"t:sections.flexible.presets.name","settings":{"transparent":false,"background_color_palette":"scheme-3","background_overlay_opacity":0,"background_position":"left","background_width":50,"background_height":100,"width":"boxed","custom_height":56,"custom_height_tablet":80,"layout_mobile":"slideshow","content_below_media":false,"media_mobile_height":"size-m","background_width_mobile":100,"background_height_mobile":100,"height_mobile":"xs","spacing_desktop":-30,"spacing_mobile":0,"fix_zindex":0}}},"order":["section_slideshow_njdemC","section_icon_text_blocks_N4FXQX","section_featured_products_PjzTCK","c385e604-1b50-4426-9056-ee79db27eeb5","section_image_mask_4bx8CW","section_rich_text_4egdDV","05309379-e9cc-4d03-8159-e5ad6a3dad3f","section_flexible_iCTgHc","section_promo_gallery_rFHfEq","section_banner_columns_rQCz6d","section_featured_products_b88Arj","section_testimonials_PCMhpx","b39409d1-233d-4d71-9962-ecf3ba269ac2","section_banner_columns_pKQtxg","section_flexible_yrVCyH"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_slideshow_njdemC": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_FyeUKW": {
+          "type": "slide",
+          "settings": {
+            "video": "shopify://files/videos/SY01-无字-视频-1.mp4",
+            "show_play_button": false,
+            "video_mute": true,
+            "layout": "background",
+            "image_width": 50,
+            "overlay_opacity": 25,
+            "color_palette": "scheme-2",
+            "background_overlay_opacity": 100,
+            "text_position": "end center",
+            "max_width": 600,
+            "title": "<h3>Cenora Wear Smart Ring S1</h3><h1>More Than A Ring</h1>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_first_link": true,
+            "first_link_text": "Explore",
+            "first_link_url": "shopify://products/cenora-wear-s1-smart-ring",
+            "first_button_style": "secondary solid",
+            "show_second_link": false,
+            "second_link_text": "More info",
+            "second_link_url": "/",
+            "second_button_style": "primary inv"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FyeUKW"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "width": "wide",
+        "height": "adapt",
+        "enable_custom_height": false,
+        "custom_height": 1000,
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "adapt",
+        "spacing_desktop": 60,
+        "spacing_mobile": 20,
+        "fix_zindex": 0
+      }
+    },
+    "section_icon_text_blocks_N4FXQX": {
+      "type": "section-icon-text-blocks",
+      "blocks": {
+        "text_V6pFad": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "",
+            "text": "<h2>Where precision engineering meets <br/>uncompromising reliability.</h2><p>100% safe & tested by experts, <a href=\"/pages/contact\" title=\"Contact\">Trusted by 100+ Happy Clients </a> ⭐⭐⭐⭐⭐</p>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "text_cYLTTc": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "",
+            "text": "<p>Discover our hand-picked selection of dashcams, hands-free car kits, and keyless protectors, all designed to keep you safe and in control on the road. Need accurate trip tracking? Our advanced mileage registration systems and fleet solutions have you covered.</p>",
+            "show_link": true,
+            "link_text": "Read more",
+            "link_url": "/",
+            "button_style": "primary link"
+          }
+        }
+      },
+      "block_order": [
+        "text_V6pFad",
+        "text_cYLTTc"
+      ],
+      "disabled": true,
+      "name": "t:sections.icon_text_blocks.presets.name",
+      "settings": {
+        "items_width": 3,
+        "text_alignment": "start",
+        "color_palette": "scheme-2",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "title": "",
+        "title_underline_style": "none",
+        "text": "",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "show_link": true,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "blocks_text_alignment": "start",
+        "blocks_title_font": "primary",
+        "blocks_title_size": "h2",
+        "blocks_enable_custom_font_styling": false,
+        "blocks_font_size": "16px",
+        "layout_mobile": "slider",
+        "mobile_blocks_text_alignment": "center",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": -30,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_featured_products_PjzTCK": {
+      "type": "section-featured-products",
+      "disabled": true,
+      "settings": {
+        "products": [],
+        "number_of_items": 4,
+        "text_alignment": "start",
+        "color_palette": "scheme-2",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "title": "<h3>Best sellers</h3>",
+        "title_underline_style": "none",
+        "text": "",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "show_link": false,
+        "link_text": "Show all Fashion",
+        "link_url": "/",
+        "button_style": "tertiary plain",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 100,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "c385e604-1b50-4426-9056-ee79db27eeb5": {
+      "type": "section-masonry",
+      "blocks": {
+        "image_hip9dj": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "text_position": "text-center",
+            "title": "<h2>Image banner</h2>",
+            "title_underline_style": "none",
+            "text": "<p>Give customers details about the banner image(s)</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_jdc8U7": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "text_position": "text-center",
+            "title": "<h2>Image banner</h2>",
+            "title_underline_style": "none",
+            "text": "<p>Give customers details about the banner image(s)</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "template--21305038504227__c385e604-1b50-4426-9056-ee79db27eeb5-image-3": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 20,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "align-start text-start",
+            "title": "<h2>New arrivals</h2>",
+            "title_underline_style": "none",
+            "text": "<p>Explore our latest dashcams,<br/>reverse cameras & hands-free systems.<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></p>",
+            "enable_custom_font_styling": false,
+            "font_size": "18px",
+            "show_link": true,
+            "link_text": "Shop now",
+            "link_url": "/",
+            "button_style": "primary solid",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hip9dj",
+        "image_jdc8U7",
+        "template--21305038504227__c385e604-1b50-4426-9056-ee79db27eeb5-image-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "mirrored": false,
+        "width": "boxed",
+        "space_between": 20,
+        "image_zoom": true,
+        "layout_mobile": "rows",
+        "mobile_height": "size-s",
+        "spacing_desktop": 90,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_image_mask_4bx8CW": {
+      "type": "section-image-mask",
+      "disabled": true,
+      "settings": {
+        "width": "wide",
+        "height": "s",
+        "enable_custom_height": false,
+        "custom_height": 250,
+        "color_palette": "scheme-5",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "text_alignment": "center",
+        "content_width": 2000,
+        "title": "<h4><strong>30-Day Free Trial Installation on All Trip Registration Systems. Try it now!</strong></h4>",
+        "title_underline_style": "accent",
+        "enable_custom_title_size": false,
+        "custom_title_size": 22,
+        "line_height": 125,
+        "height_mobile": "xs",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": -30,
+        "spacing_mobile": 30,
+        "fix_zindex": 20
+      }
+    },
+    "section_rich_text_4egdDV": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_4gnCAe": {
+          "type": "title",
+          "settings": {
+            "title": "<h4><span style=\"text-decoration:underline\">Trip Registrion</span></h4><h1>Always in real-time control,<br/>anytime, anywhere.</h1>",
+            "title_underline_style": "secondary_font_accent"
+          }
+        },
+        "content_7F7afb": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Real-time insights, full compliance, and total peace of mind. Whether you're managing one vehicle or an entire fleet, we keep your mobility smart and effortless.</p>",
+            "font": "secondary",
+            "enable_custom_text_styling": false,
+            "font_weight": "400",
+            "font_size": "16px"
+          }
+        },
+        "image_GpwgmJ": {
+          "type": "image",
+          "settings": {
+            "image_width": 980,
+            "link_url": ""
+          }
+        },
+        "button_jfmHMx": {
+          "type": "button",
+          "settings": {
+            "link_text": "Discover now",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        },
+        "button_hQAWNC": {
+          "type": "button",
+          "settings": {
+            "link_text": "More info",
+            "link_url": "/",
+            "button_style": "primary inv"
+          }
+        }
+      },
+      "block_order": [
+        "title_4gnCAe",
+        "content_7F7afb",
+        "image_GpwgmJ",
+        "button_jfmHMx",
+        "button_hQAWNC"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "width": "wide",
+        "height": "l",
+        "enable_custom_height": true,
+        "custom_height": 1000,
+        "color_palette": "scheme-2",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "text_position": "align-center text-center",
+        "content_width": 640,
+        "height_mobile": "xs",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "05309379-e9cc-4d03-8159-e5ad6a3dad3f": {
+      "type": "section-image-mask",
+      "disabled": true,
+      "settings": {
+        "width": "wide",
+        "height": "s",
+        "enable_custom_height": false,
+        "custom_height": 490,
+        "color_palette": "",
+        "background_overlay_opacity": 0,
+        "background_position": "left",
+        "background_width": 50,
+        "background_height": 100,
+        "background_color_section": true,
+        "text_alignment": "center",
+        "content_width": 2000,
+        "title": "<h2>Always in control</h2>",
+        "title_underline_style": "none",
+        "enable_custom_title_size": true,
+        "custom_title_size": 67,
+        "line_height": 125,
+        "height_mobile": "xs",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": -130,
+        "spacing_mobile": -80,
+        "fix_zindex": 20
+      }
+    },
+    "section_flexible_iCTgHc": {
+      "type": "section-flexible",
+      "blocks": {
+        "image_YWKNx3": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 0,
+            "vertical_position": 25,
+            "image_width": 43,
+            "constrain": false,
+            "image_height": 68,
+            "border_radius": 30,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "image_eyeqHV": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 41,
+            "vertical_position": 0,
+            "image_width": 25,
+            "constrain": true,
+            "image_height": 50,
+            "border_radius": 30,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": true,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "video_abBpYn": {
+          "type": "video",
+          "settings": {
+            "fill_video": true,
+            "image_opacity": 100,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-4",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 41,
+            "vertical_position": 50,
+            "image_width": 21,
+            "constrain": false,
+            "image_height": 30,
+            "border_radius": 16,
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "image_6PAicG": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 4,
+            "vertical_position": 96,
+            "image_width": 25,
+            "constrain": true,
+            "image_height": 50,
+            "border_radius": 16,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "content_TbQbiX": {
+          "type": "content",
+          "settings": {
+            "text_alignment": "left",
+            "content_width": 540,
+            "content_opacity": 100,
+            "background_color_palette": "",
+            "enable_background": true,
+            "background_overlay_opacity": 0,
+            "background_radius": 0,
+            "horizontal_position": 100,
+            "vertical_position": 50,
+            "title": "<h4><span style=\"text-decoration:underline\">Trip Registrion</span></h4><h1>Always in real-time control, anytime, anywhere.</h1>",
+            "title_underline_style": "secondary_font_accent",
+            "enable_custom_title_size": false,
+            "custom_title_size": 32,
+            "text": "<p>Log every journey automatically and get instant, accurate mileage reports that meet all tax requirements. From solo drivers to full Next managers, our system keeps your data precise, your records organised, and your compliance effortless.</p>",
+            "enable_custom_font_styling": false,
+            "text_font": "primary",
+            "font_size": "16px",
+            "show_first_link": true,
+            "first_link_text": "Our plans",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": true,
+            "second_link_text": "More info",
+            "second_link_url": "/",
+            "second_button_style": "primary inv",
+            "background_color_palette_mobile": "",
+            "mobile_hide": false
+          }
+        }
+      },
+      "block_order": [
+        "image_YWKNx3",
+        "image_eyeqHV",
+        "video_abBpYn",
+        "image_6PAicG",
+        "content_TbQbiX"
+      ],
+      "disabled": true,
+      "name": "t:sections.flexible.presets.name",
+      "settings": {
+        "transparent": false,
+        "background_color_palette": "scheme-3",
+        "background_overlay_opacity": 75,
+        "background_position": "left",
+        "background_width": 50,
+        "background_height": 100,
+        "width": "wide",
+        "custom_height": 56,
+        "custom_height_tablet": 80,
+        "layout_mobile": "slideshow",
+        "content_below_media": false,
+        "media_mobile_height": "size-m",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "height_mobile": "xs",
+        "spacing_desktop": -30,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_promo_gallery_rFHfEq": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "image_3wwVwn": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h6><span style=\"text-decoration:underline\">Trip Registration</span></h6><h3>Car Plan</h3><p>Accurate mileage tracking for private and business use. Fully compliant with tax regulations.<br/><br/>📍 Real-time GPS tracking<br/>• Plug & play installation<br/>• Mobile app access<br/>• Secure cloud storage.<br/>* <strong>Includes a 30-day free trial installation</strong></p><h4>From: €249</h4>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "More info",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        },
+        "image_qPMCgq": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h6><span style=\"text-decoration:underline\">Trip Registration</span></h6><h3>Truck Plan</h3><p>Robust trip logging solution for heavy-duty vehicles and fleet operations. <br/><br/>📍 Live location & route history<br/>• KM logbooks reports<br/>• Includes fleet dashboard<br/>• 24V vehicle compatible<br/>* <strong>Includes a 30-day free trial installation</strong></p><h4>From: €399</h4>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "More info",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        },
+        "image_GcKMJD": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h6><span style=\"text-decoration:underline\">Trip Registration</span></h6><h3>Motorcycle Plan</h3><p>Lightweight, waterproof, and made for riders. Track your trips automatically.</p><p>📍 GPS tracking with smart start<br/>• Compact & waterproof module<br/>• GPS tracking with smart start<br/>• Low-power standby mode<br/><strong>Includes a 30-day free trial installation</strong></p><h4>From: €199</h4>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "More info",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "image_3wwVwn",
+        "image_qPMCgq",
+        "image_GcKMJD"
+      ],
+      "disabled": true,
+      "name": "t:sections.promo_gallery.presets.name",
+      "settings": {
+        "items_width": 3,
+        "width": "boxed",
+        "height": "size-s",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 20,
+        "image_zoom": true,
+        "layout_mobile": "compact",
+        "mobile_height": "size-m",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_banner_columns_rQCz6d": {
+      "type": "section-banner-columns",
+      "blocks": {
+        "image_fXJz7p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20251009213533_101_1372.jpg",
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "align-end text-start",
+            "title": "<h3>Cenora Wear S2 Smart Ring</h3>",
+            "title_underline_style": "none",
+            "text": "<p>$149.99</p>",
+            "enable_custom_font_styling": true,
+            "font_size": "18px",
+            "show_link": true,
+            "link_text": "Shop",
+            "link_url": "shopify://products/cenora-wear-s1-smart-ring",
+            "button_style": "primary solid",
+            "show_overlay_link": true,
+            "overlay_url": "shopify://products/cenora-wear-s1-smart-ring"
+          }
+        },
+        "image_a7JQzp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SY02_21.jpg",
+            "overlay_opacity": 15,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "align-end text-start",
+            "title": "<h3>Cenora Wear S1 Smart Ring</h3>",
+            "title_underline_style": "secondary_font",
+            "text": "<p>$119.99</p>",
+            "enable_custom_font_styling": true,
+            "font_size": "18px",
+            "show_link": true,
+            "link_text": "Shop",
+            "link_url": "shopify://products/cenora-wear-s2-smart-ring",
+            "button_style": "primary inv",
+            "show_overlay_link": true,
+            "overlay_url": "shopify://products/cenora-wear-s2-smart-ring"
+          }
+        }
+      },
+      "block_order": [
+        "image_fXJz7p",
+        "image_a7JQzp"
+      ],
+      "custom_css": [
+        "h3 {margin-bottom: 6px !important;}",
+        "@media screen and (max-width: 768px) {.main {padding-left: 12px !important; padding-bottom: 12px !important; } .link-btn a {margin: 0; padding: 6px !important; }}"
+      ],
+      "name": "t:sections.banner_columns.name",
+      "settings": {
+        "items_width": 2,
+        "width": "boxed",
+        "height": "adapt",
+        "enable_custom_height": true,
+        "custom_height": 680,
+        "space_between": 16,
+        "image_zoom": false,
+        "show_content_below": false,
+        "layout_mobile": "rows",
+        "mobile_height": "16/9",
+        "spacing_desktop": 100,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_featured_products_b88Arj": {
+      "type": "section-featured-products",
+      "disabled": true,
+      "settings": {
+        "products": [],
+        "number_of_items": 3,
+        "text_alignment": "start",
+        "color_palette": "scheme-1",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": false,
+        "title": "<h3>New arrivals</h3>",
+        "title_underline_style": "secondary_font_accent",
+        "text": "",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "show_link": false,
+        "link_text": "Show all Fashion",
+        "link_url": "/",
+        "button_style": "tertiary plain",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_testimonials_PCMhpx": {
+      "type": "section-testimonials",
+      "blocks": {
+        "testimonial_qBY6Ym": {
+          "type": "testimonial",
+          "settings": {
+            "initials": false,
+            "initials_color_palette": "scheme-6",
+            "author": "David M",
+            "place": "Rotterdam",
+            "text": "Reliable, intuitive, and surprisingly affordable. I use Fleetassist for my personal car and it’s been a game changer. Trip overviews are crystal clear and the app works flawlessly.",
+            "score": 5
+          }
+        },
+        "testimonial_mFKffJ": {
+          "type": "testimonial",
+          "settings": {
+            "initials": false,
+            "initials_color_palette": "",
+            "author": "Sophie L",
+            "place": "Utrecht",
+            "text": "I run a small delivery business and needed a system that’s both tax-compliant and easy to manage. Fleetassist delivers exactly that. The installation was quick, and the live tracking is spot-on.",
+            "score": 5
+          }
+        },
+        "testimonial_D3wEtc": {
+          "type": "testimonial",
+          "settings": {
+            "initials": false,
+            "initials_color_palette": "",
+            "author": "Jamal K",
+            "place": "Canada",
+            "text": "As a self-employed electrician, I’m on the road a lot. With Fleetassist, I no longer have to think about logging my trips — it’s all done automatically. And the customer support? Top-notch.",
+            "score": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_qBY6Ym",
+        "testimonial_mFKffJ",
+        "testimonial_D3wEtc"
+      ],
+      "name": "t:sections.testimonials.presets.name",
+      "settings": {
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "testimonials_boxed_overlay_opacity": 10,
+        "color_palette_stars": "primary",
+        "layout": "rows",
+        "items_width": 3,
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "text_alignment": "center",
+        "title": "<h4><span style=\"text-decoration:underline\">Reviews</span></h4><h2>What drivers say about<br/>Next Assistent</h2>",
+        "title_underline_style": "secondary_font_accent",
+        "text": "100% safe & Growth Focused, <a href=\"/pages/contact\" title=\"Contact\">Trusted by 100+ Happy Clients</a> ⭐⭐⭐⭐⭐",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "show_link": true,
+        "link_text": "More reviews",
+        "link_url": "/",
+        "button_style": "primary plain",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "b39409d1-233d-4d71-9962-ecf3ba269ac2": {
+      "type": "section-blog-posts",
+      "settings": {
+        "blog": "news",
+        "number_of_items": 3,
+        "text_alignment": "start",
+        "title": "<h3>News</h3>",
+        "title_underline_style": "none",
+        "show_link": false,
+        "link_text": "More news",
+        "link_url": "/",
+        "button_style": "tertiary plain",
+        "custom_image_ratio": 130,
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "button_style_post": "tertiary link",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_banner_columns_pKQtxg": {
+      "type": "section-banner-columns",
+      "blocks": {
+        "image_Up6Fc6": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "end start",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_cPgk6H": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 100,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "text_position": "end start",
+            "title": "<h4><span style=\"text-decoration:underline\">About us</span></h4><h2>Smarter Driving.<br/>Real Control. Anytime, anywhere.</h2>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "<p>At Next, we believe that modern drivers deserve modern solutions. Whether you're behind the wheel of a single car or managing a fleet of vehicles, our mission is simple: to give you the tools you need to drive safely, stay compliant, and remain fully in control.<strong> Anytime, anywhere</strong>.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Read more",
+            "link_url": "/",
+            "button_style": "primary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Up6Fc6",
+        "image_cPgk6H"
+      ],
+      "name": "t:sections.banner_columns.name",
+      "settings": {
+        "items_width": 2,
+        "width": "boxed",
+        "height": "1/1",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 16,
+        "image_zoom": false,
+        "show_content_below": false,
+        "layout_mobile": "rows",
+        "mobile_height": "16/9",
+        "spacing_desktop": 20,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_flexible_yrVCyH": {
+      "type": "section-flexible",
+      "blocks": {
+        "image_djGgpJ": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 69,
+            "vertical_position": 19,
+            "image_width": 22,
+            "constrain": false,
+            "image_height": 41,
+            "border_radius": 16,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "image_KjGpmw": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 100,
+            "vertical_position": 52,
+            "image_width": 22,
+            "constrain": true,
+            "image_height": 50,
+            "border_radius": 16,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "image_YJMVig": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 66,
+            "vertical_position": 80,
+            "image_width": 28,
+            "constrain": false,
+            "image_height": 30,
+            "border_radius": 16,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "content_UPYNww": {
+          "type": "content",
+          "settings": {
+            "text_alignment": "left",
+            "content_width": 540,
+            "content_opacity": 100,
+            "background_color_palette": "",
+            "enable_background": true,
+            "background_overlay_opacity": 0,
+            "background_radius": 0,
+            "horizontal_position": 0,
+            "vertical_position": 50,
+            "title": "<h4><span style=\"text-decoration:underline\">Drive smarter</span></h4><h2>Plug & Play installation. Smart tech, and zero hassle.</h2>",
+            "title_underline_style": "secondary_font_accent",
+            "enable_custom_title_size": false,
+            "custom_title_size": 32,
+            "text": "<p>From dashcams to keyless protectors, our products come ready to use and include professional installation at no extra cost.<br/><br/>Join thousands of satisfied drivers who upgraded their ride in minutes.</p>",
+            "enable_custom_font_styling": false,
+            "text_font": "primary",
+            "font_size": "16px",
+            "show_first_link": true,
+            "first_link_text": "Explore our shop",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "More info",
+            "second_link_url": "/",
+            "second_button_style": "primary inv",
+            "background_color_palette_mobile": "",
+            "mobile_hide": false
+          }
+        }
+      },
+      "block_order": [
+        "image_djGgpJ",
+        "image_KjGpmw",
+        "image_YJMVig",
+        "content_UPYNww"
+      ],
+      "name": "t:sections.flexible.presets.name",
+      "settings": {
+        "transparent": false,
+        "background_color_palette": "scheme-3",
+        "background_overlay_opacity": 0,
+        "background_position": "left",
+        "background_width": 50,
+        "background_height": 100,
+        "width": "boxed",
+        "custom_height": 56,
+        "custom_height_tablet": 80,
+        "layout_mobile": "slideshow",
+        "content_below_media": false,
+        "media_mobile_height": "size-m",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "height_mobile": "xs",
+        "spacing_desktop": -30,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "section_slideshow_njdemC",
+    "section_icon_text_blocks_N4FXQX",
+    "section_featured_products_PjzTCK",
+    "c385e604-1b50-4426-9056-ee79db27eeb5",
+    "section_image_mask_4bx8CW",
+    "section_rich_text_4egdDV",
+    "05309379-e9cc-4d03-8159-e5ad6a3dad3f",
+    "section_flexible_iCTgHc",
+    "section_promo_gallery_rFHfEq",
+    "section_banner_columns_rQCz6d",
+    "section_featured_products_b88Arj",
+    "section_testimonials_PCMhpx",
+    "b39409d1-233d-4d71-9962-ecf3ba269ac2",
+    "section_banner_columns_pKQtxg",
+    "section_flexible_yrVCyH"
+  ]
+}
