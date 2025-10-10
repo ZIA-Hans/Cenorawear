@@ -2251,6 +2251,10 @@
             "label": "Full width"
           }
         },
+        "boxed_width": {
+          "label": "Boxed content width",
+          "info": "Set the exact width for boxed content. Leave empty to use full container width."
+        },
         "enable_custom_height": {
           "label": "Enable custom minimal height"
         },

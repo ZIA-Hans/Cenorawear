@@ -394,6 +394,14 @@
       z-index: {{ section.settings.fix_zindex }} !important;
   }
 
+  {% if section.settings.width == 'boxed' and section.settings.boxed_width %}
+    #shopify-section-{{ section.id }} .l4ft {
+        max-width: {{ section.settings.boxed_width }}px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  {% endif %}
+
   @media only screen and (min-width: 47.5em) {
       #shopify-section-{{ section.id }} .l4ft {
           margin-bottom: {{ section.settings.spacing_desktop | minus: section.settings.space_between }}px;
@@ -451,6 +459,18 @@
         }
       ],
       "default": "boxed"
+    },
+    {
+      "type": "range",
+      "id": "boxed_width",
+      "label": "t:sections.banner_columns.settings.boxed_width.label",
+      "info": "t:sections.banner_columns.settings.boxed_width.info",
+      "min": 800,
+      "max": 1600,
+      "step": 50,
+      "unit": "px",
+      "default": 1200,
+      "visible_if": "{{ section.settings.width == 'boxed' }}"
     },
     {
       "type": "select",
