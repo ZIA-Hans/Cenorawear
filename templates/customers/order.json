@@ -1,0 +1,19 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": false
+      }
+    },
+    "main-account-order": {
+      "type": "main-account-order",
+      "settings": {}
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-account-order"
+  ]
+}

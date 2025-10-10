@@ -1,0 +1,782 @@
+
+
+
+
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=1e15d29662f3c7f77b1f17da6c9da01eeda6e585761adcac55f5e8cde118fa8a") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n7.f34f55d9b3d3205d2cd6f64955ff4b36f0cfd8da.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=2b2b614d729b0cce2c785628075147de41aa011c83919cd394f1b56aea5089e6") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n3.05f58335c3209cce17da4f1f1ab324ebe2982441.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=b0b3452bf43812abb8dcf15c7d532da41266fbbba41f2b95c90f8d92a0e51c30") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n3.6971368e1f131d2c8ff8e3a44a36b577fdda3ff5.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=177e64685da0be88769600f3345f86277df113c10d27daf944aed0bca07ee854") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n1.91f1f2f2f3840810961af59e3a012dcc97d8ef59.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=222512711fbc76eb8deadccdad393695acaa993fcd7245d3acb7360866717713") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n1.58d050ae3fe39914ce84b159a8c37ae874d01bfc.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=6fb981814726cbf168c2edaa2f9af46d86a9cc70019c71bf118478199313a5ed") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n2.99893b093cc6b797a8baf99180056d9e77320b68.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=a7032d739788ded7e685f7d05a37b16e11438e5064a6c69d38320910cd2b1c9e") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n2.c218f0380a81801a28158673003c167a54d2d69c.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=8e3104f71790070a1956dcba75597267c63ca7ef998abbb402e01def9177abb7") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n3.05f58335c3209cce17da4f1f1ab324ebe2982441.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=b0b3452bf43812abb8dcf15c7d532da41266fbbba41f2b95c90f8d92a0e51c30") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n3.6971368e1f131d2c8ff8e3a44a36b577fdda3ff5.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=177e64685da0be88769600f3345f86277df113c10d27daf944aed0bca07ee854") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n4.0ba78fa5af9b0e1a374041b3ceaadf0a43b41362.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=ea16ad25ea73e0501476058fc74da18152cc723a2b414d1ce99756bfa1f2bf81") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n4.214741a72ff2596839fc9760ee7a770386cf16ca.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=531e04c13ad79290c3553924903dd2a5b7eba6abafd34df707c95c4f3074f15f") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n5.ad5b4b72b59a00358afc706450c864c3c8323842.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=e81a7c11a580b02373ffe2b4ab90d5bb4748b559983ade8d32987b3be87fc580") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n5.33757fdf985af2d24b32fcd84c9a09224d4b2c39.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=beefc9c67a2b5afc3be4aa5c0fcc55982888a92ef29f7af6bf836ced0d54b041") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n6.aa29d4918bc243723d56b59572e18228ed0786f6.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=f8900d8728c2808bc65fa022c75f5722a13fc5847eeefeed80127244433a638a") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n6.5f815d845fe073750885d5b7e619ee00e8111208.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=346cb5c141c97fac6861c32f19950467865052ce3a957a210ed770292834f0fc") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=1e15d29662f3c7f77b1f17da6c9da01eeda6e585761adcac55f5e8cde118fa8a") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n7.f34f55d9b3d3205d2cd6f64955ff4b36f0cfd8da.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=2b2b614d729b0cce2c785628075147de41aa011c83919cd394f1b56aea5089e6") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n8.580200d05bca09e2e0c6f4c922047c227dfa8e8c.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=ae5e69e885dee138fe82c611f4039b616ccc6452eebb70ebd6b8250342e45e5f") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n8.f4450f472fdcbe9e829f3583ebd559988f5a3d25.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=ad1fcfbe11359f9c4429cd5a1b2766d0fb42408f1cbb3212e271614f28f8d959") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n9.eb6b9ef01b62e777a960bfd02fc9fb4918cd3eab.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=792d2be2e8a321e2af9b1d9d58e9eeb499b5f099ea8f8c8b34c7f088b33f93c5") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n9.6501a5bd018e348b6d5d6e8c335f9e7d32a80c36.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=169835bfc2b359d13b60afc672ba62cf353fc158ce53fc934e23d668f3069ec8") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n1.91f1f2f2f3840810961af59e3a012dcc97d8ef59.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=222512711fbc76eb8deadccdad393695acaa993fcd7245d3acb7360866717713") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n1.58d050ae3fe39914ce84b159a8c37ae874d01bfc.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=6fb981814726cbf168c2edaa2f9af46d86a9cc70019c71bf118478199313a5ed") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n2.99893b093cc6b797a8baf99180056d9e77320b68.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=a7032d739788ded7e685f7d05a37b16e11438e5064a6c69d38320910cd2b1c9e") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n2.c218f0380a81801a28158673003c167a54d2d69c.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=8e3104f71790070a1956dcba75597267c63ca7ef998abbb402e01def9177abb7") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n3.05f58335c3209cce17da4f1f1ab324ebe2982441.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=b0b3452bf43812abb8dcf15c7d532da41266fbbba41f2b95c90f8d92a0e51c30") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n3.6971368e1f131d2c8ff8e3a44a36b577fdda3ff5.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=177e64685da0be88769600f3345f86277df113c10d27daf944aed0bca07ee854") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n4.0ba78fa5af9b0e1a374041b3ceaadf0a43b41362.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=ea16ad25ea73e0501476058fc74da18152cc723a2b414d1ce99756bfa1f2bf81") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n4.214741a72ff2596839fc9760ee7a770386cf16ca.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=531e04c13ad79290c3553924903dd2a5b7eba6abafd34df707c95c4f3074f15f") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n5.ad5b4b72b59a00358afc706450c864c3c8323842.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=e81a7c11a580b02373ffe2b4ab90d5bb4748b559983ade8d32987b3be87fc580") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n5.33757fdf985af2d24b32fcd84c9a09224d4b2c39.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=beefc9c67a2b5afc3be4aa5c0fcc55982888a92ef29f7af6bf836ced0d54b041") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n6.aa29d4918bc243723d56b59572e18228ed0786f6.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=f8900d8728c2808bc65fa022c75f5722a13fc5847eeefeed80127244433a638a") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n6.5f815d845fe073750885d5b7e619ee00e8111208.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=346cb5c141c97fac6861c32f19950467865052ce3a957a210ed770292834f0fc") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n7.56758dcf284489feb014a026f3727f2f20a54626.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=1e15d29662f3c7f77b1f17da6c9da01eeda6e585761adcac55f5e8cde118fa8a") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n7.f34f55d9b3d3205d2cd6f64955ff4b36f0cfd8da.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=2b2b614d729b0cce2c785628075147de41aa011c83919cd394f1b56aea5089e6") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n8.580200d05bca09e2e0c6f4c922047c227dfa8e8c.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=ae5e69e885dee138fe82c611f4039b616ccc6452eebb70ebd6b8250342e45e5f") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n8.f4450f472fdcbe9e829f3583ebd559988f5a3d25.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=ad1fcfbe11359f9c4429cd5a1b2766d0fb42408f1cbb3212e271614f28f8d959") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n9.eb6b9ef01b62e777a960bfd02fc9fb4918cd3eab.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=792d2be2e8a321e2af9b1d9d58e9eeb499b5f099ea8f8c8b34c7f088b33f93c5") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_n9.6501a5bd018e348b6d5d6e8c335f9e7d32a80c36.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=169835bfc2b359d13b60afc672ba62cf353fc158ce53fc934e23d668f3069ec8") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_i3.8536b4423050219f608e17f134fe9ea3b01ed890.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=f6eca03b320d108dc319bcb701e0581681c7edeba9040db47824ba99d9a857c8") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_i3.0f4433ada196bcabf726ed78f8e37e0995762f7f.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=f38e48af0ef1f2418d3fb3c2b5bb2ec876d30844fef5d0ca5aea532a20142498") format("woff");
+}
+
+@font-face {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("//www.cenorawear.com/cdn/fonts/poppins/poppins_i7.42fd71da11e9d101e1e6c7932199f925f9eea42d.woff2?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=6f88a51f98a767f2cfdf04bca1f2d415ff38fc270ecb770866032df8ddea0b84") format("woff2"),
+       url("//www.cenorawear.com/cdn/fonts/poppins/poppins_i7.ec8499dbd7616004e21155106d13837fff4cf556.woff?h1=Y3h4cjIwLXM2LmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=Y2Vub3Jhd2Vhci5jb20&hmac=db0c02871c7aa63ce5c332e4abad9c900940235e653f1bcb5b6c5a79a9ca9a0d") format("woff");
+}
+
+@font-face { font-family: 'i'; src: url(//www.cenorawear.com/cdn/shop/t/2/assets/icomoon.woff?v=131928518403279058281758969641) format('woff'); font-display: swap; }
+
+:root {
+  --theme_text:     var(--white);
+
+  --theme_btn_text:    var(--primary_btn_fg);
+  --theme_bg_btn:      var(--primary_btn_bg);
+  --theme_bg_btn_dark: var(--primary_btn_bg_dark);
+  --theme_bg_btn_fade: var(--primary_btn_bg_dark);
+
+  --buy_btn_fg:      #ffffff;
+  --buy_btn_bg:        #191919;
+  --buy_btn_bg_dark:   #0c0c0c;
+
+  --dynamic_buy_btn_fg:    #ffffff;
+  --dynamic_buy_btn_bg:      #4f525b;
+  --dynamic_buy_btn_bg_dark: #43464d;
+
+  --unavailable_buy_btn_fg:    #ffffff;
+  --unavailable_buy_btn_bg:      #e5e5e5;
+  --unavailable_buy_btn_bg_dark: #d8d8d8;
+
+  --top_search_bg:var(--body_bg);
+  --input_fg:    var(--dark);
+  --rt_fill: var(--accent);
+  --theme_bg_light: var(--bg_secondary);
+  
+
+  --alert_error:        #ca3814;
+  --alert_error_bg:     #fce6e1;
+  --alert_valid:        #72d112;
+  --lime:               #72d112;
+
+  --product_label_bg:   #0e1320;
+  --product_label_bg_dark:#06080e;
+  --product_label_text: #ffffff;
+  --sale_label_bg:      #ca3814;
+  --sale_label_bg_dark: #b33212;
+  --sale_label_text:    #ffffff;
+
+  --positive_bg:        #72d112;
+  --positive_bg_dark:   #65ba10;
+  --positive_fg:	      var(--white);
+
+  --ar_op: 0.4;
+  --ar_op_h: 1;
+  --ar_bg:              var(--tertiary_btn_bg);
+  --ar_bg_h:            var(--ar_bg);
+  --ar_fg:              var(--tertiary_btn_fg);
+  --ar_fg_h:            var(--ar_fg);
+
+  --price_color:        #0e1320;
+  --price_color_old:    #686868;
+
+  --multiply_bg_product:  var(--scheme-3);
+  --multiply_bg_collection: var(--scheme-3);
+
+  --primary_text:       var(--);
+  --primary_text_h:     var(--);
+
+  --breadcrumbs_fz:  13px;
+
+  --main_ff_h:          Poppins, sans-serif;
+  --main_fw_h:          700;
+  --main_fw_h_strong:   700;
+  --main_fs_h:          normal;
+  --main_ls_h:          -0.03em;
+  --main_tt_h:          none;
+  --main_lh_h:          1.15;
+
+
+  --main_ff:            Poppins, sans-serif;
+  --main_fs:            normal;
+  --main_tt:            none;
+
+  --main_fw:            400;
+  --main_fw_strong:     700;
+
+  --main_ls:            0.0em;
+  --main_lh:            1.45;
+  --main_fz:            14px;
+
+  --main_h1:            45px;
+  --main_h2:            33px;
+  --main_h3:            25px;
+  --main_h4:            19px;
+  --main_h5:            16px;
+  --main_h6:            16px;
+  --main_h_small:       var(--main_h6);
+
+  --mob_h1:             31px;
+  --mob_h2:             24px;
+  --mob_h3:             20px;
+  --mob_h4:             16px;
+  --mob_h5:             14px;
+  --mob_h6:             12px;
+  --mob_h_small:        14px;
+  --mob_fz:             13px;
+  --theme_btn_fz_mob:   14px;
+
+
+  --theme_btn_ff:            var(--main_ff_h);
+  --theme_btn_fs:            var(--main_fs_h);
+
+  --theme_btn_fw:            600;
+  --theme_btn_fz:          14px;
+  --theme_btn_tt:          none;
+  --theme_btn_ls:          -0.01em;
+  --button_bw: 2px;
+  --button_corners: 32px;
+  --button_height: 50px;
+
+
+  --price_ff:            var(--main_ff_h);
+  --price_fs:            var(--main_fs_h);
+
+  --price_fw:            600;
+  --l4cl_h_small: 13px;
+
+
+  --b2p: 12px;
+
+  --glw: 1400px;
+  --ratio: 1.0;
+  --theme_bg_gradient: var(--accent_gradient);
+  --circle_size: 55px;
+  /* --gutter: 1.5; */
+}
+@media only screen and (max-width: 760px) {
+  :root {
+    --main_mr: 20px;
+    --size_70_f: 12vw;
+    --main_fz: var(--mob_fz);
+    --theme_btn_fz: var(--theme_btn_fz_mob);
+    --main_h1: var(--mob_h1);
+    --main_h2: var(--mob_h2);
+    --main_h3: var(--mob_h3);
+    --main_h4: var(--mob_h4);
+    --main_h5: var(--mob_h5);
+    --main_h6: var(--mob_h6);
+    --main_lead: var(--mob_lead);
+  
+    --header_height_static: 70px; /* the header height is always 70px on mobile */
+  }
+}
+
+
+[class*="palette-"], [data-active-content*="palette-"] {
+--headings_text:      var(--primary_text);
+}
+
+.title-styling h1, .title-styling h2, .title-styling h3, .title-styling h4, .title-styling h5, .title-styling h6 {
+  margin-bottom: var(--main_mr);
+  margin-top: 0;
+}
+.title-styling.title-30 h1, .title-styling.title-30 h2, .title-styling.title-30 h3, .title-styling.title-30 h4, .title-styling.title-30 h5, .title-styling.title-30 h6 {
+  margin-bottom: 30px;
+}
+.title-styling.title-main-mr h1, .title-styling.title-main-mr h2, .title-styling.title-main-mr h3, .title-styling.title-main-mr h4, .title-styling.title-main-mr h5, .title-styling.title-main-mr h6 {
+  margin-bottom: calc(calc(var(--main_fz) * 1.5) * .55) !important;
+}
+@media only screen and (max-width: 760px) {
+  .title-styling.title-30 h1, .title-styling.title-30 h2, .title-styling.title-30 h3, .title-styling.title-30 h4, .title-styling.title-30 h5, .title-styling.title-30 h6 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Typography */
+.title-underline-none :is(h1, h2, h3, h4, h5, h6) span[style*="text-decoration:underline"] { text-decoration: none!important; }
+.title-underline-accent :is(h1, h2, h3, h4, h5, h6) span[style*="text-decoration:underline"] { color: var(--accent); }
+.title-underline-gradient :is(h1, h2, h3, h4, h5, h6) span[style*="text-decoration:underline"] {
+  background: var(--accent_gradient);
+  background-clip: text; -webkit-background-clip: text;
+  text-fill-color: transparent; -webkit-text-fill-color: transparent;
+}
+.title-underline-secondary-font :is(h1, h2, h3, h4, h5, h6) span[style*="text-decoration:underline"] {
+  font-family: Poppins, sans-serif;
+  text-transform: none;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+}
+.title-underline-secondary-font :is(h1, h2, h3, h4, h5, h6) span[style*="text-decoration:underline"] strong, .title-underline-secondary-font :is(h1, h2, h3, h4, h5, h6) span[style*="text-decoration:underline"] b {
+  font-weight: 600;
+}
+
+#root [class*="button-palette-"] button[disabled]:before, #root [class*="button-palette-"] button.disabled:before {
+  --secondary_bg_fade:  var(--secondary_btn_bg_dark);
+}
+
+#root [class*="button-palette-"] button[disabled]:before, #root [class*="button-palette-"] button.disabled:before {
+  --theme_bg_fade:  var(--theme_bg_btn_dark);
+}
+
+.overlay-primary { 
+  --theme_btn_text: var(--secondary_btn_fg);
+  --theme_bg_btn: var(--secondary_btn_bg);
+  --theme_bg_btn_dark: var(--secondary_btn_bg_dark);
+  --theme_bg_btn_fade: var(--secondary_btn_bg_dark);
+}
+.overlay-secondary {--theme_btn_text: var(--secondary_btn_fg); --theme_bg_btn: var(--secondary_btn_bg); --theme_bg_btn_dark: var(--secondary_btn_bg_dark); --theme_bg_btn_fade: var(--secondary_btn_bg_dark); }
+.overlay-tertiary, .link-btn.overlay-tertiary a, .link-btn a.overlay-tertiary, button.overlay-tertiary, .overlay-tertiary button, .s1bx.overlay-tertiary {
+  --tertiary_bg: var(--tertiary_btn_bg);
+  --primary_bg: var(--tertiary_btn_bg);
+  --primary_text: var(--tertiary_btn_fg);
+  --secondary_btn_fg: var(--tertiary_btn_fg);
+  --secondary_bg: var(--tertiary_bg); 
+  --secondary_btn_bg: var(--primary_bg);
+  --theme_btn_text: var(--tertiary_btn_fg);
+  --theme_bg_btn_dark: var(--tertiary_btn_bg_dark);
+  --theme_bg_btn: var(--tertiary_btn_bg);
+}
+button:not([class*="overlay-"]), .link-btn:not([class*="overlay-"], .tabs) a:not([class*="overlay-"]), #nav-user > ul > li > a i span, #totop a, .overlay-primary, .link-btn.overlay-primary a, .link-btn a.overlay-primary, button.overlay-primary, .overlay-primary button, .s1bx.overlay-primary {
+  --secondary_btn_fg: var(--primary_btn_fg);
+  --secondary_bg: var(--primary_btn_bg);
+  --secondary_btn_bg: var(--primary_btn_bg);
+  --secondary_btn_bg_dark: var(--primary_btn_bg_dark);
+  --primary_text: var(--secondary_btn_fg);
+}
+.link-btn a.overlay-buy_button, button.overlay-buy_button, .overlay-buy_button button, .s1bx.overlay-buy_button { /* used to be overlay-tertiary, but this name has been taken over to be used for the tertiary button in the color schemes*/
+  --theme_bg_btn_dark: var(--buy_btn_bg_dark);
+  --theme_bg_btn: var(--buy_btn_bg);
+  --theme_btn_text: var(--buy_btn_fg);
+}
+.link-btn a.overlay-dynamic_buy_button, button.overlay-dynamic_buy_button, .overlay-dynamic_buy_button button, .s1bx.overlay-dynamic_buy_button { /* used to be overlay-quaternary, but this might conflict in the future when more button colors are added */  
+  --theme_bg_btn_dark: var(--dynamic_buy_btn_bg_dark);
+  --theme_bg_btn: var(--dynamic_buy_btn_bg);
+  --theme_btn_text: var(--dynamic_buy_btn_fg);
+  --theme_btn_text_static: var(--theme_btn_text);
+}
+.link-btn a.overlay-unavailable_buy_button, button.overlay-unavailable_buy_button, .overlay-unavailable_buy_button button, .s1bx.overlay-unavailable_buy_button { /* used to be overlay-quinary, but this might conflict in the future when more button colors are added */
+  --theme_bg_btn_dark: var(--unavailable_buy_btn_bg_dark);
+  --theme_bg_btn: var(--unavailable_buy_btn_bg);
+  --theme_btn_text: var(--unavailable_buy_btn_fg);
+}
+.link-btn a.overlay-secondary_bg, button.overlay-secondary_bg, .overlay-secondary_bg button, .s1bx.overlay-secondary_bg {
+  --secondary_btn_fg: var(--primary_text);
+  --secondary_bg: var(--bg_secondary);
+  --secondary_btn_bg: var(--secondary_bg);
+  --secondary_btn_bg_dark: var(--secondary_btn_bg);
+}
+.overlay-primary, .overlay-secondary, .overlay-tertiary, .overlay-buy_button, .overlay-dynamic_buy_button, .overlay-unavailable_buy_button { --link_underline_c: var(--secondary_bg); }
+
+.l4al > .overlay-primary { color: var(--primary_btn_fg); --primary_text: var(--primary_btn_fg); }
+#root .l4al > .overlay-primary:before { background: var(--primary_btn_bg); opacity: 1; }
+.l4al > .overlay-secondary { color: var(--secondary_btn_fg); --primary_text: var(--secondary_btn_fg); }
+#root .l4al > .overlay-primary:before { background: var(--secondary_btn_bg); opacity: 1; }
+.l4al > .overlay-tertiary { color: var(--tertiary_btn_fg); --primary_text: var(--tertiary_btn_fg); }
+#root .l4al > .overlay-tertiary:before { background: var(--tertiary_btn_bg); opacity: 1; }
+.l4al > .overlay-buy_button { color: var(--buy_btn_fg); --primary_text: var(--buy_btn_fg); }
+#root .l4al > .overlay-buy_button:before { background: var(--buy_btn_bg); opacity: 1; }
+.l4al > .overlay-dynamic_buy_button { color: var(--dynamic_buy_btn_fg); --primary_text: var(--dynamic_buy_btn_fg);}
+#root .l4al > .overlay-dynamic_buy_button:before { background: var(--dynamic_buy_btn_bg); opacity: 1; }
+.l4al.f8pr-shipping-timer:empty { display: none; }
+
+.module-color-palette[class*=palette-] .img-overlay, #background.module-color-palette[class*="palette-"] .img-overlay { background: var(--primary_bg); }
+.module-color-palette[class*="palette-"] h1, .module-color-palette[class*="palette-"] h2, .module-color-palette[class*="palette-"] h3, .module-color-palette[class*="palette-"] h4, .module-color-palette[class*="palette-"] h5, .module-color-palette[class*="palette-"] h6 { color: var(--headings_text); }
+.module-color-palette[class*="palette-"] { color: var(--primary_text); --price_color: var(--primary_text); --price_color_old: var(--primary_text); }
+.module-color-palette[class*=palette-] { color: var(--primary_text); --rt_fill: var(--primary_text); }
+.module-color-palette[class*='palette-']:before { background: var(--primary_bg); }
+[class*="palette-"] button:not(.loading), [class*="palette-"] input[type="button"], [class*="palette-"] input[type="reset"], [class*="palette-"] input[type="submit"], [class*="palette-"] .link-btn a:not(.loading) { color: var(--theme_btn_text); }
+[data-active-content*="palette-"] .swiper-custom-pagination, [data-active-content*="palette-"] .play-pause { color: var(--primary_text); }
+.m6bx[class*="palette-"] > p, .m6bx[class*="palette-"] > p, .m6bx[class*="palette-"] > h2, .m6bx[class*="palette-"] > strong, .m6bx[class*="palette-"] > em, .m6bx[class*="palette-"] > ul { color: var(--primary_text); }
+.m6bx[class*="palette-"]:before { background: var(--primary_bg); }
+.m6bx[class*="palette-"].overlay:before { border: none; }
+.m6as[class*="palette-"]:before { background: var(--primary_bg); }
+.m6wd[class*="palette-"] .l4ts.box li, .m6wd[class*="palette-"] .l4ts.box .li { color: var(--black); }
+.l4ft.hover-out li[class*="palette-"]:before { background: none; }
+.m6fr[class*="palette-"] article:before { background: var(--primary_bg)!important; }
+.l4al li[class*="palette-"]:before { background: var(--primary_bg); }
+.l4al li[class*="palette-"]:before { border-width: 0; }
+.m6bx.inline[class*="palette-"]:before { border-width: 0; }
+.l4sc.box a:hover { --theme_bg: var(--accent); }
+/* Other*/
+
+[id*="shopify-section-"] .placeholder-svg, .placeholder-svg { background-color: var(--sand); fill: #c4c4c4; }
+label span.text-end.hidden, #root span.f8pr-pickup.hidden { display: none; }
+.image-compare figure { width: 100%; }
+.no-before:before { content: none; }
+@media only screen and (max-width: 47.5em) {
+  .accordion-a.compact + .accordion-a { margin-top: -10px; }
+}
+@media only screen and (min-width: 47.5em) {
+  .l4ft.outer-radius { border-radius: var(--b2r); overflow: hidden; }
+  .l4ft.outer-radius li { --b2r: 0; }
+}
+
+/* Buttons */
+
+
+.link-btn:not(.solid) a:not(.solid), button:not(.solid), .link-btn:not(.solid) a:not(.solid):before, button:not(.solid):before { box-shadow: none; }
+
+
+
+.day-switched {
+  --coal:   	        #444749;
+  --price_color: inherit;
+  --price_color_old: inherit;
+  --primary_text:       var(--white);
+  --primary_text_h:     var(--white);
+  --input_fg: var(--primary_text);
+  --input_bg: var(--body_bg);
+  --input_bd: rgba(255, 255, 255, 0.2);
+
+  --top_search_bg:  var(--top_main_bg);
+
+  --theme_bg_btn_dark: var(--theme_bg_btn);
+  --theme_bg_btn_fade: var(--theme_bg_btn);
+  --sand: var(--body_bg);
+}
+.day-switched .link-btn a.overlay-buy_button, .day-switched button.overlay-buy_button, .day-switched .overlay-buy_button button, .day-switched .s1bx.overlay-buy_button { /* Darkmode buy button */
+    --theme_bg_btn:   var(--primary_btn_bg);
+    --theme_btn_text: var(--primary_btn_fg);
+    --theme_bg_btn_dark: var(--theme_bg_btn);
+}
+.day-switched .link-btn a.overlay-dynamic_buy_button, .day-switched button.overlay-dynamic_buy_button, .day-switched .overlay-dynamic_buy_button button, .day-switched .s1bx.overlay-dynamic_buy_button { /* Darkmode dynamic buy button */
+    --theme_bg_btn:   var(--dynamic_buy_btn_bg);
+    --theme_btn_text: var(--dynamic_buy_btn_fg);
+    --theme_bg_btn_dark: var(--theme_bg_btn);
+}
+.day-switched .overlay-gray {
+  color: var(--primary_text);
+}
+.day-switched .l4ca > li:before,
+.day-switched #nav li:before, .day-switched #nav:not([data-type])>ul.nav-user:before {
+  border-color: var(--white);
+  opacity: 0.4;
+}
+.day-switched[data-whatin="mouse"] .l4ca.compact li:hover:before {
+  background: var(--dark);
+  opacity: 0.4;
+}
+.day-switched [class*=text-palette-], .day-switched [data-active-content*=text-palette-] {
+  --primary_text:       var(--white);
+}
+.day-switched #root .check.switch label:after { --white: var(--black); }
+html.has-first-m6fr-wide[style*="--transparent_header_fg_brightness: 1"] #header-outer:not(.fixed) .dark-only { display: block; }
+html.has-first-m6fr-wide[style*="--transparent_header_fg_brightness: 1"] #header-outer:not(.fixed) .dark-hide { display: none; }
+
+html[data-whatin="mouse"] .l4ca.compact li:hover figure.img-multiply-bg:before { background: var(--multiply_bg_product); opacity: 1; }
+.l4cl .slider img~img, .l4cl picture~picture { background: var(--multiply_bg_product); }
+
+figure.img-multiply-bg:before, picture.img-multiply-bg:before, picture.img-multiply-bg.s4wi .swiper-slide a:before, .img.img-multiply-bg:before { --body_bg: var(--multiply_bg_product); --gallery: var(--multiply_bg_product); background: var(--multiply_bg_product); } /* Product/collection image multiply background custom color palette 1/2 */
+.catalog figure.img-multiply-bg:before, .catalog picture.img-multiply-bg:before, .catalog picture.img-multiply-bg.s4wi .swiper-slide a:before, #nav > ul > li > ul a .img:has(.img-multiply-bg) { --body_bg: var(--multiply_bg_collection); --gallery: var(--multiply_bg_collection); --drop_nav_bg: var(--multiply_bg_collection); background: var(--multiply_bg_collection); } /* Product/collection image multiply background custom color palette 2/2 */
+
+.m6fr:not([data-active-content*="plain"]) .swiper-custom-bullets { --primary_text: inherit; color: var(--primary_text); } /* the slider navigation should get the same color as the text */
+
+html.dm-ready.has-first-m6fr-wide:not(.fixed-sticky) .shopify-section-header #header-outer:not(.fixed),
+html.dm-ready.has-first-m6fr-wide:not(.fixed-sticky) .shopify-section-header #header-outer:not(.fixed) #nav-outer:not(.fixed) #nav {
+  --top_search_bd:     unset;
+  --top_main_bg:       var(--transparent_header_bg);
+  --top_main_fg:       var(--transparent_header_fg);
+  --top_main_fg_hover: var(--top_main_fg);
+  --menu_fg:           var(--top_main_fg);
+}
+
+#content > * { position: relative; z-index: 0; }
+#content > *:has(+.shopify-section-footer) { z-index: 1; }
+@media only screen and (min-width: 62.5em) {
+  html.dm-ready.has-first-m6fr-wide:not(.fixed-sticky) .shopify-section-header #header-outer:not(.fixed) #nav-outer:not(.fixed) #nav {
+    --top_nav_btn_bg:    var(--transparent_header_btn_bg);
+    --top_nav_btn_fg:    var(--transparent_header_btn_fg);
+    --top_nav_fg:        var(--top_main_fg);
+    --top_nav_fg_hover:  var(--top_main_fg);
+    color:               var(--top_main_fg);
+  }
+}
+@media only screen and (max-width: 47.5em) {
+  .shopify-section-footer > .l4pm > .follow-on-shop { width: 100%; text-align: center; }
+}
+.form-m-14 > p { margin-bottom: 14px; }
+.module-color-palette .swiper-button-next, .module-color-palette .swiper-button-prev { color: var(--primary_text); }
+
+.ff-primary, .ff-primary-digit .simply-amount, .l4ft li > .content .ff-primary {
+  font-family: Poppins, sans-serif;
+  text-transform: none;
+  font-weight: var(--main_fw_h);
+  font-style: normal;
+  --main_fw_strong: var(--main_fw_h_strong);
+  letter-spacing: -0.03em;
+  --main_ff: Poppins, sans-serif;
+}
+.ff-secondary, .ff-secondary-digit .simply-amount, .l4ft li > .content .ff-secondary  {
+  font-family: Poppins, sans-serif;
+  text-transform: none;
+  font-style: normal;
+  font-weight: 300;
+  --main_fw_strong: 600;
+  letter-spacing: -0.03em;
+  --main_ff: Poppins, sans-serif;
+}
+.ff-primary p, .ff-secondary p, .ff-primary li, .ff-secondary li  {
+  font-weight: var(--main_fw);
+  letter-spacing: var(--main_ls);
+}
+.ff-primary.text-uppercase, .ff-secondary.text-uppercase { text-transform: uppercase; }
+.fw-100, .l4ft li > .content .fw-100, .ff-primary.fw-100 p, .ff-secondary.fw-100 p { font-weight: 100; }
+.fw-200, .l4ft li > .content .fw-200, .ff-primary.fw-200 p, .ff-secondary.fw-200 p { font-weight: 200; }
+.fw-300, .l4ft li > .content .fw-300, .ff-primary.fw-300 p, .ff-secondary.fw-300 p { font-weight: 300; }
+.fw-400, .l4ft li > .content .fw-400, .ff-primary.fw-400 p, .ff-secondary.fw-400 p { font-weight: 400; }
+.fw-500, .l4ft li > .content .fw-500, .ff-primary.fw-500 p, .ff-secondary.fw-500 p { font-weight: 500; }
+.fw-600, .l4ft li > .content .fw-600, .ff-primary.fw-600 p, .ff-secondary.fw-600 p { font-weight: 600; }
+.fw-700, .l4ft li > .content .fw-700, .ff-primary.fw-700 p, .ff-secondary.fw-700 p { font-weight: 700; }
+.fw-800, .l4ft li > .content .fw-800, .ff-primary.fw-800 p, .ff-secondary.fw-800 p { font-weight: 800; }
+.fw-900, .l4ft li > .content .fw-900, .ff-primary.fw-900 p, .ff-secondary.fw-900 p { font-weight: 900; }
+
+#filters.m6pn .sticky-in-panel.is-sticky:before { top: 0; } /* hotfix for in-drawer filters 1/2 */
+#filters form { margin-bottom: 2px; } /* hotfix for in-drawer filters 2/2 */
+#root .f8fl fieldset > *:not(h1, h2, h3, h4, h5, h6, header) + * { padding-top: 22px; }
+/* .dm-ready.has-first-m6fr-wide:not(.has-first-m6bx-wide) .shopify-section-header #header-outer:not(.fixed), .dm-ready.has-background .shopify-section-header #header-outer:not(.fixed) {
+  color: var(--top_main_fg);
+  --top_main_fg: var(--white);
+  --top_main_bg: var(--primary_text);
+  --menu_fg: var(--white);
+} */
+.dm-ready.has-first-m6fr-wide .shopify-section-header #header-outer:not(.fixed) {
+  color: var(--top_main_fg);
+}
+
+/* START Mobile quickshop fixes */
+@media only screen and (max-width: 47.5em) {
+  /* Fix space above image */
+  #quickshop, #quickshop .l4pr-container { margin-top: 0 !important; padding-top: 0; }
+
+  /* Fix order of block */
+  #quickshop .f8pr-container { display: flex; flex-direction: column; }
+  #quickshop .f8pr-container > * { order: 10; }
+  #quickshop .f8pr-container > .f8pr-variant-selection { order: 0; }
+  #quickshop .f8pr-container > .f8pr-price { order: 1; }
+  #quickshop .f8pr-container > .f8pr-vendor { order: 2; }
+  #quickshop .f8pr-container > header { order: 3; }
+  #quickshop .f8pr-container > .f8pr-stock { order: 4; }
+
+  /* Remove space above blocks */
+  #quickshop .l4pr-container + div { margin-top: 0 !important; }
+}
+/* END Mobile quickshop fixes */
+
+@media only screen and (max-width: 47.5em) {
+  html.theme-editor .m6fr.size-s-mobile, html.theme-editor .m6fr .size-s-mobile, html.theme-editor .m6fr figure.size-s-mobile { --mh: 15vh !important; --mhi: 15vh; }
+  html.theme-editor .m6fr.size-m-mobile, html.theme-editor .m6fr .size-m-mobile, html.theme-editor .m6fr figure.size-m-mobile { --mh: 25vh !important; --mhi: 25vh; }
+  html.theme-editor .m6fr.size-l-mobile, html.theme-editor .m6fr .size-l-mobile, html.theme-editor .m6fr figure.size-l-mobile { --mh: 37vh !important; --mhi: 37vh; }
+  .theme-editor.dm-ready.has-first-m6fr-wide #content > .shopify-section:first-child > .m6fr.wide.size-l-mobile { --mh: 37vh !important; --mhi: 37vh; }
+}
+
+.m6bx.richtext.size-xs { --mih_desktop: calc(var(--main_fz) * 20); }
+.m6bx.richtext.size-s { --mih_desktop: calc(var(--main_fz) * /*24.375*/31.25); }
+.m6bx.richtext.size-m { --mih_desktop: calc(var(--main_fz) * /*32.5*/48.125); }
+.m6bx.richtext.size-l { --mih_desktop: calc(var(--main_fz) * /*43.75*/60); }
+.m6bx.richtext { min-height: var(--mih_desktop); }
+@media only screen and (max-width: 760px) {
+  .m6bx.richtext.size-xs-mobile { --mih_mobile: 10vh; }
+  .m6bx.richtext.size-s-mobile { --mih_mobile: 15vh; }
+  .m6bx.richtext.size-m-mobile { --mih_mobile: 30vh; }
+  .m6bx.richtext.size-l-mobile { --mih_mobile: 45vh; }
+  .m6bx.richtext { --mih: var(--mih_mobile) !important; min-height: var(--mih_mobile); }
+}
+
+.s1pr [class*="overlay-"]:not(.s1bx) { font-size: inherit; }
+.f8pr.unavailable p.link-btn + .overlay-quaternary { display: none; }
+.f8pr-buy-button { --dist_ba: 10px; --dist_bb: var(--dist_ba); }
+[data-sal] { opacity: 0; }
+.product-card .s1pr .old { font-size: calc(var(--price_fz) - 2px); }
+.product-card .s1pr .small { font-size: calc(var(--price_fz) - 2px); }
+@media only screen and (max-width: 760px) {
+  .l4cl:not(.mobile-scroll) [data-sal], .l4ft:not(.mobile-scroll) [data-sal] { 
+    opacity: 1!important; 
+  }
+}
+
+.s1pr [class*="overlay-"]:not(.s1bx) { font-size: inherit; }
+
+.m6pn, .m6pn .l4ca li, .m6pn .l4ca li h2, .m6pn .l4ca li .s1pr, .m6pn .spr-reviews .spr-review-header-byline, .m6pn .spr-reviews .spr-review-footer a, .m6pn .spr-reviews .spr-review-header h3, .m6pn .invalid-feedback, .m6pn .l4ca .removed, .m6pn .r6rt, .m6pn .l4fl li * { font-size: 13px; }
+.m6pn fieldset ::placeholder { font-size: 13px; }
+.m6pn fieldset ::-webkit-input-placeholder { font-size: 13px; }
+.m6pn fieldset :-ms-input-placeholder { font-size: 13px; }
+.m6pn fieldset ::-ms-input-placeholder { font-size: 13px; }
+.m6pn li .small { font-size: calc(13px - 2px); }
+.m6pn#cart > header > * { display: flex; align-items: center; gap: 16px; }
+.shopify-section-group-overlay-group {
+  z-index: 999;
+}
+
+:root {
+  --img_padding: 0%;
+  --img_vertical_position: 0%;
+}
+.l4pr li picture, #root .check.box label picture, .l4ca picture { overflow: hidden; }
+#root .l4cl .product-card img, .l4pr img, .l4ca figure picture img, .l4ca.compact img, #root .check.box label img{
+  padding: var(--img_padding);
+  top: var(--img_vertical_position);
+}
+.m6pn#cart > header .s1bx { border-left-width: 16px; }
+.check figure.size-xs { --size: 20px; }
+.check figure.size-s { --size: 35px; }
+.check figure.size-m { --size: 50px; }
+.check figure.size-l { --size: 65px; }
+#root .check input:checked ~ label figure { border-color: var(--theme_bg); }
+
+/* custom header icons */
+.icon-custom {
+  height: 100%;
+  display: flex!important;
+  align-items: center;
+}
+.icon-custom img {
+  border-radius: 0!important;
+}
+#search button:has(.icon-custom){
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+}
+#search:not(.processing) button:has(.icon-custom):after{
+  content: none!important;
+}
+#search.processing button:has(.icon-custom) .icon-custom {
+  opacity: 0;
+}
+
+#header-inner .icon-custom:not(button) img,
+#header-inner .icon-custom:not(button) {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  max-height: unset;
+  z-index: 0;
+}
+
+#root #header-inner>.link-btn a:first-child:has(.icon-custom):after,
+#root #header-inner>.link-btn a:first-child:has(.icon-custom):before{
+  display: none!important;
+}
+@media only screen and (min-width: 1000px) {
+  .icon-custom.desktop-hide {
+    display: none!important;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .icon-custom.mobile-only {
+    display: none!important;
+  }
+  #header-inner>.link-btn a:first-child:has(.icon-custom){
+    display: flex!important;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #header-inner > .link-btn a:first-child .icon-custom {
+      top: 0!important;
+      position: absolute!important;
+  }
+  .m2a #header-inner>.link-btn a:first-child .icon-custom {
+    transform: none;
+  }
+  #search button .icon-custom img {
+      max-width: calc(var(--custom_top_search_h)* 0.75) !important;
+  }
+}
+/* END custom header icons */
+
+/* .l4ft .main, .l4ft li .main > div  { --main_mr: calc(var(--gutter) * 1rem); } */
+/* Dropdown color schemes */
+html[data-whatin=mouse] .check.box input:not(.disabled)~label:hover, html[data-whatin=mouse] #root .check.color li>a:hover {
+    --input_bg: var(--input_bg_dark);
+}
+html[data-whatin=mouse] #root .bv_mainselect .bv_ul_inner a:hover, html #root .bv_mainselect .bv_ul_inner .bv_selected>a {
+    background: var(--input_bg_dark);
+}
+/* Active tabs color schemes */
+html[data-whatin=mouse] #root .accordion-a.box:not(.compact) > details:not([open]):hover,
+.accordion-a.box details[open] summary,
+html[data-whatin=mouse] #root .link-btn.tabs > a:hover {
+  --primary_text: var(--secondary_btn_fg);
+}
+html[data-whatin=mouse] #root .accordion-a.box:not(.compact) > details:not([open]):hover:before,
+html[data-whatin=mouse] #root .link-btn.tabs > a:hover:before {
+  background: var(--secondary_btn_bg);
+}

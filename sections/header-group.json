@@ -1,0 +1,203 @@
+{
+  "type": "header",
+  "name": "t:static_sections.header.name",
+  "sections": {
+    "announcement": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-1": {
+          "type": "text",
+          "settings": {
+            "text": "Shout out your big announcement here!"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_palette": "scheme-2",
+        "height": "s",
+        "font": "secondary",
+        "font_size": "16px",
+        "enable_slider_arrows": true,
+        "enable_slider_autoplay": false,
+        "slider_autoplay_seconds": 3
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "usp_GxfRMR": {
+          "type": "usp",
+          "settings": {
+            "icon": "refresh",
+            "image_width": 40,
+            "usp": "<strong>Plug & Play</strong> Installation",
+            "link_styling": "underline"
+          }
+        },
+        "header-block-usp-1": {
+          "type": "usp",
+          "settings": {
+            "icon": "order",
+            "image_width": 40,
+            "usp": "<strong>4.8</strong> On Trustpilot",
+            "link_styling": "underline"
+          }
+        },
+        "usp_AHV9gq": {
+          "type": "usp",
+          "settings": {
+            "icon": "bell",
+            "image_width": 40,
+            "usp": "<strong>Free exchange</strong> of products within 30 days",
+            "link_styling": "underline"
+          }
+        },
+        "promo_banner": {
+          "type": "promo_banners",
+          "settings": {
+            "height": "size-l",
+            "enable_custom_height": false,
+            "custom_height": 300,
+            "space_between": 16,
+            "image_zoom": false,
+            "layout": "columns",
+            "show_content_below": false,
+            "enable_banner_1": true,
+            "overlay_opacity_1": 10,
+            "enable_controls_1": false,
+            "color_palette_1": "scheme-2",
+            "text_position_1": "align-end text-start",
+            "title_1": "<h3>New: Rear view cameras</h3>",
+            "title_1_underline_style": "none",
+            "text_1": "",
+            "enable_custom_font_styling_1": false,
+            "font_size_1": "16px",
+            "show_link_1": true,
+            "link_text_1": "Discover now",
+            "link_url_1": "/",
+            "button_style_1": "primary link",
+            "enable_banner_2": true,
+            "overlay_opacity_2": 10,
+            "enable_controls_2": false,
+            "color_palette_2": "scheme-2",
+            "text_position_2": "align-end text-start",
+            "title_2": "<h3>Dashcams</h3>",
+            "title_2_underline_style": "none",
+            "text_2": "",
+            "enable_custom_font_styling_2": false,
+            "font_size_2": "16px",
+            "show_link_2": true,
+            "link_text_2": "Discover now",
+            "link_url_2": "/",
+            "button_style_2": "primary link",
+            "layout_mobile": "rows",
+            "mobile_height": "size-m"
+          }
+        },
+        "promo_collection_list": {
+          "type": "promo_collection_list",
+          "disabled": true,
+          "settings": {
+            "custom_image_ratio": 100,
+            "show_in_circle": true,
+            "fill_images": true,
+            "layout": "slider",
+            "number_of_items": 5,
+            "show_below": true,
+            "show_arrow": false,
+            "color_palette": "scheme-2",
+            "image_overlay_opacity": 0,
+            "text_alignment": "start",
+            "title": "<h2>Collection list</h2>",
+            "title_underline_style": "none",
+            "show_link": true,
+            "link_text": "View all",
+            "link_url": "/",
+            "button_style": "primary plain",
+            "collection_title_position": "center",
+            "show_collection_titles": true,
+            "collection_title_size": "h4",
+            "mobile_layout": "slider"
+          }
+        }
+      },
+      "block_order": [
+        "usp_GxfRMR",
+        "header-block-usp-1",
+        "usp_AHV9gq",
+        "promo_banner",
+        "promo_collection_list"
+      ],
+      "settings": {
+        "logo_height": 20,
+        "layout": "layout_5",
+        "width": 1400,
+        "enable_language_selector": true,
+        "enable_country_selector": true,
+        "header_shadow": true,
+        "header_height": "69px|55px",
+        "top_bar_color": "scheme-5",
+        "header_color": "white",
+        "search_color": "scheme-1",
+        "menubar_color": "scheme-1",
+        "show_top_bar": true,
+        "top_bar_height": "35px|25px",
+        "top_bar_font_size": "13px",
+        "topbar_extra_menu_item": "",
+        "topbar_extra_menu_item_link_styling": "inline",
+        "enable_usp_slider": false,
+        "enable_usp_slider_arrows": false,
+        "enable_usp_slider_autoplay": true,
+        "usp_slider_autoplay_seconds": 3,
+        "extra_image_width": 130,
+        "extra_image_link": "",
+        "enable_transparent_header": true,
+        "enable_search": true,
+        "searchbar_height": "45px",
+        "searchbar_font": "secondary",
+        "searchbar_font_size": "13px",
+        "enable_sticky_header": true,
+        "blur_opacity": 80,
+        "cart_icon": "cart-bag-wide|e965",
+        "cart_icon_color": "scheme-2",
+        "header_icon_width": 24,
+        "darkmode_toggle": true,
+        "menubar_height": "45px",
+        "menu_layout": "dropdown",
+        "show_dropdown_images": false,
+        "show_dropdown_images_autofill": true,
+        "show_dropdown_images_rounded": true,
+        "show_dropdown_images_fill": true,
+        "menu_recently_viewed_products": true,
+        "menubar_alignment": "left",
+        "menu_border": false,
+        "menu_border_width": "wide",
+        "main_menu_items_clickable": true,
+        "menubar_caps": true,
+        "sale_highlight": true,
+        "sale_highlight_item": "Sale",
+        "menu_font": "primary",
+        "menu_font_weight": "500",
+        "menu_font_size": 13,
+        "menu_letter_spacing": 0,
+        "menu_items_limit": 5,
+        "menu_subs_font": "secondary",
+        "enable_menu_subs_font_size": true,
+        "menu_subs_font_size": 17,
+        "enable_socials": true,
+        "enable_online_store": true,
+        "enable_account_dropdown": true,
+        "logo_height_mobile": 20,
+        "mobile_menu_color": "scheme-1"
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}

@@ -1,0 +1,483 @@
+{
+  "sections": {
+    "section_spacer_MYAP4i": {
+      "type": "section-spacer",
+      "name": "t:sections.spacer.presets.name",
+      "settings": {
+        "height": -50,
+        "height_mobile": -30
+      }
+    },
+    "section_rich_text_LGgGfH": {
+      "type": "section-rich-text",
+      "blocks": {
+        "image_hpabBy": {
+          "type": "image",
+          "settings": {
+            "image_width": 60,
+            "link_url": ""
+          }
+        },
+        "title_9gHWVT": {
+          "type": "title",
+          "settings": {
+            "title": "<h4><span style=\"text-decoration:underline\">Hi, I am your Next Assistent </span>👋🏽</h4>",
+            "title_underline_style": "secondary_font_accent"
+          }
+        },
+        "title_AMEgKe": {
+          "type": "title",
+          "settings": {
+            "title": "<h1>How can I help you?<br/>We’d love to hear from you! </h1>",
+            "title_underline_style": "none"
+          }
+        },
+        "content_HKBAVG": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Whether you have a question about our products, need technical support, or want to discuss a custom solution for your vehicle or fleet, our team is here to help.</p>",
+            "font": "secondary",
+            "enable_custom_text_styling": false,
+            "font_weight": "400",
+            "font_size": "16px"
+          }
+        },
+        "button_YNWx4r": {
+          "type": "button",
+          "settings": {
+            "link_text": "Call us",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        },
+        "button_3Exxna": {
+          "type": "button",
+          "settings": {
+            "link_text": "Email us",
+            "link_url": "/",
+            "button_style": "primary inv"
+          }
+        }
+      },
+      "block_order": [
+        "image_hpabBy",
+        "title_9gHWVT",
+        "title_AMEgKe",
+        "content_HKBAVG",
+        "button_YNWx4r",
+        "button_3Exxna"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "width": "wide",
+        "height": "m",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "color_palette": "scheme-1",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "text_position": "align-center text-center",
+        "content_width": 640,
+        "height_mobile": "l",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section-slideshow": {
+      "type": "section-slideshow",
+      "settings": {
+        "width": "wide",
+        "height": "s",
+        "enable_custom_height": true,
+        "custom_height": 540,
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "m",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": false,
+        "back_button": true
+      }
+    },
+    "section-icon-text-blocks": {
+      "type": "section-icon-text-blocks",
+      "blocks": {
+        "block_1": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "Certified Support",
+            "text": "<p>Our team consists of trained specialists ready to assist you with installation, troubleshooting, and product advice.</p>",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "block_2": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "Fast Response",
+            "text": "<p>We know your time is valuable. That’s why we aim to answer every inquiry within one business day.</p>",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "block_3": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "Worldwide Service",
+            "text": "<p>No matter where you are, our systems are designed to work across Europe and beyond. We ship and support internationally.</p>",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3"
+      ],
+      "settings": {
+        "items_width": 3,
+        "text_alignment": "next",
+        "color_palette": "scheme-3",
+        "background_overlay_opacity": 75,
+        "background_position": "left",
+        "background_width": 50,
+        "background_height": 100,
+        "background_color_section": true,
+        "title": "<h3>We’re here to help you drive smarter.</h3>",
+        "title_underline_style": "none",
+        "text": "",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "show_link": false,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "blocks_text_alignment": "start",
+        "blocks_title_font": "primary",
+        "blocks_title_size": "h4",
+        "blocks_enable_custom_font_styling": false,
+        "blocks_font_size": "16px",
+        "layout_mobile": "slider",
+        "mobile_blocks_text_alignment": "center",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": -10,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_image_with_text_jgE9de": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "title_kPwrBK": {
+          "type": "title",
+          "settings": {
+            "title": "<h4><span style=\"text-decoration:underline\">Get in touch</span></h4><h1>Visit us.</h1>",
+            "title_underline_style": "secondary_font_accent"
+          }
+        },
+        "text_y8LzCp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you have questions about our trip registration systems, need technical support, or want to explore fleet solutions, our team is ready to help.</p><p><strong>Email:</strong> support@next.com<br/><strong>Phone:</strong> +31 (0)88 456 7890<br/><br/>📍 <strong>Address:</strong> Highway Business Center, Route A7 Exit 12, 1234 XR Nieuwstad, The Netherlands</p>",
+            "font": "secondary",
+            "enable_custom_text_styling": false,
+            "font_size": "16px"
+          }
+        },
+        "buttons_bFAW7W": {
+          "type": "buttons",
+          "settings": {
+            "show_first_link": true,
+            "first_link_text": "More info",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "/",
+            "second_button_style": "secondary plain"
+          }
+        }
+      },
+      "block_order": [
+        "title_kPwrBK",
+        "text_y8LzCp",
+        "buttons_bFAW7W"
+      ],
+      "settings": {
+        "fill_image": true,
+        "overlay_opacity_img": 0,
+        "enable_controls": false,
+        "video_mute": true,
+        "width": "boxed",
+        "height": "size-s",
+        "enable_custom_height": true,
+        "custom_height": 560,
+        "color_palette": "scheme-1",
+        "overlay_opacity": 100,
+        "layout": "image-left",
+        "text_position": "text-start",
+        "background_color_palette": "light",
+        "background_overlay_opacity": 0,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section-contact-form": {
+      "type": "section-contact-form",
+      "blocks": {
+        "0fd44d31-da56-43fe-972d-74b438cbb328": {
+          "type": "text",
+          "settings": {
+            "title": "Name",
+            "placeholder": "Name",
+            "required": true
+          }
+        },
+        "b8774408-fd65-4d42-865e-40eb5da3e9ee": {
+          "type": "text",
+          "settings": {
+            "title": "Company",
+            "placeholder": "Company",
+            "required": false
+          }
+        },
+        "30c68dd5-0daf-4c67-9e87-30fae9f6db2e": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "placeholder": "Email"
+          }
+        },
+        "e70b7df4-5299-4c87-b7a3-7f0ab2f6cd55": {
+          "type": "tel",
+          "settings": {
+            "title": "Phone number",
+            "placeholder": "Phone number",
+            "required": false
+          }
+        },
+        "7f5b90a3-0ea1-466d-a8bb-fb174e340aed": {
+          "type": "textarea",
+          "settings": {
+            "title": "Message",
+            "placeholder": "Message",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "0fd44d31-da56-43fe-972d-74b438cbb328",
+        "b8774408-fd65-4d42-865e-40eb5da3e9ee",
+        "30c68dd5-0daf-4c67-9e87-30fae9f6db2e",
+        "e70b7df4-5299-4c87-b7a3-7f0ab2f6cd55",
+        "7f5b90a3-0ea1-466d-a8bb-fb174e340aed"
+      ],
+      "settings": {
+        "text_alignment": "start",
+        "content_position": "center",
+        "title": "<h3>Please contact us.</h3>",
+        "title_underline_style": "none",
+        "button_style": "primary plain",
+        "show_placeholder": true,
+        "compact": true,
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_faq_q7HWdm": {
+      "type": "section-faq",
+      "blocks": {
+        "text_RNcCdR": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "How does the trip registration system work?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Our trip registration device automatically logs every journey you take. It uses GPS tracking to capture routes in real time and distinguishes between business and private trips. You can access all reports via our secure online dashboard or mobile app.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_tG6KNY": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "Is the system approved for tax purposes?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Yes. All trip data and reports are fully compliant with tax authority requirements. You can download your mileage logs as official, tax-proof documentation at any time, ensuring you stay 100% compliant.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_JEHRak": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "Do I need professional installation?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>No. Our devices are designed for plug & play installation. Simply connect the unit, and you’ll be ready to track trips within minutes. If you prefer, we also offer professional installation through our certified partners.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_adzkAU": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "Can I use the system for multiple vehicles?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Absolutely. Our trip registration solution supports single vehicles as well as full fleets. Each vehicle gets its own device, and all data is managed from one central dashboard for easy oversight.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_gjGxHy": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "What happens to my data if I cancel the service?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Your trip history remains securely stored for up to 12 months after cancellation. You can download all reports before closing your account to ensure you have full access to your mileage records.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "text_RNcCdR",
+        "text_tG6KNY",
+        "text_JEHRak",
+        "text_adzkAU",
+        "text_gjGxHy"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "text_alignment": "start",
+        "alignment": "left",
+        "content_width": 2000,
+        "media_position": "top",
+        "image_width": 180,
+        "enable_controls": false,
+        "video_mute": true,
+        "title": "<h3>Frequently Asked Questions</h3><p>This content is for demonstration purposes.</p>",
+        "title_underline_style": "none",
+        "text": "",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "blocks_title_font": "primary",
+        "blocks_title_size": "h4",
+        "blocks_enable_custom_font_styling": false,
+        "blocks_font_size": "16px",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section-google-maps": {
+      "type": "section-google-maps",
+      "settings": {
+        "google_maps_iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4613648351315!2d-75.69569834823506!3d45.420200278997804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0502f07d210b%3A0xa1502f7f1d25c118!2sShopify!5e0!3m2!1snl!2snl!4v1653470436404!5m2!1snl!2snl\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+        "spacing_desktop": 90,
+        "spacing_mobile": 50
+      }
+    }
+  },
+  "order": [
+    "section_spacer_MYAP4i",
+    "section_rich_text_LGgGfH",
+    "section-slideshow",
+    "breadcrumbs",
+    "section-icon-text-blocks",
+    "section_image_with_text_jgE9de",
+    "section-contact-form",
+    "section_faq_q7HWdm",
+    "main-page",
+    "section-google-maps"
+  ]
+}

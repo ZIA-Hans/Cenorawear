@@ -1,0 +1,152 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false,
+        "back_button": false
+      }
+    },
+    "ed374bad-877b-4382-a3f7-a77d90cf8f62": {
+      "type": "section-spacer",
+      "settings": {
+        "height": 50,
+        "height_mobile": 20
+      }
+    },
+    "section_faq_gdiR3V": {
+      "type": "section-faq",
+      "blocks": {
+        "text_hh7xGM": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "How does the trip registration system work?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Our trip registration device automatically logs every journey you take. It uses GPS tracking to capture routes in real time and distinguishes between business and private trips. You can access all reports via our secure online dashboard or mobile app.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_Qrjgna": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "Is the system approved for tax purposes?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Yes. All trip data and reports are fully compliant with tax authority requirements. You can download your mileage logs as official, tax-proof documentation at any time, ensuring you stay 100% compliant.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_wGfyUP": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "Do I need professional installation?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>No. Our devices are designed for plug & play installation. Simply connect the unit, and you’ll be ready to track trips within minutes. If you prefer, we also offer professional installation through our certified partners.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_YK6zYw": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "Can I use the system for multiple vehicles?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Absolutely. Our trip registration solution supports single vehicles as well as full fleets. Each vehicle gets its own device, and all data is managed from one central dashboard for easy oversight.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_Tg9La4": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "What happens to my data if I cancel the service?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Your trip history remains securely stored for up to 12 months after cancellation. You can download all reports before closing your account to ensure you have full access to your mileage records.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "text_hh7xGM",
+        "text_Qrjgna",
+        "text_wGfyUP",
+        "text_YK6zYw",
+        "text_Tg9La4"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "text_alignment": "start",
+        "alignment": "next",
+        "content_width": 1600,
+        "media_position": "top",
+        "image_width": 180,
+        "enable_controls": false,
+        "video_mute": true,
+        "title": "<h2>Frequently Asked Questions</h2><p>This content is for demonstration purposes.</p>",
+        "title_underline_style": "none",
+        "text": "Have questions about our trip registration and vehicle tech solutions? We’ve gathered the most common questions and answers to help you get started quickly.",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "blocks_title_font": "primary",
+        "blocks_title_size": "h4",
+        "blocks_enable_custom_font_styling": false,
+        "blocks_font_size": "16px",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "content"
+      ],
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "ed374bad-877b-4382-a3f7-a77d90cf8f62",
+    "section_faq_gdiR3V",
+    "main-page"
+  ]
+}

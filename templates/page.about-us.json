@@ -1,0 +1,766 @@
+{
+  "sections": {
+    "section_flexible_UQqVy8": {
+      "type": "section-flexible",
+      "blocks": {
+        "image_8JQHRd": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 100,
+            "vertical_position": 10,
+            "image_width": 43,
+            "constrain": false,
+            "image_height": 61,
+            "border_radius": 30,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "image_id7kGV": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 61,
+            "vertical_position": 52,
+            "image_width": 25,
+            "constrain": false,
+            "image_height": 39,
+            "border_radius": 30,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "image_ALpif4": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 0,
+            "vertical_position": 100,
+            "image_width": 25,
+            "constrain": false,
+            "image_height": 39,
+            "border_radius": 30,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "content_qVCGHe": {
+          "type": "content",
+          "settings": {
+            "text_alignment": "left",
+            "content_width": 540,
+            "content_opacity": 100,
+            "background_color_palette": "",
+            "enable_background": true,
+            "background_overlay_opacity": 0,
+            "background_radius": 0,
+            "horizontal_position": 0,
+            "vertical_position": 20,
+            "title": "<h4><span style=\"text-decoration:underline\">About us</span></h4><h1>Every journey needs safety, clarity, and control. </h1>",
+            "title_underline_style": "secondary_font_accent",
+            "enable_custom_title_size": false,
+            "custom_title_size": 32,
+            "text": "<p>We provide premium vehicle technology in a new way.</p>",
+            "enable_custom_font_styling": false,
+            "text_font": "primary",
+            "font_size": "16px",
+            "show_first_link": true,
+            "first_link_text": "Discover now",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": true,
+            "second_link_text": "Contact us",
+            "second_link_url": "/",
+            "second_button_style": "primary inv",
+            "background_color_palette_mobile": "",
+            "mobile_hide": false
+          }
+        }
+      },
+      "block_order": [
+        "image_8JQHRd",
+        "image_id7kGV",
+        "image_ALpif4",
+        "content_qVCGHe"
+      ],
+      "name": "t:sections.flexible.presets.name",
+      "settings": {
+        "transparent": true,
+        "background_color_palette": "scheme-1",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 78,
+        "width": "wide",
+        "custom_height": 55,
+        "custom_height_tablet": 80,
+        "layout_mobile": "slideshow",
+        "content_below_media": false,
+        "media_mobile_height": "size-l",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "height_mobile": "xs",
+        "spacing_desktop": -20,
+        "spacing_mobile": 50,
+        "fix_zindex": 0
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": false,
+        "back_button": false
+      }
+    },
+    "section_icon_text_blocks_WBMiiV": {
+      "type": "section-icon-text-blocks",
+      "blocks": {
+        "text_LMyNLK": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "",
+            "text": "<h2>Premium Vehicle Technology for Maximum Safety, Security & Control.</h2>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "text_LN43D6": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "",
+            "text": "<p>Today, we supply technology that works right out of the box, with intuitive design and trusted quality that thousands of drivers rely on every day.</p>",
+            "show_link": true,
+            "link_text": "Read more",
+            "link_url": "/",
+            "button_style": "primary link"
+          }
+        }
+      },
+      "block_order": [
+        "text_LMyNLK",
+        "text_LN43D6"
+      ],
+      "name": "t:sections.icon_text_blocks.presets.name",
+      "settings": {
+        "items_width": 3,
+        "text_alignment": "start",
+        "color_palette": "scheme-3",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "title": "",
+        "title_underline_style": "none",
+        "text": "",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "show_link": true,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "blocks_text_alignment": "start",
+        "blocks_title_font": "primary",
+        "blocks_title_size": "h2",
+        "blocks_enable_custom_font_styling": false,
+        "blocks_font_size": "16px",
+        "layout_mobile": "slider",
+        "mobile_blocks_text_alignment": "center",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 0,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "78ec654f-411f-4036-9480-fe1f37a3b146": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "template--21305038668067__78ec654f-411f-4036-9480-fe1f37a3b146-image-1": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h3>Driven by Innovation</h3>",
+            "title_underline_style": "none",
+            "text": "<p>We believe smarter technology leads to safer roads. Every product we create is designed with cutting-edge innovation and tested for real-world performance to give drivers and fleets total control.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "9eea386e-0626-4ccd-a4ce-5ce9049c1ea2": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h3>Passion for Mobility</h3>",
+            "title_underline_style": "none",
+            "text": "<p>Our passion for mobility drives everything we do. From dashcams to trip registration systems, we build tools that empower people to travel, work, and explore with confidence and ease.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "fbbc31d7-4184-4c15-bb17-1375708ad03a": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h3>Commitment to Trust</h3>",
+            "title_underline_style": "none",
+            "text": "<p>We value trust above all else. That’s why we deliver reliable products, transparent service, and long-term support, making us a partner you can depend on every mile of the journey.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "template--21305038668067__78ec654f-411f-4036-9480-fe1f37a3b146-image-1",
+        "9eea386e-0626-4ccd-a4ce-5ce9049c1ea2",
+        "fbbc31d7-4184-4c15-bb17-1375708ad03a"
+      ],
+      "settings": {
+        "items_width": 3,
+        "width": "boxed",
+        "height": "size-msize-m",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 16,
+        "image_zoom": true,
+        "layout_mobile": "compact",
+        "mobile_height": "size-m",
+        "spacing_desktop": 80,
+        "spacing_mobile": 50,
+        "fix_zindex": 0
+      }
+    },
+    "section_banner_columns_VYYGJg": {
+      "type": "section-banner-columns",
+      "blocks": {
+        "image_LEygME": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 100,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "center",
+            "title": "<h4><span style=\"text-decoration:underline\">Our mission is simple:</span> </h4><h2><strong>'Empower drivers and fleets with tools that deliver peace of mind and effortless compliance.'</strong></h2><p>This content is for demonstration purposes.</p>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_LEygME"
+      ],
+      "disabled": true,
+      "name": "t:sections.banner_columns.name",
+      "settings": {
+        "items_width": 3,
+        "width": "boxed",
+        "height": "16/9",
+        "enable_custom_height": true,
+        "custom_height": 480,
+        "space_between": 16,
+        "image_zoom": false,
+        "show_content_below": false,
+        "layout_mobile": "rows",
+        "mobile_height": "16/9",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_rich_text_GDKjtp": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_cQMyYP": {
+          "type": "title",
+          "settings": {
+            "title": "<h4><span style=\"text-decoration:underline\">Our mission is simple</span></h4><h2><strong>'Empower drivers and fleets with tools that deliver peace of mind and effortless compliance.'</strong></h2><p>This content is for demonstration purposes.</p>",
+            "title_underline_style": "secondary_font_accent"
+          }
+        },
+        "button_DprpmL": {
+          "type": "button",
+          "settings": {
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "title_cQMyYP",
+        "button_DprpmL"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "width": "wide",
+        "height": "l",
+        "enable_custom_height": true,
+        "custom_height": 560,
+        "color_palette": "scheme-2",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "text_position": "align-center text-center",
+        "content_width": 800,
+        "height_mobile": "m",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": -40,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_slideshow_RJfFWK": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_QFKaMK": {
+          "type": "slide",
+          "settings": {
+            "show_play_button": true,
+            "video_mute": true,
+            "layout": "background",
+            "image_width": 50,
+            "overlay_opacity": 25,
+            "color_palette": "scheme-2",
+            "background_overlay_opacity": 100,
+            "text_position": "start center",
+            "max_width": 600,
+            "title": "<h4><span style=\"text-decoration:underline\">Drive Smart. Drive Secure.</span></h4><h1>Premium Vehicle Tech for Safety & Control</h1>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "<p>Discover our hand-picked selection of dashcams, hands-free car kits, and keyless protectors, all designed to keep you safe and in control on the road.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_first_link": true,
+            "first_link_text": "Explore",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": true,
+            "second_link_text": "More info",
+            "second_link_url": "/",
+            "second_button_style": "primary inv"
+          }
+        }
+      },
+      "block_order": [
+        "slide_QFKaMK"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "width": "wide",
+        "height": "16/9",
+        "enable_custom_height": true,
+        "custom_height": 1000,
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "16/9",
+        "spacing_desktop": -30,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_image_with_text_rcRtWG": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "title_NXGBgT": {
+          "type": "title",
+          "settings": {
+            "title": "<h4><span style=\"text-decoration:underline\">Founded by mobility enthusiasts</span></h4><h2>Built on a passion for innovation and practical solutions.</h2>",
+            "title_underline_style": "secondary_font_accent"
+          }
+        },
+        "text_FKGnfL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Founded by mobility enthusiasts, Next was built on a passion for innovation and practical solutions. We saw how much time drivers and fleet owners wasted on outdated systems, manual logging, and unreliable hardware, so we decided to change that.</p><p>Today, we supply technology that works right out of the box, with intuitive design and trusted quality that thousands of drivers rely on every day.</p>",
+            "font": "secondary",
+            "enable_custom_text_styling": false,
+            "font_size": "16px"
+          }
+        }
+      },
+      "block_order": [
+        "title_NXGBgT",
+        "text_FKGnfL"
+      ],
+      "settings": {
+        "fill_image": true,
+        "overlay_opacity_img": 0,
+        "enable_controls": false,
+        "video_mute": true,
+        "width": "boxed",
+        "height": "size-s",
+        "enable_custom_height": true,
+        "custom_height": 560,
+        "color_palette": "scheme-2",
+        "overlay_opacity": 0,
+        "layout": "image-left",
+        "text_position": "text-start",
+        "background_color_palette": "scheme-2",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "16600579701b9ea466": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "166005796961cc60d8-0": {
+          "type": "title",
+          "settings": {
+            "title": "<h4><span style=\"text-decoration:underline\">Trip Registration</span></h4><h2>Keep every journey recorded.</h2>",
+            "title_underline_style": "secondary_font_accent"
+          }
+        },
+        "166005796961cc60d8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Eliminate the hassle of manual logs. Our trip registration systems are approved for tax purposes and built for accuracy, whether you manage a single car, a motorcycle, or an entire fleet of trucks.</p><p>Experience the ease of fully automated mileage tracking with a <strong>30-day free trial installation</strong>.</p>",
+            "font": "secondary",
+            "enable_custom_text_styling": false,
+            "font_size": "16px"
+          }
+        },
+        "buttons_CmeGTb": {
+          "type": "buttons",
+          "settings": {
+            "show_first_link": true,
+            "first_link_text": "More info",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "/",
+            "second_button_style": "secondary plain"
+          }
+        }
+      },
+      "block_order": [
+        "166005796961cc60d8-0",
+        "166005796961cc60d8-1",
+        "buttons_CmeGTb"
+      ],
+      "settings": {
+        "fill_image": true,
+        "overlay_opacity_img": 0,
+        "enable_controls": false,
+        "video_mute": true,
+        "width": "boxed",
+        "height": "size-s",
+        "enable_custom_height": true,
+        "custom_height": 560,
+        "color_palette": "scheme-1",
+        "overlay_opacity": 100,
+        "layout": "image-right",
+        "text_position": "text-start",
+        "background_color_palette": "light",
+        "background_overlay_opacity": 0,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 10,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_rich_text_HkjMCH": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_gHdJnB": {
+          "type": "title",
+          "settings": {
+            "title": "<h4><span style=\"text-decoration:underline\">Our Team</span></h4><h2>Passionate experts in vehicle technology.</h2><p>We’re not just a company, we’re drivers, just like you. </p>",
+            "title_underline_style": "secondary_font_accent"
+          }
+        }
+      },
+      "block_order": [
+        "title_gHdJnB"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "width": "wide",
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 560,
+        "color_palette": "scheme-3",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "text_position": "align-center text-center",
+        "content_width": 800,
+        "height_mobile": "xs",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": -60,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_banner_columns_xAah9K": {
+      "type": "section-banner-columns",
+      "blocks": {
+        "image_Gm4Y9E": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 10,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "end start",
+            "title": "<h3>Ian Sandler</h3>",
+            "title_underline_style": "none",
+            "text": "<p>Product Specialist</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_XceqFk": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 10,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "end start",
+            "title": "<h3>Lisa Spears</h3>",
+            "title_underline_style": "none",
+            "text": "<p>Support Advisor</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_3hengJ": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 10,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "end start",
+            "title": "<h3>Dean Morrison</h3>",
+            "title_underline_style": "none",
+            "text": "<p>Developer & Engineer</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Gm4Y9E",
+        "image_XceqFk",
+        "image_3hengJ"
+      ],
+      "name": "t:sections.banner_columns.name",
+      "settings": {
+        "items_width": 3,
+        "width": "boxed",
+        "height": "4/5",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 16,
+        "image_zoom": false,
+        "show_content_below": false,
+        "layout_mobile": "compact",
+        "mobile_height": "4/5",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "1660058006badb14d4": {
+      "type": "section-logo-list",
+      "blocks": {
+        "166005800624ee1e13-0": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166005800624ee1e13-1": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166005800624ee1e13-2": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166005800624ee1e13-3": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166005800624ee1e13-4": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "166005800624ee1e13-5": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166005800624ee1e13-0",
+        "166005800624ee1e13-1",
+        "166005800624ee1e13-2",
+        "166005800624ee1e13-3",
+        "166005800624ee1e13-4",
+        "166005800624ee1e13-5"
+      ],
+      "settings": {
+        "number_of_items": 6,
+        "text_alignment": "start",
+        "title": "<h3>Our partners</h3>",
+        "title_underline_style": "none",
+        "show_link": false,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "content"
+      ],
+      "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    }
+  },
+  "order": [
+    "section_flexible_UQqVy8",
+    "breadcrumbs",
+    "section_icon_text_blocks_WBMiiV",
+    "78ec654f-411f-4036-9480-fe1f37a3b146",
+    "section_banner_columns_VYYGJg",
+    "section_rich_text_GDKjtp",
+    "section_slideshow_RJfFWK",
+    "section_image_with_text_rcRtWG",
+    "16600579701b9ea466",
+    "section_rich_text_HkjMCH",
+    "section_banner_columns_xAah9K",
+    "1660058006badb14d4",
+    "main-page"
+  ]
+}

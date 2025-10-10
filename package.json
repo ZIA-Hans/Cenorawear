@@ -1,0 +1,13 @@
+{
+  "name": "cenorawear",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "shopify theme dev -s cxxr20-s6.myshopify.com",
+    "pull": "shopify theme pull -s cxxr20-s6.myshopify.com",
+    "push": "shopify theme push -s cxxr20-s6.myshopify.com"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

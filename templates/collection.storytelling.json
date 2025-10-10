@@ -1,0 +1,790 @@
+{
+  "sections": {
+    "section_spacer_JFiHha": {
+      "type": "section-spacer",
+      "name": "t:sections.spacer.presets.name",
+      "settings": {
+        "height": -50,
+        "height_mobile": -30
+      }
+    },
+    "section_rich_text_HrA9UE": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_Jew9jn": {
+          "type": "title",
+          "settings": {
+            "title": "<h4><span style=\"text-decoration:underline\">Trip Registrion</span></h4><h1>Always in real-time control, anytime, anywhere.</h1>",
+            "title_underline_style": "secondary_font_accent"
+          }
+        },
+        "content_B6mRdh": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Real-time insights, full compliance, and total peace of mind. Whether you're managing one vehicle or an entire fleet, we keep your mobility smart and effortless.</p>",
+            "font": "secondary",
+            "enable_custom_text_styling": false,
+            "font_weight": "400",
+            "font_size": "16px"
+          }
+        },
+        "image_649xyi": {
+          "type": "image",
+          "settings": {
+            "image_width": 980,
+            "link_url": ""
+          }
+        },
+        "button_a94wDx": {
+          "type": "button",
+          "settings": {
+            "link_text": "Discover now",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        },
+        "button_wC6wxr": {
+          "type": "button",
+          "settings": {
+            "link_text": "More info",
+            "link_url": "/",
+            "button_style": "primary inv"
+          }
+        }
+      },
+      "block_order": [
+        "title_Jew9jn",
+        "content_B6mRdh",
+        "image_649xyi",
+        "button_a94wDx",
+        "button_wC6wxr"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "width": "wide",
+        "height": "l",
+        "enable_custom_height": true,
+        "custom_height": 1000,
+        "color_palette": "scheme-2",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "text_position": "align-center text-center",
+        "content_width": 640,
+        "height_mobile": "m",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_image_mask_rAqFPH": {
+      "type": "section-image-mask",
+      "settings": {
+        "width": "wide",
+        "height": "s",
+        "enable_custom_height": false,
+        "custom_height": 250,
+        "color_palette": "scheme-5",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "text_alignment": "center",
+        "content_width": 2000,
+        "title": "<h4><strong>30-Day Free Trial Installation on All Trip Registration Systems. Try it now!</strong></h4>",
+        "title_underline_style": "accent",
+        "enable_custom_title_size": false,
+        "custom_title_size": 22,
+        "line_height": 125,
+        "height_mobile": "xs",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": -30,
+        "spacing_mobile": 30,
+        "fix_zindex": 20
+      }
+    },
+    "section_flexible_ReN4yy": {
+      "type": "section-flexible",
+      "blocks": {
+        "video_pJgHEh": {
+          "type": "video",
+          "settings": {
+            "fill_video": true,
+            "image_opacity": 100,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-4",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 0,
+            "vertical_position": 20,
+            "image_width": 50,
+            "constrain": false,
+            "image_height": 65,
+            "border_radius": 20,
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "image_q6DJr7": {
+          "type": "image",
+          "settings": {
+            "fill_image": true,
+            "image_opacity": 100,
+            "color_palette": "",
+            "overlay_opacity_img": 0,
+            "horizontal_position": 44,
+            "vertical_position": 84,
+            "image_width": 25,
+            "constrain": false,
+            "image_height": 45,
+            "border_radius": 30,
+            "shape": "none",
+            "link_url": "",
+            "mobile_hide": false,
+            "mobile_sizes": false,
+            "image_width_mobile": 50,
+            "image_height_mobile": 50
+          }
+        },
+        "content_tMYrmB": {
+          "type": "content",
+          "settings": {
+            "text_alignment": "left",
+            "content_width": 540,
+            "content_opacity": 100,
+            "background_color_palette": "scheme-3",
+            "enable_background": true,
+            "background_overlay_opacity": 100,
+            "background_radius": 30,
+            "horizontal_position": 100,
+            "vertical_position": 26,
+            "title": "<h4><span style=\"text-decoration:underline\">Trip Registrion</span></h4><h2>Automated mileage tracking. Full compliance. Zero hassle.</h2>",
+            "title_underline_style": "secondary_font_accent",
+            "enable_custom_title_size": false,
+            "custom_title_size": 32,
+            "text": "<p>Keeping accurate mileage logs is essential for both individuals and businesses. Our trip registration system makes it effortless by automatically recording every journey you take.</p>",
+            "enable_custom_font_styling": false,
+            "text_font": "primary",
+            "font_size": "16px",
+            "show_first_link": true,
+            "first_link_text": "Discover now",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": true,
+            "second_link_text": "More info",
+            "second_link_url": "/",
+            "second_button_style": "primary inv",
+            "background_color_palette_mobile": "",
+            "mobile_hide": false
+          }
+        }
+      },
+      "block_order": [
+        "video_pJgHEh",
+        "image_q6DJr7",
+        "content_tMYrmB"
+      ],
+      "name": "t:sections.flexible.presets.name",
+      "settings": {
+        "transparent": true,
+        "background_color_palette": "scheme-3",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "width": "wide",
+        "custom_height": 45,
+        "custom_height_tablet": 80,
+        "layout_mobile": "slideshow",
+        "content_below_media": false,
+        "media_mobile_height": "size-m",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "height_mobile": "xs",
+        "spacing_desktop": -40,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_promo_gallery_wb4DTU": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "image_4T6efM": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4>Automatic logging of every trip</h4>",
+            "title_underline_style": "none",
+            "text": "<p>Forget manual mileage logs. Our system automatically records every journey from start to finish, ensuring complete and accurate data without any extra work.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "image_fDx9fm": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4>Distinguish private and business use</h4>",
+            "title_underline_style": "none",
+            "text": "<p>Easily separate personal and professional trips. The system tags journeys automatically, helping you stay compliant and saving time on administration.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "image_npQQgy": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4>Real-time GPS tracking</h4>",
+            "title_underline_style": "none",
+            "text": "<p>Track your vehicle’s location live and view complete route histories at any moment. Perfect for both individual drivers and fleet managers who need full visibility.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "image_VnQMCk": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4>Tax-compliant reports</h4>",
+            "title_underline_style": "none",
+            "text": "<p>Generate detailed, fully approved reports ready for submission to tax authorities. Save hours of paperwork and rest assured your data meets all regulations.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "image_4T6efM",
+        "image_fDx9fm",
+        "image_npQQgy",
+        "image_VnQMCk"
+      ],
+      "settings": {
+        "items_width": 4,
+        "width": "boxed",
+        "height": "size-msize-m",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 16,
+        "image_zoom": true,
+        "layout_mobile": "compact",
+        "mobile_height": "size-m",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_banner_columns_dyiTNG": {
+      "type": "section-banner-columns",
+      "blocks": {
+        "image_cXCdat": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 15,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "end start",
+            "title": "<h4><span style=\"text-decoration:underline\">Effortless Setup</span></h4><h2>Plug & Play installation.</h2>",
+            "title_underline_style": "secondary_font",
+            "text": "<p>Simply plug in the device, and you’re ready to go within minutes.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Read more",
+            "link_url": "/",
+            "button_style": "primary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_cXCdat"
+      ],
+      "name": "t:sections.banner_columns.name",
+      "settings": {
+        "items_width": 2,
+        "width": "boxed",
+        "height": "adapt",
+        "enable_custom_height": true,
+        "custom_height": 680,
+        "space_between": 16,
+        "image_zoom": false,
+        "show_content_below": false,
+        "layout_mobile": "rows",
+        "mobile_height": "1/1",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_banner_columns_GQqrcP": {
+      "type": "section-banner-columns",
+      "blocks": {
+        "image_HCxjG7": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 100,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "text_position": "center start",
+            "title": "<h4><span style=\"text-decoration:underline\">Why choose automated trip registration?</span></h4><h3>01</h3><h5>Automatic Trip Logging</h5><p>Every journey is tracked in real time, no manual input, no missed kilometres. Perfect for tax compliance and accurate mileage records.</p><h3>02</h3><h5>Business vs. Private Trips.</h5><p>Easily separate personal and professional use. The system tags trips automatically, so your reports are always clean and compliant.</p><h3>03</h3><h5>Complete Fleet Insight</h5><p>From cars to trucks and motorcycles, manage every vehicle from one dashboard. Get live tracking, route history, and instant reporting.</p>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_PftEkE": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "end start",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_HCxjG7",
+        "image_PftEkE"
+      ],
+      "name": "t:sections.banner_columns.name",
+      "settings": {
+        "items_width": 2,
+        "width": "boxed",
+        "height": "1/1",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 16,
+        "image_zoom": false,
+        "show_content_below": false,
+        "layout_mobile": "compact",
+        "mobile_height": "1/1",
+        "spacing_desktop": 50,
+        "spacing_mobile": 50,
+        "fix_zindex": 0
+      }
+    },
+    "section_image_mask_XpwUHp": {
+      "type": "section-image-mask",
+      "settings": {
+        "width": "wide",
+        "height": "s",
+        "enable_custom_height": false,
+        "custom_height": 490,
+        "color_palette": "",
+        "background_overlay_opacity": 0,
+        "background_position": "left",
+        "background_width": 50,
+        "background_height": 100,
+        "background_color_section": true,
+        "text_alignment": "center",
+        "content_width": 2000,
+        "title": "<h2>Our plans</h2>",
+        "title_underline_style": "none",
+        "enable_custom_title_size": true,
+        "custom_title_size": 74,
+        "line_height": 125,
+        "height_mobile": "xs",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": -50,
+        "spacing_mobile": -20,
+        "fix_zindex": 20
+      }
+    },
+    "section_promo_gallery_VNJLcm": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "image_wkYD9E": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4><span style=\"text-decoration:underline\">Trip Registration</span></h4><h3>Car Plan</h3><p>Accurate mileage tracking for private and business use. Fully compliant with tax regulations.<br/><br/>📍 Real-time GPS tracking<br/>• Plug & play installation<br/>• Mobile app access<br/>• Secure cloud storage.<br/>* <strong>Includes a 30-day free trial installation</strong></p><h4>From: €249</h4>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "More info",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        },
+        "image_69JA9e": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4><span style=\"text-decoration:underline\">Trip Registration</span></h4><h3>Truck Plan</h3><p>Robust trip logging solution for heavy-duty vehicles and fleet operations. <br/><br/>📍 Live location & route history<br/>• KM logbooks reports<br/>• Includes fleet dashboard<br/>• 24V vehicle compatible<br/>* <strong>Includes a 30-day free trial installation</strong></p><h4>From: €399</h4>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "More info",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        },
+        "image_aDbDxf": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4><span style=\"text-decoration:underline\">Trip Registration</span></h4><h3>Motorcycle Plan</h3><p>Lightweight, waterproof, and made for riders. Track your trips automatically.</p><p>📍 GPS tracking with smart start<br/>• Compact & waterproof module<br/>• GPS tracking with smart start<br/>• Low-power standby mode<br/><strong>Includes a 30-day free trial installation</strong></p><h4>From: €199</h4>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "More info",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "image_wkYD9E",
+        "image_69JA9e",
+        "image_aDbDxf"
+      ],
+      "name": "t:sections.promo_gallery.presets.name",
+      "settings": {
+        "items_width": 3,
+        "width": "boxed",
+        "height": "size-s",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 20,
+        "image_zoom": true,
+        "layout_mobile": "compact",
+        "mobile_height": "size-m",
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": false,
+        "back_button": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "text_alignment": "left",
+            "title_size": "h3",
+            "title": ""
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "settings": {}
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {}
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "settings": {
+            "text_alignment": "left",
+            "enable_read_more": false,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "sorting",
+        "product_grid",
+        "423fb7f6-2c97-4420-8211-d45378349d2a"
+      ],
+      "disabled": true,
+      "settings": {
+        "pagination_qty": 16,
+        "pagination_type": "button",
+        "show_amount_of_products_in_collection": true,
+        "products_per_row": 3,
+        "secondary_products_per_row": 4,
+        "fill_images": true,
+        "fill_not_first": true,
+        "images_padding": 0,
+        "images_vertical_position": 0,
+        "show_collection_image": true,
+        "enable_filters": true,
+        "enable_menu": false,
+        "enable_collections": true,
+        "filters_layout": "static",
+        "enable_filters_checkboxes": true,
+        "collections_menu": [],
+        "main_menu_items_clickable": true,
+        "filter_sticky": false,
+        "filters_show_more_limit": 5,
+        "enable_custom_filters_font_size": true,
+        "filters_font_size": "14px",
+        "image_swatches_size": "xs",
+        "image_swatches_fill_images": true,
+        "image_swatches_show_in_circle": true,
+        "fix_zindex": 1
+      }
+    },
+    "650e297b-0ed0-4910-ba6b-8988aee2591c": {
+      "type": "section-spacer",
+      "settings": {
+        "height": 50,
+        "height_mobile": 20
+      }
+    },
+    "section_faq_y7XNV3": {
+      "type": "section-faq",
+      "blocks": {
+        "text_JKixPp": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "How does the trip registration system work?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Our trip registration device automatically logs every journey you take. It uses GPS tracking to capture routes in real time and distinguishes between business and private trips. You can access all reports via our secure online dashboard or mobile app.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_VUAAe7": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "Is the system approved for tax purposes?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Yes. All trip data and reports are fully compliant with tax authority requirements. You can download your mileage logs as official, tax-proof documentation at any time, ensuring you stay 100% compliant.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_664Kty": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "Do I need professional installation?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>No. Our devices are designed for plug & play installation. Simply connect the unit, and you’ll be ready to track trips within minutes. If you prefer, we also offer professional installation through our certified partners.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_pzCw3w": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "Can I use the system for multiple vehicles?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Absolutely. Our trip registration solution supports single vehicles as well as full fleets. Each vehicle gets its own device, and all data is managed from one central dashboard for easy oversight.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_t6jmy6": {
+          "type": "text",
+          "settings": {
+            "collapse": true,
+            "title": "What happens to my data if I cancel the service?",
+            "icon": "none",
+            "header_image_width": 50,
+            "faq_answer": "<p>Your trip history remains securely stored for up to 12 months after cancellation. You can download all reports before closing your account to ensure you have full access to your mileage records.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "text_JKixPp",
+        "text_VUAAe7",
+        "text_664Kty",
+        "text_pzCw3w",
+        "text_t6jmy6"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "text_alignment": "start",
+        "alignment": "next",
+        "content_width": 2000,
+        "media_position": "top",
+        "image_width": 180,
+        "enable_controls": false,
+        "video_mute": true,
+        "title": "<h2>Frequently Asked Questions</h2><p>This content is for demonstration purposes.</p>",
+        "title_underline_style": "none",
+        "text": "Have questions about our trip registration and vehicle tech solutions? We’ve gathered the most common questions and answers to help you get started quickly.",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "blocks_title_font": "primary",
+        "blocks_title_size": "h4",
+        "blocks_enable_custom_font_styling": false,
+        "blocks_font_size": "16px",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_collection_list_d9Tqfm": {
+      "type": "section-collection-list",
+      "settings": {
+        "custom_image_ratio": 100,
+        "show_in_circle": false,
+        "fill_images": false,
+        "layout": "slider",
+        "number_of_items": 4,
+        "show_below": true,
+        "show_arrow": false,
+        "color_palette": "scheme-1",
+        "image_overlay_opacity": 0,
+        "text_alignment": "start",
+        "background_color_palette": "scheme-1",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": false,
+        "title": "<h3>You might like these categories</h3>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "",
+        "link_url": "",
+        "button_style": "primary plain",
+        "collection_title_position": "start",
+        "show_collection_titles": true,
+        "collection_title_size": "h5",
+        "mobile_layout": "slider",
+        "number_of_items_mobile": "w100-mobile",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "section_spacer_JFiHha",
+    "section_rich_text_HrA9UE",
+    "section_image_mask_rAqFPH",
+    "section_flexible_ReN4yy",
+    "section_promo_gallery_wb4DTU",
+    "section_banner_columns_dyiTNG",
+    "section_banner_columns_GQqrcP",
+    "section_image_mask_XpwUHp",
+    "section_promo_gallery_VNJLcm",
+    "breadcrumbs",
+    "main-collection",
+    "650e297b-0ed0-4910-ba6b-8988aee2591c",
+    "section_faq_y7XNV3",
+    "section_collection_list_d9Tqfm"
+  ]
+}

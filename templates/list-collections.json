@@ -1,0 +1,118 @@
+{
+  "sections": {
+    "section_slideshow_7iMQLJ": {
+      "type": "section-slideshow",
+      "blocks": {
+        "slide_A48KDM": {
+          "type": "slide",
+          "settings": {
+            "show_play_button": true,
+            "video_mute": true,
+            "layout": "background",
+            "image_width": 50,
+            "overlay_opacity": 90,
+            "color_palette": "scheme-1",
+            "background_overlay_opacity": 100,
+            "text_position": "center",
+            "max_width": 700,
+            "title": "<h4><span style=\"text-decoration:underline\">Drive Smart. Drive Secure.</span></h4><h1>Explore premium dashcams, carkits, and rear view cameras.</h1>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "<p>Designed for protection, comfort, and total control on the road.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_first_link": true,
+            "first_link_text": "Shop",
+            "first_link_url": "/",
+            "first_button_style": "primary plain",
+            "show_second_link": true,
+            "second_link_text": "About us",
+            "second_link_url": "/",
+            "second_button_style": "primary inv"
+          }
+        }
+      },
+      "block_order": [
+        "slide_A48KDM"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "width": "wide",
+        "height": "16/9",
+        "enable_custom_height": true,
+        "custom_height": 620,
+        "autoplay": false,
+        "autoplay_seconds": 3,
+        "enable_controls": false,
+        "height_mobile": "16/9",
+        "spacing_desktop": 30,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_mobile": false,
+        "back_button": false
+      }
+    },
+    "main-list-collection": {
+      "type": "main-list-collection",
+      "settings": {
+        "text_alignment": "start",
+        "title_size": "h3",
+        "color_palette": "scheme-2",
+        "image_overlay_opacity": 10,
+        "custom_image_ratio": 100,
+        "show_in_circle": false,
+        "fill_images": true,
+        "collection_title_position": "start",
+        "collection_title_size": "h5",
+        "show_below": true,
+        "show_arrow": false,
+        "pagination_qty": 12,
+        "number_of_items": 3
+      }
+    },
+    "section_spacer_TJMrPp": {
+      "type": "section-spacer",
+      "name": "t:sections.spacer.presets.name",
+      "settings": {
+        "height": 60,
+        "height_mobile": 20
+      }
+    },
+    "section_featured_products_6K7Mhb": {
+      "type": "section-featured-products",
+      "settings": {
+        "number_of_items": 3,
+        "text_alignment": "start",
+        "color_palette": "scheme-1",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": false,
+        "title": "<h3>New arrivals</h3>",
+        "title_underline_style": "secondary_font_accent",
+        "text": "",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "show_link": false,
+        "button_style": "tertiary plain",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 70,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "section_slideshow_7iMQLJ",
+    "breadcrumbs",
+    "main-list-collection",
+    "section_spacer_TJMrPp",
+    "section_featured_products_6K7Mhb"
+  ]
+}
