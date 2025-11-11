@@ -940,7 +940,7 @@
                         {%- if gift_card_recipient_feature_active -%}
                             {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
                         {%- endif -%}
-                        <p class="link-btn compact margin-0{% unless current_variant.available %} unavailable{% endunless %}{% unless block.settings.show_amount_selection %} wide{% endunless %}" {{ block.shopify_attributes }}>
+                        <p id="product-buy-button-{{ section.id }}" class="link-btn compact margin-0{% unless current_variant.available %} unavailable{% endunless %}{% unless block.settings.show_amount_selection %} wide{% endunless %}" {{ block.shopify_attributes }}>
                             {%- if block.settings.show_amount_selection -%}
                                 <span class="input-amount f8pr-amount inline">
                                     <label for="quantity" class="hidden">{{ 'product.form.quantity' | t }}</label>
@@ -1537,6 +1537,20 @@
         </div>
     </div>
 </article>
+
+{%- comment -%} 移动端吸底加购按钮 {%- endcomment -%}
+{%- liquid
+    assign buy_button_block = section.blocks | where: "type", "buy_button" | first
+-%}
+{%- if buy_button_block -%}
+    {%- render 'product-sticky-buy-button',
+        product: product,
+        current_variant: current_variant,
+        section: section,
+        buy_button_block: buy_button_block,
+        form_id: form_id
+    -%}
+{%- endif -%}
 
 <style>
     {% if section.settings.enable_custom_font_size %}
