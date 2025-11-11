@@ -12776,7 +12776,7 @@ h6 .icon-print {
 		visibility: hidden;
 		overflow-x: hidden;
 		overflow-y: auto;
-		background: var(--drop_nav_bg);
+		background: linear-gradient(133deg,#fdf2e9 9%,#fdf6ed 47%,#fdf2e9 86%);
 		color: var(--drop_nav_fg);
 		opacity: 0;
 		--tr: -20px;

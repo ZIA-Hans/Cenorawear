@@ -1,9 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "breadcrumbs": {
       "type": "breadcrumbs",
       "settings": {
-        "hide_mobile": false
+        "hide_mobile": false,
+        "back_button": false
       }
     },
     "main-cart": {
@@ -11,16 +21,19 @@
       "blocks": {
         "2e80a36d-6430-46c3-9e9d-1dee82e7df53": {
           "type": "shipping_timer",
+          "disabled": true,
           "settings": {}
         },
         "3624e8f9-a5a3-4b0b-be1f-dae50b6fce40": {
           "type": "usp",
+          "disabled": true,
           "settings": {
             "usp": "<p>Give your customers more details</p>"
           }
         },
         "17a13ba4-a5aa-4b7c-895c-8c47d698ccec": {
           "type": "usp",
+          "disabled": true,
           "settings": {
             "usp": "<p>Give your customers more details</p>"
           }

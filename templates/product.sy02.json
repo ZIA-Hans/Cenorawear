@@ -47,20 +47,10 @@
         "price": {
           "type": "price",
           "settings": {
-            "show_tax": true,
+            "show_tax": false,
             "sale_label": true,
             "font_size_price": 20
           }
-        },
-        "short_description": {
-          "type": "short_description",
-          "settings": {
-            "show_read_more": true
-          }
-        },
-        "300dd8ed-65d7-4403-a78c-0f22925cfb25": {
-          "type": "pickup",
-          "settings": {}
         },
         "variant_selection": {
           "type": "variant_selection",
@@ -77,35 +67,6 @@
             "show_selected_variant_images": true,
             "selected_variant_images_source": "metafield",
             "variant_images_metafield": "custom.images"
-          }
-        },
-        "inventory": {
-          "type": "inventory",
-          "disabled": true,
-          "settings": {}
-        },
-        "b021209e-de1b-4192-868f-19ef66228ad9": {
-          "type": "spacer",
-          "settings": {
-            "height": 30,
-            "height_mobile": 20
-          }
-        },
-        "content_3x8Gzf": {
-          "type": "content",
-          "settings": {
-            "layout": "tab",
-            "collapse": false,
-            "title_size": "h4",
-            "title": "Charging Dock Included",
-            "icon": "gift",
-            "header_image_width": 25,
-            "text": "<p>Purchase the <strong>Cenora Wear S1 Smart Ring</strong> today and receive a <strong>free charging dock</strong> as a bonus gift.</p>",
-            "page": "",
-            "image_width": 555,
-            "liquid": "",
-            "html": "",
-            "show_contact_form": false
           }
         },
         "sizechart_TjW7wd": {
@@ -132,10 +93,6 @@
             "show_gift_card_recipient": true
           }
         },
-        "ee5e9f1c-a80a-4244-950f-03806a509775": {
-          "type": "shipping_timer",
-          "settings": {}
-        },
         "content_byJPWH": {
           "type": "content",
           "settings": {
@@ -153,19 +110,6 @@
             "show_contact_form": false
           }
         },
-        "ce57c15f-9a2f-4731-8dfe-6ed8eefa9924": {
-          "type": "usp",
-          "settings": {
-            "usp": "<p><strong>Free exchange </strong>of products within 30 days</p>"
-          }
-        },
-        "90724a70-740a-4cc9-984c-764e1d76a5bd": {
-          "type": "codes",
-          "settings": {
-            "show_sku": true,
-            "show_barcode": true
-          }
-        },
         "e56259a8-d9d4-4116-ba68-a3567a075824": {
           "type": "product_specifications",
           "settings": {
@@ -174,41 +118,6 @@
             "title_size": "h3",
             "specifications": "<p>Weight: 3.2g, Thickness: 2.7mm</p>"
           }
-        },
-        "355a7f35-a203-4d78-995d-78fb4a7e6f1c": {
-          "type": "ratings",
-          "disabled": true,
-          "settings": {}
-        },
-        "27aa4d7c-5003-431c-b837-f6b3936b3b75": {
-          "type": "share_buttons",
-          "disabled": true,
-          "settings": {
-            "share_whatsapp": true,
-            "share_facebook": true,
-            "share_twitter": true,
-            "share_pinterest": true,
-            "share_messenger": true,
-            "share_email": true
-          }
-        },
-        "complementary_products_VEDx6R": {
-          "type": "complementary_products",
-          "disabled": true,
-          "settings": {
-            "layout": "none",
-            "collapse": false,
-            "title_size": "h4",
-            "title": "Pairs well with",
-            "icon": "none",
-            "header_image_width": 25,
-            "products_show_image": true,
-            "products_show_vendor": false,
-            "products_show_title": true,
-            "products_show_rating": false,
-            "products_show_price": true,
-            "products_show_stock": false
-          }
         }
       },
       "block_order": [
@@ -216,22 +125,11 @@
         "c7259cb9-7235-4028-b6df-3a68077fed80",
         "e9431daf-3b99-40f6-89ff-dab164cda2ff",
         "price",
-        "short_description",
-        "300dd8ed-65d7-4403-a78c-0f22925cfb25",
         "variant_selection",
-        "inventory",
-        "b021209e-de1b-4192-868f-19ef66228ad9",
-        "content_3x8Gzf",
         "sizechart_TjW7wd",
         "buy_button",
-        "ee5e9f1c-a80a-4244-950f-03806a509775",
         "content_byJPWH",
-        "ce57c15f-9a2f-4731-8dfe-6ed8eefa9924",
-        "90724a70-740a-4cc9-984c-764e1d76a5bd",
-        "e56259a8-d9d4-4116-ba68-a3567a075824",
-        "355a7f35-a203-4d78-995d-78fb4a7e6f1c",
-        "27aa4d7c-5003-431c-b837-f6b3936b3b75",
-        "complementary_products_VEDx6R"
+        "e56259a8-d9d4-4116-ba68-a3567a075824"
       ],
       "settings": {
         "width": "boxed",
@@ -383,6 +281,7 @@
       "settings": {
         "items_width": 3,
         "width": "boxed",
+        "boxed_width": 1200,
         "height": "4/5",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -436,7 +335,7 @@
             "title": "Does the order include a Charging Case/Dock?",
             "icon": "none",
             "header_image_width": 50,
-            "faq_answer": "<p>The <strong>Charging Dock</strong> included in your <strong>Cenora Wear S1</strong> Order, while other models come with a C<strong>harging Cable</strong> as a complimentary accessory.</p><p>And no matter which model you choose, you can purchase our <strong>Charging Case </strong>as an <strong>optional accessory</strong>.<br/></p>",
+            "faq_answer": "<p>The <strong>Charging Dock</strong> included in your <strong>Cenora Wear S1</strong> Order, while other models come with a <strong>Charging Cable</strong> as a complimentary accessory.</p><p>And no matter which model you choose, you can purchase our <strong>Charging Case </strong>as an <strong>optional accessory</strong>.<br/></p>",
             "page": "",
             "image_width": 465,
             "liquid": "",
@@ -522,7 +421,7 @@
         "image_jPq7Fz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_1_d625ebbf-0180-4d07-bfb3-c99251990099.jpg",
+            "image": "shopify://shop_images/SY02_1.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -550,6 +449,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -569,7 +469,7 @@
         "image_8cgNTk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_2_07416ff7-bb27-449e-b3c4-8b054ce793f1.jpg",
+            "image": "shopify://shop_images/SY02_2.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -596,6 +496,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -615,7 +516,7 @@
         "image_dUpF7g": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_3_f288a52e-faab-4448-a75c-89932ed4faf3.jpg",
+            "image": "shopify://shop_images/SY02_3.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -642,6 +543,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -661,7 +563,7 @@
         "image_38UrD3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_4_1237d42f-114c-4715-8a7a-51a695383fbe.jpg",
+            "image": "shopify://shop_images/SY02_4.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -688,6 +590,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -707,7 +610,7 @@
         "image_3EjXU9": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_5_07bc542d-11d7-40e8-b1ba-9659792d7370.jpg",
+            "image": "shopify://shop_images/SY02_5.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -734,6 +637,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -753,7 +657,7 @@
         "image_Bd6wi4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_6_2bb93415-2db9-48a4-84e9-21b1ca856794.jpg",
+            "image": "shopify://shop_images/SY02_6.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -780,6 +684,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -799,7 +704,7 @@
         "image_knxn7A": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_7_cbd7a452-38c5-43c1-a999-b826a203869c.jpg",
+            "image": "shopify://shop_images/SY02_7.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -826,6 +731,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -845,7 +751,7 @@
         "image_9dWfbD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_8_bae4d978-8533-4fb5-978f-adb8f4706b5b.jpg",
+            "image": "shopify://shop_images/SY02_8.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -872,6 +778,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -891,7 +798,7 @@
         "image_AmLCEX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_9_38077544-2212-4193-8a95-c4a001c5e447.jpg",
+            "image": "shopify://shop_images/SY02_9.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -918,6 +825,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -937,7 +845,7 @@
         "image_PgdJ6T": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_10_facc024c-8810-485b-b748-7f1ca88a11a0.jpg",
+            "image": "shopify://shop_images/SY02_10.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -964,6 +872,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -983,7 +892,7 @@
         "image_tg8Q3z": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_11_34a2e1d7-5912-48f3-9dd0-208937618979.jpg",
+            "image": "shopify://shop_images/SY02_11.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -1010,6 +919,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -1029,7 +939,7 @@
         "image_tAhwnN": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_12.jpg",
+            "image": "shopify://shop_images/SY02_12.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -1056,6 +966,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -1075,7 +986,7 @@
         "image_3KVYwF": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_13_2f48e04c-e5ac-4bc1-89ef-f0f99a5c4410.jpg",
+            "image": "shopify://shop_images/SY02_13.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -1102,6 +1013,7 @@
       "settings": {
         "items_width": 3,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -1121,7 +1033,7 @@
         "image_bYykaW": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_14_e75a4e62-7f48-4f83-bc61-2366ac787adb.jpg",
+            "image": "shopify://shop_images/SY02_14.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -1148,6 +1060,7 @@
       "settings": {
         "items_width": 3,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -1167,7 +1080,7 @@
         "image_Xw66Nw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_15_7c99adcc-c8e7-4002-be6f-c056325846c5.jpg",
+            "image": "shopify://shop_images/SY02_15.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -1194,6 +1107,7 @@
       "settings": {
         "items_width": 3,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -1213,7 +1127,7 @@
         "image_QFcfcb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_17_32d349ff-966e-4137-84b1-76194bcd5645.jpg",
+            "image": "shopify://shop_images/SY02_16.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -1240,6 +1154,7 @@
       "settings": {
         "items_width": 3,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -1259,7 +1174,7 @@
         "image_ah8CW7": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/SY01_18_902786a3-8a63-4776-867f-373c8414d687.jpg",
+            "image": "shopify://shop_images/SY02_17.jpg",
             "overlay_opacity": 0,
             "enable_controls": false,
             "video_mute": true,
@@ -1286,6 +1201,7 @@
       "settings": {
         "items_width": 1,
         "width": "boxed",
+        "boxed_width": 800,
         "height": "adapt",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -1296,6 +1212,53 @@
         "mobile_height": "adapt",
         "spacing_desktop": 30,
         "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_banner_columns_DxCbd8": {
+      "type": "section-banner-columns",
+      "blocks": {
+        "image_fVPE3f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SY02_18.jpg",
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "",
+            "text_position": "align-center text-center",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": false,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_fVPE3f"
+      ],
+      "name": "t:sections.banner_columns.name",
+      "settings": {
+        "items_width": 1,
+        "width": "boxed",
+        "boxed_width": 800,
+        "height": "adapt",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 0,
+        "image_zoom": false,
+        "show_content_below": false,
+        "layout_mobile": "rows",
+        "mobile_height": "adapt",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0,
         "fix_zindex": 0
       }
     }
@@ -1323,6 +1286,7 @@
     "section_banner_columns_pjwfh4",
     "section_banner_columns_CmfUJL",
     "section_banner_columns_BrnYiz",
-    "section_banner_columns_PYTRmN"
+    "section_banner_columns_PYTRmN",
+    "section_banner_columns_DxCbd8"
   ]
 }

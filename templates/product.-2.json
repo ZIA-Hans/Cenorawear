@@ -1,0 +1,446 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "hide_mobile": true,
+        "back_button": false
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "vendor_mqD7fr": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {
+            "show_vendor_brand": false,
+            "show_vendor_name": true
+          }
+        },
+        "c7259cb9-7235-4028-b6df-3a68077fed80": {
+          "type": "title",
+          "settings": {
+            "title_size": "h3",
+            "title": "",
+            "layout_mobile": "title-bottom",
+            "mobile_title_size": "h3"
+          }
+        },
+        "e9431daf-3b99-40f6-89ff-dab164cda2ff": {
+          "type": "spacer",
+          "settings": {
+            "height": 15,
+            "height_mobile": 20
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax": false,
+            "sale_label": false,
+            "font_size_price": 14
+          }
+        },
+        "short_description": {
+          "type": "short_description",
+          "settings": {
+            "show_read_more": true
+          }
+        },
+        "300dd8ed-65d7-4403-a78c-0f22925cfb25": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "variant_selection": {
+          "type": "variant_selection",
+          "settings": {
+            "selection_type": "buttons",
+            "options": true,
+            "button_options": "Color",
+            "dropdown_options": "",
+            "show_variant_label": true,
+            "show_variant_images": true,
+            "show_variant_one_available": false,
+            "show_unavailable_variants": true,
+            "enable_selling_plans": true,
+            "show_selected_variant_images": false,
+            "selected_variant_images_source": "default",
+            "variant_images_metafield": "custom.images"
+          }
+        },
+        "b021209e-de1b-4192-868f-19ef66228ad9": {
+          "type": "spacer",
+          "settings": {
+            "height": 30,
+            "height_mobile": 20
+          }
+        },
+        "buy_button": {
+          "type": "buy_button",
+          "settings": {
+            "button_style": "solid",
+            "show_amount_selection": false,
+            "show_dynamic_buybutton": true,
+            "button_style_dynamic_buybutton": "inv",
+            "show_gift_card_recipient": true
+          }
+        },
+        "e56259a8-d9d4-4116-ba68-a3567a075824": {
+          "type": "product_specifications",
+          "settings": {
+            "layout": "accordion",
+            "collapse": true,
+            "title_size": "h3",
+            "specifications": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor_mqD7fr",
+        "c7259cb9-7235-4028-b6df-3a68077fed80",
+        "e9431daf-3b99-40f6-89ff-dab164cda2ff",
+        "price",
+        "short_description",
+        "300dd8ed-65d7-4403-a78c-0f22925cfb25",
+        "variant_selection",
+        "b021209e-de1b-4192-868f-19ef66228ad9",
+        "buy_button",
+        "e56259a8-d9d4-4116-ba68-a3567a075824"
+      ],
+      "settings": {
+        "width": "boxed",
+        "images_layout": "grid",
+        "images_grid_spacing": 8,
+        "custom_product_image_ratio": 100,
+        "fill_images": true,
+        "fill_not_first": false,
+        "images_padding": 0,
+        "images_vertical_position": 0,
+        "enable_custom_font_size": true,
+        "font_size": "14px",
+        "show_product_description": true,
+        "title_size": "h3",
+        "show_product_description_drawer": true,
+        "product_description_enable_read_more": true,
+        "product_description_mobile_collapse": true,
+        "images_layout_mobile": "full_width",
+        "tabs_title_size": "h2"
+      }
+    },
+    "section_icon_text_blocks_Ygapbx": {
+      "type": "section-icon-text-blocks",
+      "blocks": {
+        "text_hCw9ji": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "",
+            "text": "<h2>Capture Every Moment. Drive with Confidence.</h2><p>Ideal for professional drivers and frequent callers, it supports streaming, voice control, and integrates with your car’s steering wheel buttons for smooth operation.</p>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "text_JXG8jM": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "Key features",
+            "text": "<p><strong>Type of Product:</strong> Smart Dashcam<br/><br/><strong>Model:</strong> Vision Pro X2<br/><br/><strong>Power Supply:</strong> USB-C / 12V Vehicle Adapter</p><p><strong>Resolution:</strong> 1920 x 1080p Full HD<br/></p>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "text_rmCrGF": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "image_height": 55,
+            "image_border_radius": false,
+            "title": "Technical Specifications",
+            "text": "<p><strong>Lens Angle:</strong> 170° Wide-Angle<br/><br/><strong>Storage:</strong> Supports up to 128GB MicroSD<br/><br/><strong>Key Feature:</strong> Night Vision + Smart Parking Mode</p>",
+            "show_link": false,
+            "link_text": "Read more",
+            "link_url": "/",
+            "button_style": "primary link"
+          }
+        }
+      },
+      "block_order": [
+        "text_hCw9ji",
+        "text_JXG8jM",
+        "text_rmCrGF"
+      ],
+      "disabled": true,
+      "name": "t:sections.icon_text_blocks.presets.name",
+      "settings": {
+        "items_width": 4,
+        "text_alignment": "start",
+        "color_palette": "scheme-3",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": true,
+        "title": "",
+        "title_underline_style": "none",
+        "text": "",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "show_link": true,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "blocks_text_alignment": "start",
+        "blocks_title_font": "primary",
+        "blocks_title_size": "h4",
+        "blocks_enable_custom_font_styling": false,
+        "blocks_font_size": "16px",
+        "layout_mobile": "slider",
+        "mobile_blocks_text_alignment": "center",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": -30,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "abe883bc-bf09-4d60-91c5-c8adbae0b6d4": {
+      "type": "section-spacer",
+      "settings": {
+        "height": 40,
+        "height_mobile": 20
+      }
+    },
+    "section_banner_columns_7U8BtT": {
+      "type": "section-banner-columns",
+      "blocks": {
+        "image_rUwekC": {
+          "type": "image",
+          "settings": {
+            "video": "shopify://files/videos/SY01-英-视频-1.mp4",
+            "overlay_opacity": 15,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "end start",
+            "title": "<h4><span style=\"text-decoration:underline\">Peace of Mind</span></h4><h2>Full HD 1080p Recording.</h2>",
+            "title_underline_style": "secondary_font_accent",
+            "text": "<p>Capture sharp, high-quality footage day and night.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "Read more",
+            "link_url": "",
+            "button_style": "primary link",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rUwekC"
+      ],
+      "disabled": true,
+      "name": "t:sections.banner_columns.name",
+      "settings": {
+        "items_width": 2,
+        "width": "boxed",
+        "boxed_width": 1200,
+        "height": "adapt",
+        "enable_custom_height": true,
+        "custom_height": 680,
+        "space_between": 16,
+        "image_zoom": false,
+        "show_content_below": false,
+        "layout_mobile": "rows",
+        "mobile_height": "16/9",
+        "spacing_desktop": 100,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_promo_gallery_AVpBTH": {
+      "type": "section-promo-gallery",
+      "blocks": {
+        "image_76TDPG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SY01_5.jpg",
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4>Automatic logging of every trip</h4>",
+            "title_underline_style": "none",
+            "text": "<p>Forget manual mileage logs. Our system automatically records every journey from start to finish, ensuring complete and accurate data without any extra work.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "image_gFFbpm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SY01_21.jpg",
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4>Distinguish private and business use</h4>",
+            "title_underline_style": "none",
+            "text": "<p>Easily separate personal and professional trips. The system tags journeys automatically, helping you stay compliant and saving time on administration.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        },
+        "image_BAWMxe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SY01_14.jpg",
+            "overlay_opacity_img": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-1",
+            "overlay_opacity": 100,
+            "text_position": "text-start",
+            "title": "<h4>Real-time GPS tracking</h4>",
+            "title_underline_style": "none",
+            "text": "<p>Track your vehicle’s location live and view complete route histories at any moment. Perfect for both individual drivers and fleet managers who need full visibility.</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "",
+            "link_url": "",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "image_76TDPG",
+        "image_gFFbpm",
+        "image_BAWMxe"
+      ],
+      "disabled": true,
+      "settings": {
+        "items_width": 3,
+        "width": "wide",
+        "height": "size-m",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 16,
+        "image_zoom": true,
+        "layout_mobile": "compact",
+        "mobile_height": "size-s",
+        "spacing_desktop": 100,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "limit": 8,
+        "number_of_items": 4,
+        "text_alignment": "start",
+        "background_color_palette": "scheme-1",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": false,
+        "title": "<h3>You may also like</h3>",
+        "title_underline_style": "none",
+        "text": "",
+        "enable_custom_font_styling": false,
+        "text_color_palette": "black",
+        "font_size": "16px",
+        "mobile_collapse": false,
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    },
+    "section_collection_list_9wLLmg": {
+      "type": "section-collection-list",
+      "disabled": true,
+      "settings": {
+        "collections": [],
+        "custom_image_ratio": 100,
+        "show_in_circle": false,
+        "fill_images": false,
+        "layout": "slider",
+        "number_of_items": 4,
+        "show_below": true,
+        "show_arrow": false,
+        "color_palette": "scheme-1",
+        "image_overlay_opacity": 0,
+        "text_alignment": "start",
+        "background_color_palette": "scheme-1",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 100,
+        "background_height": 100,
+        "background_color_section": false,
+        "title": "<h3>You may like these categories</h3>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "",
+        "link_url": "",
+        "button_style": "primary plain",
+        "collection_title_position": "start",
+        "show_collection_titles": true,
+        "collection_title_size": "h5",
+        "mobile_layout": "slider",
+        "number_of_items_mobile": "w100-mobile",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 80,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "section_icon_text_blocks_Ygapbx",
+    "abe883bc-bf09-4d60-91c5-c8adbae0b6d4",
+    "section_banner_columns_7U8BtT",
+    "section_promo_gallery_AVpBTH",
+    "recommendations",
+    "section_collection_list_9wLLmg"
+  ]
+}

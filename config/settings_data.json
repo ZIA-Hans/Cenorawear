@@ -9,6 +9,9 @@
  */
 {
   "current": {
+    "favicon": "shopify://shop_images/jpg_cenorawear_-10.25__1.jpg",
+    "logo": "shopify://shop_images/cenorawear_-10.25_1.png",
+    "darkmode_logo": "shopify://shop_images/cenorawear_-10.25_1.png",
     "width": 1400,
     "everything_rounded": true,
     "gutter": 1.5,
@@ -79,6 +82,7 @@
     "search_drawer_wide": true,
     "search_drawer_popular_collections_title": "Popular collections",
     "search_drawer_popular_products_title": "Popular products",
+    "show_product_stock": false,
     "layout_productcard": "quickshop",
     "quickshop_behavior": "on_hover",
     "quickshop_button_size": 30,
@@ -97,9 +101,12 @@
     "enable_free_shipping": true,
     "free_shipping_amount": 50,
     "free_shipping_progress_color": "scheme-2",
-    "default_product_deliverytime_in_stock": "Next day delivery",
+    "default_product_deliverytime_in_stock": "",
     "product_deliverytime_info": "",
+    "default_product_deliverytime_info": "<p>Show extra info for delivery time</p>",
     "show_deliverytime_always": false,
+    "custom_script_for_head": "",
+    "custom_script_for_body": "",
     "enable_darkmode": "off",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#f6f6f6",
@@ -124,6 +131,37 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "4015264832934714879": {
+        "type": "shopify://apps/trustoo-email-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": true,
+        "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "button_color": "#000000",
+          "secondary_color": "#FFFFFF",
+          "ternary_color": "#6A6A6A",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": ""
+        }
+      },
+      "8970570646067211390": {
+        "type": "shopify://apps/chatway-live-chat-whatsapp/blocks/chatway/b98feb50-a1d2-42c7-be3b-c24d75144246",
+        "disabled": true,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {

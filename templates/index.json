@@ -47,7 +47,7 @@
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "width": "wide",
-        "height": "adapt",
+        "height": "21/9",
         "enable_custom_height": false,
         "custom_height": 1000,
         "autoplay": false,
@@ -624,9 +624,9 @@
             "video_mute": true,
             "color_palette": "scheme-2",
             "text_position": "align-end text-start",
-            "title": "<h3>Cenora Wear S2 Smart Ring</h3>",
+            "title": "<h3>Cenora Wear S1 Smart Ring</h3>",
             "title_underline_style": "none",
-            "text": "<p>$149.99</p>",
+            "text": "<p>$99.99</p>",
             "enable_custom_font_styling": true,
             "font_size": "18px",
             "show_link": true,
@@ -646,10 +646,10 @@
             "video_mute": true,
             "color_palette": "scheme-2",
             "text_position": "align-end text-start",
-            "title": "<h3>Cenora Wear S1 Smart Ring</h3>",
+            "title": "<h3>Cenora Wear S2 Smart Ring</h3>",
             "title_underline_style": "secondary_font",
-            "text": "<p>$119.99</p>",
-            "enable_custom_font_styling": true,
+            "text": "<p>$79.99</p>",
+            "enable_custom_font_styling": false,
             "font_size": "18px",
             "show_link": true,
             "link_text": "Shop",
@@ -672,6 +672,7 @@
       "settings": {
         "items_width": 2,
         "width": "boxed",
+        "boxed_width": 1200,
         "height": "adapt",
         "enable_custom_height": true,
         "custom_height": 680,
@@ -711,97 +712,6 @@
         "background_height_mobile": 100,
         "spacing_desktop": 0,
         "spacing_mobile": 0,
-        "fix_zindex": 0
-      }
-    },
-    "section_testimonials_PCMhpx": {
-      "type": "section-testimonials",
-      "blocks": {
-        "testimonial_qBY6Ym": {
-          "type": "testimonial",
-          "settings": {
-            "initials": false,
-            "initials_color_palette": "scheme-6",
-            "author": "David M",
-            "place": "Rotterdam",
-            "text": "Reliable, intuitive, and surprisingly affordable. I use Fleetassist for my personal car and it’s been a game changer. Trip overviews are crystal clear and the app works flawlessly.",
-            "score": 5
-          }
-        },
-        "testimonial_mFKffJ": {
-          "type": "testimonial",
-          "settings": {
-            "initials": false,
-            "initials_color_palette": "",
-            "author": "Sophie L",
-            "place": "Utrecht",
-            "text": "I run a small delivery business and needed a system that’s both tax-compliant and easy to manage. Fleetassist delivers exactly that. The installation was quick, and the live tracking is spot-on.",
-            "score": 5
-          }
-        },
-        "testimonial_D3wEtc": {
-          "type": "testimonial",
-          "settings": {
-            "initials": false,
-            "initials_color_palette": "",
-            "author": "Jamal K",
-            "place": "Canada",
-            "text": "As a self-employed electrician, I’m on the road a lot. With Fleetassist, I no longer have to think about logging my trips — it’s all done automatically. And the customer support? Top-notch.",
-            "score": 5
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_qBY6Ym",
-        "testimonial_mFKffJ",
-        "testimonial_D3wEtc"
-      ],
-      "name": "t:sections.testimonials.presets.name",
-      "settings": {
-        "color_palette": "",
-        "overlay_opacity": 100,
-        "testimonials_boxed_overlay_opacity": 10,
-        "color_palette_stars": "primary",
-        "layout": "rows",
-        "items_width": 3,
-        "autoplay": false,
-        "autoplay_seconds": 3,
-        "text_alignment": "center",
-        "title": "<h4><span style=\"text-decoration:underline\">Reviews</span></h4><h2>What drivers say about<br/>Next Assistent</h2>",
-        "title_underline_style": "secondary_font_accent",
-        "text": "100% safe & Growth Focused, <a href=\"/pages/contact\" title=\"Contact\">Trusted by 100+ Happy Clients</a> ⭐⭐⭐⭐⭐",
-        "enable_custom_font_styling": false,
-        "font_size": "16px",
-        "show_link": true,
-        "link_text": "More reviews",
-        "link_url": "/",
-        "button_style": "primary plain",
-        "spacing_desktop": 80,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "b39409d1-233d-4d71-9962-ecf3ba269ac2": {
-      "type": "section-blog-posts",
-      "settings": {
-        "blog": "news",
-        "number_of_items": 3,
-        "text_alignment": "start",
-        "title": "<h3>News</h3>",
-        "title_underline_style": "none",
-        "show_link": false,
-        "link_text": "More news",
-        "link_url": "/",
-        "button_style": "tertiary plain",
-        "custom_image_ratio": 130,
-        "show_image": true,
-        "show_tags": true,
-        "show_date": true,
-        "show_author": true,
-        "show_excerpt": false,
-        "button_style_post": "tertiary link",
-        "spacing_desktop": 80,
-        "spacing_mobile": 30,
         "fix_zindex": 0
       }
     },
@@ -855,10 +765,12 @@
         "image_Up6Fc6",
         "image_cPgk6H"
       ],
+      "disabled": true,
       "name": "t:sections.banner_columns.name",
       "settings": {
         "items_width": 2,
         "width": "boxed",
+        "boxed_width": 1200,
         "height": "1/1",
         "enable_custom_height": false,
         "custom_height": 300,
@@ -977,6 +889,7 @@
         "image_YJMVig",
         "content_UPYNww"
       ],
+      "disabled": true,
       "name": "t:sections.flexible.presets.name",
       "settings": {
         "transparent": false,
@@ -998,6 +911,183 @@
         "spacing_mobile": 0,
         "fix_zindex": 0
       }
+    },
+    "section_masonry_N4ALCd": {
+      "type": "section-masonry",
+      "blocks": {
+        "image_Kmgt97": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/home_sleep_intro.png",
+            "overlay_opacity": 25,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "",
+            "text_position": "text-center",
+            "title": "<h2>Your Sleep's Smart Guardian<br/><br/></h2>",
+            "title_underline_style": "none",
+            "text": "<p>Monitors sleep closely, analyzes the proportion of deep sleep, light sleep and awake time, helps you understand sleep patterns and improve sleep health.<br/><br/></p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": false,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": false,
+            "overlay_url": ""
+          }
+        },
+        "image_QUpwyR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DeWatermark.ai_1760628714824.jpg",
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "",
+            "text_position": "text-center",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_VjntWX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/sport__img_1.png",
+            "overlay_opacity": 25,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "",
+            "text_position": "text-center",
+            "title": "<h1>Follow your body's rhythm</h1>",
+            "title_underline_style": "none",
+            "text": "<p>Record every step, every bit of energy and every burst of passion</p>",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_BqQUCb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DeWatermark.ai_1760631017319.jpg",
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "",
+            "text_position": "text-center",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Kmgt97",
+        "image_QUpwyR",
+        "image_VjntWX",
+        "image_BqQUCb"
+      ],
+      "disabled": true,
+      "name": "t:sections.masonry.presets.name",
+      "settings": {
+        "mirrored": false,
+        "width": "boxed",
+        "space_between": 16,
+        "image_zoom": true,
+        "layout_mobile": "compact",
+        "mobile_height": "size-m",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_image_with_text_J4GyFa": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "title_ArJyTf": {
+          "type": "title",
+          "settings": {
+            "title": "<h3>Your health means more than anything, and our ring feels like nothing.</h3>",
+            "title_underline_style": "none"
+          }
+        },
+        "text_7tKwXV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cenora Wear Smart Ring weighs <strong>only 3 grams</strong>.</p>",
+            "font": "primary",
+            "enable_custom_text_styling": false,
+            "font_size": "16px"
+          }
+        },
+        "buttons_Yj3rqF": {
+          "type": "buttons",
+          "settings": {
+            "show_first_link": true,
+            "first_link_text": "Shop",
+            "first_link_url": "shopify://products/cenora-wear-s1-smart-ring",
+            "first_button_style": "primary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "/",
+            "second_button_style": "secondary plain"
+          }
+        }
+      },
+      "block_order": [
+        "title_ArJyTf",
+        "text_7tKwXV",
+        "buttons_Yj3rqF"
+      ],
+      "name": "t:sections.image_with_text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/SY01_21_d8adfa8f-2e63-4b1b-a91f-c075e8ea2b45.jpg",
+        "fill_image": true,
+        "overlay_opacity_img": 0,
+        "enable_controls": true,
+        "video_mute": true,
+        "width": "boxed",
+        "height": "size-m",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "color_palette": "",
+        "overlay_opacity": 30,
+        "layout": "image-right",
+        "text_position": "text-start",
+        "background_color_palette": "scheme-7",
+        "background_overlay_opacity": 100,
+        "background_position": "left",
+        "background_width": 50,
+        "background_height": 0,
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
     }
   },
   "order": [
@@ -1012,9 +1102,9 @@
     "section_promo_gallery_rFHfEq",
     "section_banner_columns_rQCz6d",
     "section_featured_products_b88Arj",
-    "section_testimonials_PCMhpx",
-    "b39409d1-233d-4d71-9962-ecf3ba269ac2",
     "section_banner_columns_pKQtxg",
-    "section_flexible_yrVCyH"
+    "section_flexible_yrVCyH",
+    "section_masonry_N4ALCd",
+    "section_image_with_text_J4GyFa"
   ]
 }

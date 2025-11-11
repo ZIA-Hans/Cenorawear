@@ -12,8 +12,7 @@
     "breadcrumbs": {
       "type": "breadcrumbs",
       "settings": {
-        "hide_mobile": false,
-        "back_button": false
+        "hide_mobile": false
       }
     },
     "main-page": {
@@ -22,13 +21,7 @@
         "title": {
           "type": "title",
           "settings": {
-            "title_size": "h1"
-          }
-        },
-        "spacer_yJc9zz": {
-          "type": "spacer",
-          "settings": {
-            "height": 35
+            "title_size": "h2"
           }
         },
         "content": {
@@ -38,12 +31,9 @@
       },
       "block_order": [
         "title",
-        "spacer_yJc9zz",
         "content"
       ],
       "settings": {
-        "max_width": 980,
-        "content_alignment": "start",
         "text_alignment": "start",
         "spacing_desktop": 50,
         "spacing_mobile": 30
