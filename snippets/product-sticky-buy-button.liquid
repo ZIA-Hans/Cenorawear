@@ -83,7 +83,7 @@
           left: 0;
           right: 0;
           width: 100%;
-          z-index: 999999;
+          z-index: 99;
           background: linear-gradient(133deg, #fdf2e9 9%, #fdf6ed 47%, #fdf2e9 86%);
           padding: 16px;
           box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
@@ -258,9 +258,13 @@
         return;
       }
 
-      // 将吸底按钮移到 body 最后，确保不受任何层叠上下文影响
-      if (stickyButton.parentNode !== document.body) {
-        document.body.appendChild(stickyButton);
+      // 确定目标父元素：优先使用 #root，不存在则使用 body
+      var rootElement = document.getElementById('root');
+      var targetParent = rootElement || document.body;
+
+      // 将吸底按钮移到目标父元素最后，确保不受任何层叠上下文影响
+      if (stickyButton.parentNode !== targetParent) {
+        targetParent.appendChild(stickyButton);
       }
 
       // 处理加购按钮的 loading 状态
@@ -360,9 +364,9 @@
       // 显示吸底按钮
       function showStickyButton() {
         stickyButton.style.display = 'block';
-        // 确保按钮在 body 下
-        if (stickyButton.parentNode !== document.body) {
-          document.body.appendChild(stickyButton);
+        // 确保按钮在目标父元素下
+        if (stickyButton.parentNode !== targetParent) {
+          targetParent.appendChild(stickyButton);
         }
         setTimeout(function () {
           stickyButton.classList.add('show');
