@@ -53,7 +53,7 @@
         "29fd4919-250d-4101-b146-11305de34929": {
           "type": "menu",
           "settings": {
-            "menu": "main",
+            "menu": "footer-1",
             "split_menu": false
           }
         },

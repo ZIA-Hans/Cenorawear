@@ -254,7 +254,7 @@
             "video_mute": true,
             "color_palette": "scheme-2",
             "text_position": "align-center text-start",
-            "title": "<h4>Sleep Monitoring</h4>",
+            "title": "<h4><strong>Sleep Analysis</strong></h4>",
             "title_underline_style": "none",
             "text": "<p>Understand your own sleeping status, the proportion of light sleep and deep sleep during the entire sleep period.</p>",
             "enable_custom_font_styling": false,

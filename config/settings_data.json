@@ -137,11 +137,6 @@
         "disabled": false,
         "settings": {}
       },
-      "4015264832934714879": {
-        "type": "shopify://apps/trustoo-email-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
-        "disabled": true,
-        "settings": {}
-      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
@@ -156,9 +151,9 @@
           "greeting_message": ""
         }
       },
-      "8970570646067211390": {
-        "type": "shopify://apps/chatway-live-chat-whatsapp/blocks/chatway/b98feb50-a1d2-42c7-be3b-c24d75144246",
-        "disabled": true,
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
         "settings": {}
       }
     },

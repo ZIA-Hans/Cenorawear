@@ -626,7 +626,7 @@
             "text_position": "align-end text-start",
             "title": "<h3>Cenora Wear S1 Smart Ring</h3>",
             "title_underline_style": "none",
-            "text": "<p>$99.99</p>",
+            "text": "<p>$149.99</p>",
             "enable_custom_font_styling": true,
             "font_size": "18px",
             "show_link": true,
@@ -648,7 +648,7 @@
             "text_position": "align-end text-start",
             "title": "<h3>Cenora Wear S2 Smart Ring</h3>",
             "title_underline_style": "secondary_font",
-            "text": "<p>$79.99</p>",
+            "text": "<p>$129.99</p>",
             "enable_custom_font_styling": false,
             "font_size": "18px",
             "show_link": true,
@@ -682,6 +682,71 @@
         "layout_mobile": "rows",
         "mobile_height": "16/9",
         "spacing_desktop": 100,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_logo_list_XMhGRd": {
+      "type": "section-logo-list",
+      "blocks": {
+        "logo_6RiaLF": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/rohs_a_1.png",
+            "link": ""
+          }
+        },
+        "logo_mLcprR": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Conformite_Europeenne__logo.svg",
+            "link": ""
+          }
+        },
+        "logo_Djjbkr": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_mTWX9X": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_e8wXCj": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_ihnagk": {
+          "type": "logo",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_6RiaLF",
+        "logo_mLcprR",
+        "logo_Djjbkr",
+        "logo_mTWX9X",
+        "logo_e8wXCj",
+        "logo_ihnagk"
+      ],
+      "name": "t:sections.logo_list.presets.name",
+      "settings": {
+        "number_of_items": 7,
+        "text_alignment": "start",
+        "title": "<h2>Brand logo slider</h2>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
       }
@@ -1088,6 +1153,99 @@
         "spacing_mobile": 30,
         "fix_zindex": 0
       }
+    },
+    "section_banner_columns_MzHpHh": {
+      "type": "section-banner-columns",
+      "blocks": {
+        "image_w6JRzB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/e56938cdf5e41c62899093ddea93220e_2.png",
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "align-start text-start",
+            "title": "<h3><strong>Sleep Analysis</strong></h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_dPqrDE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SY01_8_bae4d978-8533-4fb5-978f-adb8f4706b5b.jpg",
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "align-start text-start",
+            "title": "<h3>Smart Workout Tracking</h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        },
+        "image_cVEdgQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SY02_11_e2ef46de-8b3a-4b9d-be17-ae1d486217b2.jpg",
+            "overlay_opacity": 0,
+            "enable_controls": false,
+            "video_mute": true,
+            "color_palette": "scheme-2",
+            "text_position": "align-start text-start",
+            "title": "<h3>Stress & Recovery</h3>",
+            "title_underline_style": "none",
+            "text": "",
+            "enable_custom_font_styling": false,
+            "font_size": "16px",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_overlay_link": true,
+            "overlay_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_w6JRzB",
+        "image_dPqrDE",
+        "image_cVEdgQ"
+      ],
+      "name": "t:sections.banner_columns.name",
+      "settings": {
+        "items_width": 3,
+        "width": "boxed",
+        "boxed_width": 1200,
+        "height": "4/5",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "space_between": 16,
+        "image_zoom": false,
+        "show_content_below": false,
+        "layout_mobile": "rows",
+        "mobile_height": "16/9",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
     }
   },
   "order": [
@@ -1101,10 +1259,12 @@
     "section_flexible_iCTgHc",
     "section_promo_gallery_rFHfEq",
     "section_banner_columns_rQCz6d",
+    "section_logo_list_XMhGRd",
     "section_featured_products_b88Arj",
     "section_banner_columns_pKQtxg",
     "section_flexible_yrVCyH",
     "section_masonry_N4ALCd",
-    "section_image_with_text_J4GyFa"
+    "section_image_with_text_J4GyFa",
+    "section_banner_columns_MzHpHh"
   ]
 }

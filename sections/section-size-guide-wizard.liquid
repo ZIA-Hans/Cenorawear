@@ -1,0 +1,231 @@
+{% comment %}
+  Size Guide Wizard Section
+  可配置的尺码测量向导 - 用于添加到 Page 中
+{% endcomment %}
+
+<script src="{{ 'step-wizard.js' | asset_url }}" defer></script>
+
+<style>
+  .size-guide-wizard-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .size-guide-wizard-section h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .wizard-step-content {
+    text-align: center;
+  }
+
+  .wizard-step-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+  }
+
+  .wizard-step-description {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .wizard-step-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto 24px;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .wizard-tips-box {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 24px;
+    text-align: left;
+  }
+
+  .wizard-tips-box h4 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .wizard-tips-box ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .wizard-tips-box li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 768px) {
+    .size-guide-wizard-section h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    .size-guide-wizard-section {
+      padding: 24px 16px;
+    }
+  }
+</style>
+
+<div class="size-guide-wizard-section">
+  {% if section.settings.heading != blank %}
+    <h2>{{ section.settings.heading }}</h2>
+  {% endif %}
+
+  <step-wizard current-step="1" id="configWizard">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'step' %}
+          <div slot="step-{{ forloop.index }}" class="wizard-step-content" {{ block.shopify_attributes }}>
+            
+            {% comment %} 标题 {% endcomment %}
+            {% if block.settings.title != blank %}
+              <h3 class="wizard-step-title">{{ block.settings.title }}</h3>
+            {% endif %}
+
+            {% comment %} 描述 {% endcomment %}
+            {% if block.settings.desc != blank %}
+              <div class="wizard-step-description">
+                {{ block.settings.desc }}
+              </div>
+            {% endif %}
+
+            {% comment %} 内容图片 {% endcomment %}
+            {% if block.settings.image != blank %}
+              <img
+                class="wizard-step-image"
+                src="{{ block.settings.image | image_url: width: 800 }}"
+                srcset="{{ block.settings.image | image_url: width: 400 }} 400w,
+                        {{ block.settings.image | image_url: width: 600 }} 600w,
+                        {{ block.settings.image | image_url: width: 800 }} 800w"
+                sizes="(max-width: 768px) 100vw, 800px"
+                loading="lazy"
+                alt="{{ block.settings.image.alt | default: block.settings.title | escape }}"
+                width="800"
+                height="600">
+            {% endif %}
+
+            {% comment %} 内容文字 {% endcomment %}
+            {% if block.settings.content_text != blank %}
+              <div class="wizard-tips-box">
+                {{ block.settings.content_text }}
+              </div>
+            {% endif %}
+
+            {% comment %} 内容 HTML {% endcomment %}
+            {% if block.settings.content_html != blank %}
+              <div style="margin-top: 24px;">
+                {{ block.settings.content_html }}
+              </div>
+            {% endif %}
+
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </step-wizard>
+</div>
+
+{% schema %}
+{
+  "name": "Size Guide Wizard",
+  "tag": "section",
+  "class": "section-size-guide-wizard",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "How to Measure"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Step Title",
+          "info": "The title of this step"
+        },
+        {
+          "type": "richtext",
+          "id": "desc",
+          "label": "Description",
+          "default": "<p>Enter your step description here.</p>",
+          "info": "Brief description of this step"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Content image for this step"
+        },
+        {
+          "type": "richtext",
+          "id": "content_text",
+          "label": "Content Text",
+          "info": "Additional text content (optional)"
+        },
+        {
+          "type": "html",
+          "id": "content_html",
+          "label": "Content HTML",
+          "info": "Custom HTML content (optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Size Guide Wizard",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "title": "Step 1: Prepare Your Tools",
+            "desc": "<p>Before you start measuring, make sure you have the right tools ready.</p>",
+            "content_text": "<h4>What You'll Need:</h4><ul><li>A strip of paper (or string)</li><li>A pen or marker</li><li>A ruler or measuring tape</li></ul>"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "Step 2: Measure Your Finger",
+            "desc": "<p>Wrap the paper strip around the base of your finger and mark where it overlaps.</p>",
+            "content_text": "<h4>Tips for Accurate Measurement:</h4><ul><li>Measure at the end of the day when fingers are largest</li><li>The paper should fit snugly but not too tight</li><li>Measure the finger you plan to wear the ring on</li></ul>"
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "Step 3: Find Your Size",
+            "desc": "<p>Measure the marked paper strip with a ruler and use our chart to find your ring size.</p>",
+            "content_text": "<h4>Size Chart Reference:</h4><ul><li>49-50mm = US Size 5</li><li>51-52mm = US Size 6</li><li>53-54mm = US Size 7</li><li>55-56mm = US Size 8</li><li>57-58mm = US Size 9</li></ul>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+

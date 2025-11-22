@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "section_slideshow_7iMQLJ": {
@@ -5,6 +14,7 @@
       "blocks": {
         "slide_A48KDM": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "show_play_button": true,
             "video_mute": true,
@@ -81,38 +91,12 @@
         "height": 60,
         "height_mobile": 20
       }
-    },
-    "section_featured_products_6K7Mhb": {
-      "type": "section-featured-products",
-      "settings": {
-        "number_of_items": 3,
-        "text_alignment": "start",
-        "color_palette": "scheme-1",
-        "background_overlay_opacity": 100,
-        "background_position": "left",
-        "background_width": 100,
-        "background_height": 100,
-        "background_color_section": false,
-        "title": "<h3>New arrivals</h3>",
-        "title_underline_style": "secondary_font_accent",
-        "text": "",
-        "enable_custom_font_styling": false,
-        "font_size": "16px",
-        "show_link": false,
-        "button_style": "tertiary plain",
-        "background_width_mobile": 100,
-        "background_height_mobile": 100,
-        "spacing_desktop": 70,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
     }
   },
   "order": [
     "section_slideshow_7iMQLJ",
     "breadcrumbs",
     "main-list-collection",
-    "section_spacer_TJMrPp",
-    "section_featured_products_6K7Mhb"
+    "section_spacer_TJMrPp"
   ]
 }

@@ -1,19 +1,75 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "breadcrumbs": {
       "type": "breadcrumbs",
       "disabled": true,
       "settings": {
-        "hide_mobile": false
+        "hide_mobile": false,
+        "back_button": false
       }
     },
     "main-account": {
       "type": "main-account",
-      "settings": {}
+      "settings": {
+        "show_breadcrumbs": "both",
+        "image": "shopify://shop_images/business-meeting-over-coffee.jpg",
+        "overlay_opacity": 25,
+        "color_palette": "",
+        "image_position": "center center",
+        "image_position_mobile": "center center",
+        "text_position": "text-start",
+        "title_font": "primary",
+        "title_size": "h2",
+        "enable_custom_text_styling": false,
+        "font_size": "16px",
+        "text": "<p>Extra shop info</p>",
+        "show_phone_link": true,
+        "show_mail_link": true,
+        "show_whatsapp_link": false
+      }
+    },
+    "section_featured_collection_xgzAPb": {
+      "type": "section-featured-collection",
+      "name": "t:sections.featured_collection.presets.name",
+      "settings": {
+        "collection": "frontpage",
+        "limit": 5,
+        "number_of_items": 5,
+        "text_alignment": "start",
+        "background_color_palette": "",
+        "background_overlay_opacity": 75,
+        "background_position": "left",
+        "background_width": 50,
+        "background_height": 100,
+        "background_color_section": false,
+        "title": "<h2>Featured collection</h2>",
+        "title_underline_style": "none",
+        "text": "Share information and details about this collection",
+        "enable_custom_font_styling": false,
+        "font_size": "16px",
+        "show_link": true,
+        "link_text": "Button",
+        "button_style": "primary plain",
+        "background_width_mobile": 100,
+        "background_height_mobile": 100,
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
     }
   },
   "order": [
     "breadcrumbs",
-    "main-account"
+    "main-account",
+    "section_featured_collection_xgzAPb"
   ]
 }
