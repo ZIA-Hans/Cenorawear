@@ -706,24 +706,14 @@
         "logo_Djjbkr": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/FCC.png",
             "link": ""
           }
         },
         "logo_mTWX9X": {
           "type": "logo",
           "settings": {
-            "link": ""
-          }
-        },
-        "logo_e8wXCj": {
-          "type": "logo",
-          "settings": {
-            "link": ""
-          }
-        },
-        "logo_ihnagk": {
-          "type": "logo",
-          "settings": {
+            "image": "shopify://shop_images/IP68.png",
             "link": ""
           }
         }
@@ -732,15 +722,13 @@
         "logo_6RiaLF",
         "logo_mLcprR",
         "logo_Djjbkr",
-        "logo_mTWX9X",
-        "logo_e8wXCj",
-        "logo_ihnagk"
+        "logo_mTWX9X"
       ],
       "name": "t:sections.logo_list.presets.name",
       "settings": {
-        "number_of_items": 7,
+        "number_of_items": 4,
         "text_alignment": "start",
-        "title": "<h2>Brand logo slider</h2>",
+        "title": "<h2>Certified for Quality & Safety</h2>",
         "title_underline_style": "none",
         "show_link": true,
         "link_text": "Button",
@@ -1176,7 +1164,8 @@
             "link_url": "",
             "button_style": "primary plain",
             "show_overlay_link": true,
-            "overlay_url": ""
+            "overlay_url": "",
+            "image_mobile": "shopify://shop_images/e56938cdf5e41c62899093ddea93220e_2.png"
           }
         },
         "image_dPqrDE": {
@@ -1198,7 +1187,8 @@
             "link_url": "",
             "button_style": "primary plain",
             "show_overlay_link": true,
-            "overlay_url": ""
+            "overlay_url": "",
+            "image_mobile": "shopify://shop_images/SY01_8_bae4d978-8533-4fb5-978f-adb8f4706b5b.jpg"
           }
         },
         "image_cVEdgQ": {
@@ -1220,7 +1210,8 @@
             "link_url": "",
             "button_style": "primary plain",
             "show_overlay_link": true,
-            "overlay_url": ""
+            "overlay_url": "",
+            "image_mobile": "shopify://shop_images/SY02_11.jpg"
           }
         }
       },

@@ -131,7 +131,7 @@
             "title": "Features & Details",
             "icon": "none",
             "header_image_width": 35,
-            "text": "<ul><li>Comprehensive Health Monitoring</li><li>IP68 & 5ATM Waterproof</li><li>3-4Days Battery Life, 7 times charging with charging dock.</li></ul>",
+            "text": "<ul><li>Comprehensive Health Monitoring</li><li>IP68 & 5ATM Waterproof</li><li>4-5Days Battery Life, 7 times charging with charging dock.</li></ul>",
             "page": "",
             "image_width": 555,
             "liquid": "",
@@ -152,7 +152,7 @@
             "layout": "accordion",
             "collapse": true,
             "title_size": "h3",
-            "specifications": "<p>Weight: 3.2g, Thickness: 2.7mm</p>"
+            "specifications": "<p>Weight: 3.2g, Thickness: 2.7mm, Waterproof: IP68, Material: Stainless steel & glue pouring process, Battery Capacity: 18mAh, Charging time: 1.5h, Theory Standby time: 16-20 days, Normal using time: 4-5 days, Operating temperature range: 0-50℃</p>"
           }
         }
       },

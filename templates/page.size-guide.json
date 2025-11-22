@@ -12,7 +12,8 @@
     "breadcrumbs": {
       "type": "breadcrumbs",
       "settings": {
-        "hide_mobile": false
+        "hide_mobile": false,
+        "back_button": false
       }
     },
     "main-page": {
@@ -20,12 +21,14 @@
       "blocks": {
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "title_size": "h2"
           }
         },
         "content": {
           "type": "content",
+          "disabled": true,
           "settings": {}
         }
       },
@@ -34,14 +37,61 @@
         "content"
       ],
       "settings": {
+        "max_width": 980,
+        "content_alignment": "start",
         "text_alignment": "start",
         "spacing_desktop": 50,
         "spacing_mobile": 30
+      }
+    },
+    "section_size_guide_wizard_yNEhFN": {
+      "type": "section-size-guide-wizard",
+      "blocks": {
+        "step_bfgb77": {
+          "type": "step",
+          "settings": {
+            "title": "Step 1: Prepare Your Tools",
+            "desc": "<p>Before you start measuring, make sure you have the right tools ready.</p>",
+            "image": "shopify://shop_images/46d5cd75-8294-4fa7-8df6-1616c0e331ef.jpg",
+            "content_text": "<h4>What You'll Need:</h4><ul><li>cut a strip of paper that’s long enough to go around your index finger.</li><li>A pen or marker</li><li>A ruler or measuring tape</li></ul>",
+            "content_html": ""
+          }
+        },
+        "step_wNnGpy": {
+          "type": "step",
+          "settings": {
+            "title": "Step 2: Measure Your Finger",
+            "desc": "<p>Wrap the paper strip around the base of your finger and mark where it overlaps.</p>",
+            "image": "shopify://shop_images/jimeng-2025-11-22-9430_2.png",
+            "content_text": "<h4>Tips for Accurate Measurement:</h4><ul><li>Measure at the end of the day when fingers are largest</li><li>The paper should fit snugly but not too tight</li><li>Measure the finger you plan to wear the ring on</li></ul>",
+            "content_html": ""
+          }
+        },
+        "step_eViFU3": {
+          "type": "step",
+          "settings": {
+            "title": "Step 3: Find Your Size",
+            "desc": "<p>Measure the marked paper strip with a ruler and use our chart to find your ring size.</p>",
+            "image": "shopify://shop_images/jimeng-2025-11-22-9445-_0_..._1.png",
+            "content_text": "",
+            "content_html": "<table class=\"size-table\">\n                <tbody>\n<tr>\n                    <th>Model</th>\n                    <th>Inner Diameter (mm)</th>\n                    <th>Inner Diameter (inch)</th>\n                    <th>Circumference (mm)</th>\n                    <th>Circumference (inch)</th>\n                </tr>\n                <tr>\n                    <td>No.7</td>\n                    <td>17.4</td>\n                    <td>0.685</td>\n                    <td>54.6</td>\n                    <td>2.149</td>\n                </tr>\n                <tr>\n                    <td>No.8</td>\n                    <td>18.2</td>\n                    <td>0.716</td>\n                    <td>57.1</td>\n                    <td>2.248</td>\n                </tr>\n                <tr>\n                    <td>No.9</td>\n                    <td>19.0</td>\n                    <td>0.748</td>\n                    <td>59.6</td>\n                    <td>2.346</td>\n                </tr>\n                <tr>\n                    <td>No.10</td>\n                    <td>19.9</td>\n                    <td>0.783</td>\n                    <td>62.4</td>\n                    <td>2.457</td>\n                </tr>\n                <tr>\n                    <td>No.11</td>\n                    <td>20.7</td>\n                    <td>0.815</td>\n                    <td>64.9</td>\n                    <td>2.555</td>\n                </tr>\n                <tr>\n                    <td>No.12</td>\n                    <td>21.5</td>\n                    <td>0.846</td>\n                    <td>67.5</td>\n                    <td>2.657</td>\n                </tr>\n                <tr>\n                    <td>No.13</td>\n                    <td>22.3</td>\n                    <td>0.878</td>\n                    <td>70.0</td>\n                    <td>2.756</td>\n                </tr>\n            </tbody>\n</table>"
+          }
+        }
+      },
+      "block_order": [
+        "step_bfgb77",
+        "step_wNnGpy",
+        "step_eViFU3"
+      ],
+      "name": "Size Guide Wizard",
+      "settings": {
+        "heading": "Find Your Perfect Size"
       }
     }
   },
   "order": [
     "breadcrumbs",
-    "main-page"
+    "main-page",
+    "section_size_guide_wizard_yNEhFN"
   ]
 }
