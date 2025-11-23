@@ -38,8 +38,6 @@
   }
 
   .wizard-step-image {
-    width: 100%;
-    max-width: 400px;
     height: auto;
     margin: 0 auto 24px;
     display: block;
@@ -109,6 +107,7 @@
 
             {% comment %} 内容图片 {% endcomment %}
             {% if block.settings.image != blank %}
+              {% assign image_width_percent = block.settings.image_width | default: 100 %}
               <img
                 class="wizard-step-image"
                 src="{{ block.settings.image | image_url: width: 800 }}"
@@ -119,7 +118,8 @@
                 loading="lazy"
                 alt="{{ block.settings.image.alt | default: block.settings.title | escape }}"
                 width="800"
-                height="600">
+                height="600"
+                style="width: {{ image_width_percent }}%; max-width: 400px;">
             {% endif %}
 
             {% comment %} 内容文字 {% endcomment %}
@@ -179,6 +179,17 @@
           "id": "image",
           "label": "Image",
           "info": "Content image for this step"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "label": "Image Width",
+          "min": 20,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "default": 100,
+          "info": "Control the image width as a percentage of the container"
         },
         {
           "type": "richtext",
