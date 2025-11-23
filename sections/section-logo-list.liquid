@@ -90,15 +90,7 @@
       {{ width_class }}
       {% if section.blocks.size > section.settings.number_of_items %} slider{% else %}text-{{ section.settings.text_alignment }}{% endif %}
     "
-    style="
-      {% if settings.enable_animations %}--nav_delay: 300;{% endif %}
-      {% if section.settings.container_bg_color != blank %}background-color: {{ section.settings.container_bg_color }};{% endif %}
-      {% if section.settings.container_padding_top > 0 %}padding-top: {{ section.settings.container_padding_top }}px;{% endif %}
-      {% if section.settings.container_padding_bottom > 0 %}padding-bottom: {{ section.settings.container_padding_bottom }}px;{% endif %}
-      {% if section.settings.container_padding_left > 0 %}padding-left: {{ section.settings.container_padding_left }}px;{% endif %}
-      {% if section.settings.container_padding_right > 0 %}padding-right: {{ section.settings.container_padding_right }}px;{% endif %}
-      {% if section.settings.container_border_radius > 0 %}border-radius: {{ section.settings.container_border_radius }}px;{% endif %}
-    "
+    style="{% if settings.enable_animations %}--nav_delay: 300;{% endif %}"
   >
     {%- for block in section.blocks -%}
       {%- liquid
@@ -190,17 +182,6 @@
   @media only screen and (max-width: 47.5em) {
       #shopify-section-{{ section.id }} { margin-bottom: {{ section.settings.spacing_mobile }}px; }
   }
-  
-  {%- comment -%} Logo size control {%- endcomment -%}
-  {%- if section.settings.logo_max_width or section.settings.logo_max_height -%}
-    #shopify-section-{{ section.id }} .l4cl li img {
-      {% if section.settings.logo_max_width %}max-width: {{ section.settings.logo_max_width }}px !important;{% endif %}
-      {% if section.settings.logo_max_height %}max-height: {{ section.settings.logo_max_height }}px !important;{% endif %}
-      width: auto !important;
-      height: auto !important;
-      object-fit: contain;
-    }
-  {%- endif -%}
 </style>
 
 {% schema %}
@@ -375,93 +356,6 @@
       ],
       "default": "primary plain",
       "visible_if": "{{ section.settings.show_link }}"
-    },
-    {
-      "type": "header",
-      "content": "List Container Styling"
-    },
-    {
-      "type": "color",
-      "id": "container_bg_color",
-      "label": "Container Background Color",
-      "info": "Set background color for the logo list container"
-    },
-    {
-      "type": "range",
-      "id": "container_padding_top",
-      "label": "Container Padding Top",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "container_padding_bottom",
-      "label": "Container Padding Bottom",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "container_padding_left",
-      "label": "Container Padding Left",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "container_padding_right",
-      "label": "Container Padding Right",
-      "min": 0,
-      "max": 100,
-      "step": 5,
-      "unit": "px",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "container_border_radius",
-      "label": "Container Border Radius",
-      "min": 0,
-      "max": 50,
-      "step": 2,
-      "unit": "px",
-      "default": 0,
-      "info": "Add rounded corners to the container"
-    },
-    {
-      "type": "header",
-      "content": "Logo Item Size"
-    },
-    {
-      "type": "range",
-      "id": "logo_max_width",
-      "label": "Logo Max Width",
-      "min": 50,
-      "max": 300,
-      "step": 10,
-      "unit": "px",
-      "default": 120,
-      "info": "Control the maximum width of each logo"
-    },
-    {
-      "type": "range",
-      "id": "logo_max_height",
-      "label": "Logo Max Height",
-      "min": 30,
-      "max": 200,
-      "step": 5,
-      "unit": "px",
-      "default": 75,
-      "info": "Control the maximum height of each logo"
     },
     {
       "type": "header",

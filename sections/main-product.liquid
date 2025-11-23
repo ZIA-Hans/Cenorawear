@@ -1096,6 +1096,7 @@
                         </footer>
                     </aside>
                 {%- when 'sizechart' -%}
+                  <script src="{{ 'step-wizard.js' | asset_url }}" defer></script>
                     {% if block.settings.hide_one_variant %}{% if product.has_only_default_variant or product.variants.size == 1 %}{% continue %}{% endif %}{% endif %}
                     <p class="quickshop-hide-mobile" {{ block.shopify_attributes }}>{{ 'product.sizechart.need_help' | t }} <a href="./" class="overlay-content strong" data-panel="size-guide">{{ 'product.sizechart.size_finder' | t }}</a></p>
 
