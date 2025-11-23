@@ -53,6 +53,7 @@
             "title": "Step 1: Prepare Your Tools",
             "desc": "<p>Before you start measuring, make sure you have the right tools ready.</p>",
             "image": "shopify://shop_images/46d5cd75-8294-4fa7-8df6-1616c0e331ef.jpg",
+            "image_width": 50,
             "content_text": "<h4>What You'll Need:</h4><ul><li>cut a strip of paper that’s long enough to go around your index finger.</li><li>A pen or marker</li><li>A ruler or measuring tape</li></ul>",
             "content_html": ""
           }
@@ -63,6 +64,7 @@
             "title": "Step 2: Measure Your Finger",
             "desc": "<p>Wrap the paper strip around the base of your finger and mark where it overlaps.</p>",
             "image": "shopify://shop_images/jimeng-2025-11-22-9430_2.png",
+            "image_width": 50,
             "content_text": "<h4>Tips for Accurate Measurement:</h4><ul><li>Measure at the end of the day when fingers are largest</li><li>The paper should fit snugly but not too tight</li><li>Measure the finger you plan to wear the ring on</li></ul>",
             "content_html": ""
           }
@@ -73,8 +75,9 @@
             "title": "Step 3: Find Your Size",
             "desc": "<p>Measure the marked paper strip with a ruler and use our chart to find your ring size.</p>",
             "image": "shopify://shop_images/jimeng-2025-11-22-9445-_0_..._1.png",
+            "image_width": 50,
             "content_text": "",
-            "content_html": "<table class=\"size-table\">\n                <tbody>\n<tr>\n                    <th>Model</th>\n                    <th>Inner Diameter (mm)</th>\n                    <th>Inner Diameter (inch)</th>\n                    <th>Circumference (mm)</th>\n                    <th>Circumference (inch)</th>\n                </tr>\n                <tr>\n                    <td>No.7</td>\n                    <td>17.4</td>\n                    <td>0.685</td>\n                    <td>54.6</td>\n                    <td>2.149</td>\n                </tr>\n                <tr>\n                    <td>No.8</td>\n                    <td>18.2</td>\n                    <td>0.716</td>\n                    <td>57.1</td>\n                    <td>2.248</td>\n                </tr>\n                <tr>\n                    <td>No.9</td>\n                    <td>19.0</td>\n                    <td>0.748</td>\n                    <td>59.6</td>\n                    <td>2.346</td>\n                </tr>\n                <tr>\n                    <td>No.10</td>\n                    <td>19.9</td>\n                    <td>0.783</td>\n                    <td>62.4</td>\n                    <td>2.457</td>\n                </tr>\n                <tr>\n                    <td>No.11</td>\n                    <td>20.7</td>\n                    <td>0.815</td>\n                    <td>64.9</td>\n                    <td>2.555</td>\n                </tr>\n                <tr>\n                    <td>No.12</td>\n                    <td>21.5</td>\n                    <td>0.846</td>\n                    <td>67.5</td>\n                    <td>2.657</td>\n                </tr>\n                <tr>\n                    <td>No.13</td>\n                    <td>22.3</td>\n                    <td>0.878</td>\n                    <td>70.0</td>\n                    <td>2.756</td>\n                </tr>\n            </tbody>\n</table>"
+            "content_html": "<h1>Size Chart</h1>\n<table border=\"1\">\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>Inner diameter</th>\n      <th>Perimeter</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>No. 7</td>\n      <td>17.4mm</td>\n      <td>54.6mm</td>\n    </tr>\n    <tr>\n      <td>No. 8</td>\n      <td>18.2mm</td>\n      <td>57.1mm</td>\n    </tr>\n    <tr>\n      <td>No. 9</td>\n      <td>19mm</td>\n      <td>59.6mm</td>\n    </tr>\n    <tr>\n      <td>No. 10</td>\n      <td>19.9mm</td>\n      <td>62.4mm</td>\n    </tr>\n    <tr>\n      <td>No. 11</td>\n      <td>20.7mm</td>\n      <td>64.9mm</td>\n    </tr>\n    <tr>\n      <td>No. 12</td>\n      <td>21.5mm</td>\n      <td>67.5mm</td>\n    </tr>\n    <tr>\n      <td>No. 13</td>\n      <td>22.3mm</td>\n      <td>70mm</td>\n    </tr>\n    <tr>\n      <td>No. 14</td>\n      <td>23.0mm</td>\n      <td>72.5mm</td>\n    </tr>\n  </tbody>\n</table>"
           }
         }
       },
