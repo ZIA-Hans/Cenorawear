@@ -1099,13 +1099,26 @@
                     {% if block.settings.hide_one_variant %}{% if product.has_only_default_variant or product.variants.size == 1 %}{% continue %}{% endif %}{% endif %}
                     <p class="quickshop-hide-mobile" {{ block.shopify_attributes }}>{{ 'product.sizechart.need_help' | t }} <a href="./" class="overlay-content strong" data-panel="size-guide">{{ 'product.sizechart.size_finder' | t }}</a></p>
 
-                    <aside class="m6pn" id="size-guide" aria-hidden="true">
+                    <aside class="m6pn" id="size-guide" aria-hidden="true"
+                      {%- if block.settings.wizard_page != blank -%}
+                        data-wizard-page="{{ block.settings.wizard_page.handle }}"
+                      {%- endif -%}>
                         <header>
                             <{{ settings.drawers_font_size_heading }}>{{ block.settings.sizechart_title }}</{{ settings.drawers_font_size_heading }}>
-                            {%- if block.settings.sizechart_text != empty -%}{{ block.settings.sizechart_text }}{%- endif -%}
-                            {%- if block.settings.sizechart_page != blank -%}{{ block.settings.sizechart_page.content }}{%- endif -%}
+                            
+                            {%- if block.settings.wizard_page != blank -%}
+                              {%- comment -%} Wizard container - will be populated by JS {%- endcomment -%}
+                              <div id="wizard-container" class="wizard-dynamic-content"></div>
+                            {%- else -%}
+                              {%- comment -%} Static content (legacy) {%- endcomment -%}
+                              {%- if block.settings.sizechart_text != empty -%}{{ block.settings.sizechart_text }}{%- endif -%}
+                              {%- if block.settings.sizechart_page != blank -%}{{ block.settings.sizechart_page.content }}{%- endif -%}
+                            {%- endif -%}
                         </header>
-                        {%- if block.settings.sizechart_image != blank -%}
+                        
+                        {%- if block.settings.wizard_page == blank -%}
+                          {%- comment -%} Only show static content if no wizard page selected {%- endcomment -%}
+                          {%- if block.settings.sizechart_image != blank -%}
                             <figure>
                                 <img
                                     src="{{ block.settings.sizechart_image | image_url: width: block.settings.sizechart_image_width }}"
@@ -1119,14 +1132,20 @@
                                     width="{{ block.settings.sizechart_image_width }}"
                                     height="640">
                             </figure>
-                        {%- endif -%}
-                        {%- if block.settings.sizechart_liquid or block.settings.sizechart_html -%}
+                          {%- endif -%}
+                          {%- if block.settings.sizechart_liquid or block.settings.sizechart_html -%}
                             <p>
                                 {{ block.settings.sizechart_liquid }}
                                 {{ block.settings.sizechart_html }}
                             </p>
+                          {%- endif -%}
                         {%- endif -%}
                     </aside>
+                    
+                    {%- comment -%} Load wizard loader script if wizard page is configured {%- endcomment -%}
+                    {%- if block.settings.wizard_page != blank -%}
+                      <script src="{{ 'size-guide-wizard-loader.js' | asset_url }}" defer></script>
+                    {%- endif -%}
                 {%- when 'share_buttons' -%}
                     {%- liquid
                         assign share_whatsapp = block.settings.share_whatsapp
@@ -2966,6 +2985,20 @@
           "type": "page",
           "id": "sizechart_page",
           "label": "t:main.product.blocks.sizechart.settings.sizechart_page.label"
+        },
+        {
+          "type": "header",
+          "content": "Size Guide Wizard"
+        },
+        {
+          "type": "page",
+          "id": "wizard_page",
+          "label": "Wizard Guide Page",
+          "info": "Select a page that contains the Size Guide Wizard section. This will replace the static content above when selected."
+        },
+        {
+          "type": "header",
+          "content": "Static Size Chart (Legacy)"
         },
         {
           "type": "image_picker",
