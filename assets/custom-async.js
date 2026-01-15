@@ -4132,79 +4132,214 @@ var ajaxCart = (function(module) {
 
 	addCartItem = function(form, listItem) {
 		formData = new FormData(form);
-		if (general.template == 'cart') {
-			formData.append('sections', sideCartId +  ',' + cartPageTemplate);
-		} else {
-			formData.append('sections', sideCartId);
-		}
-		config = {
-			method: 'POST',
-			body: formData,
-			headers: {
-				'X-Requested-With': 'XMLHttpRequest',
-				'Accept': 'application/javascript'
-			}
-		};
-		fetch(routes.cart_add_url, config)
-			.then((response) => response.json())
-			.then((response) => {
-				form.classList.remove('processing');
-				if (form.querySelector('button[type="submit"]')) { form.querySelector('button[type="submit"]').classList.remove('processing'); }
-				if (sticky) { sticky.querySelector('form').classList.remove('processing'); }
-				document.querySelectorAll('[data-error-key]').forEach(function (el) { el.classList.remove('is-invalid'); });
-				if (response.status) {
-					if (listItem) {
-						listItem.remove();
-					}
-					hidePanels();
-					if (typeof response.description == 'object') {
-						let keys = Object.keys(response.description);
-						let messages = Object.values(response.description);
-						for (let i = 0; i < keys.length; i++) {
-							if (document.querySelector('[data-error-key="' + keys[i] + '"]')) {
-								document.querySelector('[data-error-key="' + keys[i] + '"]').classList.add('is-invalid');
-							}
-						}
-						for (let i = 0; i < messages.length; i++) {
-							handleErrorMessage(messages[i]);
-						}
-					} else {
-						handleErrorMessage(response.description);
-					}
-					return;
+		
+		// 检查是否有选中的赠品关联
+		// 赠品radio可能不在form内部，但通过form属性关联
+		var formId = form.getAttribute('id');
+		var selectedGiftRadios = [];
+		if (formId) {
+			// 查找所有form属性匹配当前表单ID的赠品radio
+			var allGiftRadios = document.querySelectorAll('.f8pr-gift-radio:checked');
+			allGiftRadios.forEach(function(radio) {
+				if (radio.getAttribute('form') === formId) {
+					selectedGiftRadios.push(radio);
 				}
-				if (enable_cart_drawer) {
-					if (listItem) {
-						listItem.remove();
-						updateCartPanel(response, true, true);
+			});
+		}
+		var hasGiftItems = selectedGiftRadios.length > 0;
+		
+		// 如果有赠品，使用items数组格式同时添加主产品和赠品
+		if (hasGiftItems) {
+			var mainVariantId = formData.get('id');
+			var quantity = parseInt(formData.get('quantity') || 1);
+			var items = [
+				{
+					id: parseInt(mainVariantId),
+					quantity: quantity
+				}
+			];
+			
+			// 收集所有选中的赠品variant ID
+			selectedGiftRadios.forEach(function(radio) {
+				var giftVariantId = radio.getAttribute('data-gift-variant-id-attr');
+				if (giftVariantId) {
+					items.push({
+						id: parseInt(giftVariantId),
+						quantity: 1
+					});
+				}
+			});
+			
+			// 准备sections参数用于更新购物车面板
+			var sectionsParam = '';
+			if (general.template == 'cart') {
+				sectionsParam = sideCartId + ',' + cartPageTemplate;
+			} else {
+				sectionsParam = sideCartId;
+			}
+			
+			// 使用JSON格式提交多个商品
+			config = {
+				method: 'POST',
+				body: JSON.stringify({ items: items }),
+				headers: {
+					'Content-Type': 'application/json',
+					'X-Requested-With': 'XMLHttpRequest',
+					'Accept': 'application/javascript'
+				}
+			};
+			
+			// 如果有sections参数，添加到URL
+			var addUrl = routes.cart_add_url;
+			if (sectionsParam) {
+				addUrl += (addUrl.indexOf('?') > -1 ? '&' : '?') + 'sections=' + encodeURIComponent(sectionsParam);
+			}
+			
+			fetch(addUrl, config)
+				.then((response) => response.json())
+				.then((response) => {
+					form.classList.remove('processing');
+					if (form.querySelector('button[type="submit"]')) { form.querySelector('button[type="submit"]').classList.remove('processing'); }
+					if (sticky) { sticky.querySelector('form').classList.remove('processing'); }
+					document.querySelectorAll('[data-error-key]').forEach(function (el) { el.classList.remove('is-invalid'); });
+					
+					// 处理错误响应
+					if (response.status) {
+						if (listItem) {
+							listItem.remove();
+						}
+						hidePanels();
+						if (typeof response.description == 'object') {
+							let keys = Object.keys(response.description);
+							let messages = Object.values(response.description);
+							for (let i = 0; i < keys.length; i++) {
+								if (document.querySelector('[data-error-key="' + keys[i] + '"]')) {
+									document.querySelector('[data-error-key="' + keys[i] + '"]').classList.add('is-invalid');
+								}
+							}
+							for (let i = 0; i < messages.length; i++) {
+								handleErrorMessage(messages[i]);
+							}
+						} else {
+							handleErrorMessage(response.description);
+						}
+						return;
+					}
+					
+					// 处理成功响应
+					if (enable_cart_drawer) {
+						if (listItem) {
+							listItem.remove();
+							updateCartPanel(response, true, true);
+						} else {
+							updateCartPanel(response);
+						}
+						if (general.template == 'cart') {
+							updateCartPage(response);
+						}
+						if (listItem == undefined) {
+							// 对于多商品添加，显示通用成功消息
+							var successMessage = hasGiftItems 
+								? (items.length > 2 ? items.length + ' items' : 'Items') + ' ' + translations.added_to_cart
+								: (response.title || 'Product') + ' ' + translations.added_to_cart;
+							var alertAttributes = {
+									message: successMessage,
+									type: "success",
+									location: "cartpanel"
+								},
+								showAlertEvent = new CustomEvent("showAlert", {detail: alertAttributes});
+							window.dispatchEvent(showAlertEvent);
+							listAlertsAsync();
+							closeAlerts();
+						}
 					} else {
-						updateCartPanel(response);
+						updateCartCount(response.quantity);
+						window.location.href = routes.cart_url;
 					}
-					if (general.template == 'cart') {
-						updateCartPage(response);
+				})
+				.catch((error) => {
+					console.log("addCartItem error", error);
+					form.classList.remove('processing');
+					if (form.querySelector('button[type="submit"]')) { form.querySelector('button[type="submit"]').classList.remove('processing'); }
+					if (sticky) { sticky.querySelector('form').classList.remove('processing'); }
+					handleErrorMessage('Failed to add items to cart. Please try again.');
+				});
+		} else {
+			// 没有赠品，使用原有的FormData格式
+			if (general.template == 'cart') {
+				formData.append('sections', sideCartId +  ',' + cartPageTemplate);
+			} else {
+				formData.append('sections', sideCartId);
+			}
+			config = {
+				method: 'POST',
+				body: formData,
+				headers: {
+					'X-Requested-With': 'XMLHttpRequest',
+					'Accept': 'application/javascript'
+				}
+			};
+			fetch(routes.cart_add_url, config)
+				.then((response) => response.json())
+				.then((response) => {
+					form.classList.remove('processing');
+					if (form.querySelector('button[type="submit"]')) { form.querySelector('button[type="submit"]').classList.remove('processing'); }
+					if (sticky) { sticky.querySelector('form').classList.remove('processing'); }
+					document.querySelectorAll('[data-error-key]').forEach(function (el) { el.classList.remove('is-invalid'); });
+					if (response.status) {
+						if (listItem) {
+							listItem.remove();
+						}
+						hidePanels();
+						if (typeof response.description == 'object') {
+							let keys = Object.keys(response.description);
+							let messages = Object.values(response.description);
+							for (let i = 0; i < keys.length; i++) {
+								if (document.querySelector('[data-error-key="' + keys[i] + '"]')) {
+									document.querySelector('[data-error-key="' + keys[i] + '"]').classList.add('is-invalid');
+								}
+							}
+							for (let i = 0; i < messages.length; i++) {
+								handleErrorMessage(messages[i]);
+							}
+						} else {
+							handleErrorMessage(response.description);
+						}
+						return;
 					}
-					if (listItem == undefined) {
-						var alertAttributes = {
-								message: (response.title + ' ' + translations.added_to_cart),
-								type: "success",
-								location: "cartpanel"
-							},
-							showAlertEvent = new CustomEvent("showAlert", {detail: alertAttributes});
-						window.dispatchEvent(showAlertEvent);
-						listAlertsAsync();
-						closeAlerts();
-					}
-				} else {
+					if (enable_cart_drawer) {
+						if (listItem) {
+							listItem.remove();
+							updateCartPanel(response, true, true);
+						} else {
+							updateCartPanel(response);
+						}
+						if (general.template == 'cart') {
+							updateCartPage(response);
+						}
+						if (listItem == undefined) {
+							var alertAttributes = {
+									message: (response.title + ' ' + translations.added_to_cart),
+									type: "success",
+									location: "cartpanel"
+								},
+								showAlertEvent = new CustomEvent("showAlert", {detail: alertAttributes});
+							window.dispatchEvent(showAlertEvent);
+							listAlertsAsync();
+							closeAlerts();
+						}
+					} else {
           // console.log(response.quantity);
           // console.log(new DOMParser().parseFromString(response.sections["section-side-cart"], 'text/html'));
-					// var count = new DOMParser().parseFromString(response.sections["section-side-cart"], 'text/html').querySelector('#shopify-section-side-cart').querySelector('[data-totalqty]').dataset.totalqty;
-					updateCartCount(response.quantity);
-					window.location.href = routes.cart_url;
-				}
-			})
-			.catch((error) => {
-				console.log("addCartItem error", error);
-			});
+						// var count = new DOMParser().parseFromString(response.sections["section-side-cart"], 'text/html').querySelector('#shopify-section-side-cart').querySelector('[data-totalqty]').dataset.totalqty;
+						updateCartCount(response.quantity);
+						window.location.href = routes.cart_url;
+					}
+				})
+				.catch((error) => {
+					console.log("addCartItem error", error);
+				});
+		}
 	}
 
 	handleErrorMessage = function(errorMessage = false) {

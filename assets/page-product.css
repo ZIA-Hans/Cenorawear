@@ -523,15 +523,7 @@ html:not([dir="rtl"]) .f8pr.sticky { position: sticky; top: var(--stick); z-inde
     transition: all 0.2s ease;
 }
 
-.gift-card-label:hover {
-    border-color: #9ca3af;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
 
-.f8pr-gift-radio:checked ~ .gift-card-label {
-    border-color: var(--theme_bg, #000);
-    border-width: 2px;
-}
 
 .f8pr-gift-radio:checked ~ .gift-card-label .gift-card-title,
 .f8pr-gift-radio:checked ~ .gift-card-label .gift-card-description,

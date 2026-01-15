@@ -21,10 +21,6 @@
     transition: all 0.2s ease;
 }
 
-.f8pr-gift-card label:hover {
-    border-color: var(--theme_bg);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
 
 
 .gift-card-content {
