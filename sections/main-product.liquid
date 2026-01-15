@@ -101,7 +101,25 @@
     endif
 
     assign form_id = 'main-product-form-' | append: product.id
+
+    # 解析赠品关联metafield
+    assign gift_associations_data = product.metafields.custom.option_gift_association.value
+    assign has_gift_associations = false
+    assign gift_association_map = ''
+    
+    if gift_associations_data and gift_associations_data.associations
+        for association in gift_associations_data.associations
+            assign gift_product = all_products[association.gift_product_handle]
+            if gift_product and gift_product != empty
+                assign has_gift_associations = true
+                # 创建映射键: option_name|option_value
+                assign map_key = association.option_name | append: '|' | append: association.option_value
+                assign gift_association_map = gift_association_map | append: map_key | append: '::' | append: forloop.index0 | append: ';;'
+            endif
+        endfor
+    endif
 -%}
+
 
 {%- capture header -%}
     <header {{ title_block.shopify_attributes }} class="class-x margin-content">
@@ -563,7 +581,8 @@
                             endif
                         endif
                     -%}
-                    <{% if enable_options == false and block.settings.selection_type == 'dropdown' %}p{% else %}div{% endif %} class="f8pr-variant-selection no-zindex{% if is_color %} margin-x025{% endif %}" data-current-variant="{{ current_variant.id }}" {{ block.shopify_attributes }}>
+                    <div class="f8pr-variant-selection no-zindex{% if is_color %} margin-x025{% endif %}" data-current-variant="{{ current_variant.id }}" {{ block.shopify_attributes }}>
+                        
                         {%- if one_variant -%}
                             <input name="id" id="id-{{ section.id }}" value="{{ current_variant.id }}" type="hidden" form="{{ form_id }}">
                         {%- endif -%}
@@ -664,6 +683,22 @@
                             {% if enable_options %}
                                 <input name="id" id="id-{{ section.id }}" value="{{ current_variant.id }}" type="hidden" form="{{ form_id }}">
                                 {%- for option in product.options_with_values -%}
+                                    {%- comment -%} 为每个 option 检查是否有赠品关联 {%- endcomment -%}
+                                    {%- assign current_option_has_gift = false -%}
+                                    {%- assign current_option_gift_data = null -%}
+                                    {%- if has_gift_associations -%}
+                                        {%- for association in gift_associations_data.associations -%}
+                                            {%- if association.option_name == option.name -%}
+                                                {%- assign gift_product = all_products[association.gift_product_handle] -%}
+                                                {%- if gift_product and gift_product != empty -%}
+                                                    {%- assign current_option_has_gift = true -%}
+                                                    {%- assign current_option_gift_data = association -%}
+                                                    {%- break -%}
+                                                {%- endif -%}
+                                            {%- endif -%}
+                                        {%- endfor -%}
+                                    {%- endif -%}
+                                    
                                     {%- liquid
                                         assign is_color = false
                                         if settings.enable_color_swatches and color_triggers contains option.name
@@ -691,12 +726,100 @@
                                         endif
                                     -%}
                                     {% if selection_type == 'dropdown' %}
+                                        {%- comment -%} Dropdown版本：赠品卡片在select之前渲染 {%- endcomment -%}
+                                        {%- if current_option_has_gift and current_option_gift_data.option_name == option.name -%}
+                                            {%- liquid
+                                                assign gift_product = all_products[current_option_gift_data.gift_product_handle]
+                                                assign gift_variant_id = current_option_gift_data.gift_variant_id
+                                                if gift_variant_id == null or gift_variant_id == blank
+                                                    assign gift_variant = gift_product.selected_or_first_available_variant
+                                                    assign gift_variant_id = gift_variant.id
+                                                endif
+                                                assign gift_radio_id = 'gift-radio-' | append: option.name | handleize | append: '-' | append: section.id
+                                                
+                                                assign main_variant_id = null
+                                                assign option_position = null
+                                                for opt in product.options_with_values
+                                                    if opt.name == option.name
+                                                        assign option_position = forloop.index0
+                                                        break
+                                                    endif
+                                                endfor
+                                                
+                                                if option_position != null
+                                                    for variant in product.variants
+                                                        if option_position == 0 and variant.option1 == current_option_gift_data.option_value
+                                                            assign main_variant_id = variant.id
+                                                            break
+                                                        elsif option_position == 1 and variant.option2 == current_option_gift_data.option_value
+                                                            assign main_variant_id = variant.id
+                                                            break
+                                                        elsif option_position == 2 and variant.option3 == current_option_gift_data.option_value
+                                                            assign main_variant_id = variant.id
+                                                            break
+                                                        endif
+                                                    endfor
+                                                endif
+                                            -%}
+                                            
+                                            <div class="f8pr-gift-card" 
+                                                 data-option-name="{{ option.name }}"
+                                                 data-option-value="{{ current_option_gift_data.option_value }}"
+                                                 data-main-variant-id="{{ main_variant_id }}"
+                                                 data-gift-variant-id="{{ gift_variant_id }}">
+                                                <input type="radio" 
+                                                       id="{{ gift_radio_id }}"
+                                                       class="f8pr-gift-radio"
+                                                       name="options[{{ section.id }}-{{ option.name | escape }}]"
+                                                       value="{{ current_option_gift_data.option_value }}"
+                                                       data-gift-variant-id-attr="{{ gift_variant_id }}"
+                                                       form="{{ form_id }}">
+                                                
+                                                <label for="{{ gift_radio_id }}" class="gift-card-label gift-card-label-custom">
+                                                    <div class="gift-card-content">
+                                                        <div class="gift-card-header">
+                                                            <div class="gift-card-image">
+                                                                {% if gift_product.featured_image %}
+                                                                    <img src="{{ gift_product.featured_image | image_url: width: 80 }}" 
+                                                                         alt="{{ gift_product.title | escape }}" 
+                                                                         width="80"
+                                                                         height="80"
+                                                                         loading="lazy">
+                                                                {% endif %}
+                                                            </div>
+                                                            <div class="gift-card-title-wrapper">
+                                                                <div class="gift-card-title">
+                                                                  {{ gift_product.title }}
+                                                                  <span>Find your size with ring sizing kit for accurate data.</span>
+                                                                </div>
+                                                                {% comment %} {% if gift_product.price == 0 %} {% endcomment %}
+                                                                    <span class="gift-card-badge">FREE</span>
+                                                                {% comment %} {% else %}
+                                                                    <span class="gift-card-price">{{ gift_product.price | money }}</span>
+                                                                {% endif %} {% endcomment %}
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        {% if gift_product.description != blank %}
+                                                            <p class="gift-card-description">{{ gift_product.description | strip_html | truncatewords: 20 }}</p>
+                                                        {% endif %}
+                                                        
+                                                        <ul class="gift-card-features">
+                                                            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg> Perfect ring fit—no guesswork</li>
+                                                            <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg> Yours to keep and share—no returns required</li>
+                                                        </ul>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        {%- endif -%}
+                                        
                                         <p class="no-js-hidden">
                                             {% if block.settings.show_variant_label %}
                                                 <label for="option-{{ section.id }}-{{ forloop.index0 }}">
                                                     {% if option.name == 'Title' %}{{ 'product.form.choose_option' | t }}{% else %}{{ option.name }}{% endif %}
                                                 </label>
                                             {% endif %}
+                                            
                                             <select id="option-{{ section.id }}-{{ forloop.index0 }}"
                                                     name="options[{{ section.id }}-{{ option.name | escape }}]"
                                                     data-template="{{ section.id }}"
@@ -704,6 +827,19 @@
                                                     required
                                             >
                                                 {%- for value in option.values -%}
+                                                    {%- comment -%} 检查此选项值是否被赠品关联 {%- endcomment -%}
+                                                    {%- liquid
+                                                        assign is_gift_associated = false
+                                                        if has_gift_associations
+                                                            assign check_key = option.name | append: '|' | append: value
+                                                            if gift_association_map contains check_key
+                                                                assign is_gift_associated = true
+                                                            endif
+                                                        endif
+                                                    -%}
+                                                    {%- if is_gift_associated -%}
+                                                        {%- continue -%}
+                                                    {%- endif -%}
                                                     {% capture swatch %}
                                                         {% if value.swatch.image %}
                                                             data-color="url('{{ value.swatch.image | image_url }}')"
@@ -750,63 +886,174 @@
                                         {% if block.settings.show_variant_label %}
                                             <label for="f8pr-ul-check-{{ forloop.index | plus: 1 }}">{% if option.name == 'Title' %}{{ 'product.form.choose_option' | t }}{% else %}{{ option.name }}{% endif %}{% if is_color %} <span class="data-change-to-option-{{ section.id }}-{{ forloop.index0 }}">{{ option.selected_value }}</span>{% endif %}</label>
                                         {% endif %}
+                                        
                                         <ul id="f8pr-ul-check-{{ forloop.index | plus: 1 }}" class="check {% if show_images == false and is_color %}color{% else %}box{% endif %}" class="no-js-hidden">
                                             {%- for value in option.values -%}
-                                                {% capture swatch %}
-                                                    {% if value.swatch.image %}
-                                                        <i aria-hidden="true" class="icon-circle" style="--color: url('{{ value.swatch.image | image_url }}');"></i>
-                                                    {% elsif value.swatch.color %}
-                                                        <i aria-hidden="true" class="icon-circle" style="--color: {{ value.swatch.color }};"></i>
-                                                    {% else %}
-                                                        <i aria-hidden="true" class="icon-circle swatch-custom-color-{{ value | handleize }}" style="--color: {{ value | split: ' ' | last }};"></i>
-                                                    {% endif %}
-                                                {% endcapture %}
-                                                <li>
-                                                    <input type="radio"
-                                                           data-product-url="{{ value.product_url }}"
-                                                           data-option-value-id="{{ value.id }}"
-                                                           id="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
-                                                           value="{{ value | escape }}"
-                                                           name="options[{{ section.id }}-{{ option.name | escape }}]"
-                                                           title="{{ value }}"
-                                                           {% if value.selected %}checked{% endif %}
-                                                           data-template="{{ section.id }}"
-                                                        {% if is_color %}data-change=".data-change-to-option-{{ section.id }}-{{ forloop.parentloop.index0 }}"{% endif %}
-                                                           form="{{ form_id }}"
-                                                            {% unless value.variant.available or is_color %}
-                                                                class="disabled"
-                                                            {% endunless %}
-                                                    >
-                                                    <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}">
-                                                        {% if show_images -%}
-                                                            {%- liquid
-                                                                if value.product_url
-                                                                    if value.variant
-                                                                        assign value_img = value.variant.product.featured_image
-                                                                    else
-                                                                        assign value_product_handle = value.product_url | split: '/' | last
-                                                                        assign value_product = all_products[value_product_handle]
-                                                                        assign value_img = value_product.featured_image
-                                                                    endif
-                                                                else
-                                                                    assign value_img = value.variant.image
+                                                {%- comment -%} 检查此选项值是否被赠品关联 {%- endcomment -%}
+                                                {%- liquid
+                                                    assign is_gift_associated = false
+                                                    assign current_value_gift_data = null
+                                                    if has_gift_associations
+                                                        assign check_key = option.name | append: '|' | append: value
+                                                        if gift_association_map contains check_key
+                                                            assign is_gift_associated = true
+                                                            for association in gift_associations_data.associations
+                                                                if association.option_name == option.name and association.option_value == value
+                                                                    assign current_value_gift_data = association
+                                                                    break
                                                                 endif
-                                                            -%}
-                                                            {% if value_img %}
-                                                                <span class="img{% if settings.multiply_product_images == 'multiply' %} img-multiply{% elsif settings.multiply_product_images == 'multiply-bg' %} img-multiply-bg{% endif %}">
-                                                                    <img src="{% if section.settings.fill_images %}{{ value_img | image_url: width: image_width_small, height: image_height_small, crop: 'center' }}{% else %}{{ value_img | image_url: width: image_width_small, height: image_height_small, pad_color: 'fff' }}{% endif %}" alt="{{ value }}" width="30" height="23" loading="lazy">
-                                                                </span>
-                                                            {% endif %}
-                                                            {% unless is_color %}
-                                                                <span>{{ value }}</span>
-                                                            {% endunless %}
-                                                        {% elsif is_color %}
-                                                            {{ swatch }}
+                                                            endfor
+                                                        endif
+                                                    endif
+                                                -%}
+                                                
+                                                {%- if is_gift_associated -%}
+                                                    {%- comment -%} 渲染赠品卡片样式（替代普通按钮） {%- endcomment -%}
+                                                    {%- liquid
+                                                        assign gift_product = all_products[current_value_gift_data.gift_product_handle]
+                                                        assign gift_variant_id = current_value_gift_data.gift_variant_id
+                                                        if gift_variant_id == null or gift_variant_id == blank
+                                                            assign gift_variant = gift_product.selected_or_first_available_variant
+                                                            assign gift_variant_id = gift_variant.id
+                                                        endif
+                                                        assign gift_radio_id = 'gift-radio-' | append: option.name | handleize | append: '-' | append: value | handleize | append: '-' | append: section.id
+                                                        
+                                                        assign main_variant_id = null
+                                                        assign option_position = null
+                                                        for opt in product.options_with_values
+                                                            if opt.name == option.name
+                                                                assign option_position = forloop.index0
+                                                                break
+                                                            endif
+                                                        endfor
+                                                        
+                                                        if option_position != null
+                                                            for variant in product.variants
+                                                                if option_position == 0 and variant.option1 == value
+                                                                    assign main_variant_id = variant.id
+                                                                    break
+                                                                elsif option_position == 1 and variant.option2 == value
+                                                                    assign main_variant_id = variant.id
+                                                                    break
+                                                                elsif option_position == 2 and variant.option3 == value
+                                                                    assign main_variant_id = variant.id
+                                                                    break
+                                                                endif
+                                                            endfor
+                                                        endif
+                                                    -%}
+                                                    
+                                                    <li class="f8pr-gift-option">
+                                                        <div class="f8pr-gift-card" 
+                                                             data-option-name="{{ option.name }}"
+                                                             data-option-value="{{ value }}"
+                                                             data-main-variant-id="{{ main_variant_id }}"
+                                                             data-gift-variant-id="{{ gift_variant_id }}">
+                                                            <input type="radio" 
+                                                                   id="{{ gift_radio_id }}"
+                                                                   class="f8pr-gift-radio"
+                                                                   name="options[{{ section.id }}-{{ option.name | escape }}]"
+                                                                   value="{{ value | escape }}"
+                                                                   data-gift-variant-id-attr="{{ gift_variant_id }}"
+                                                                   data-template="{{ section.id }}"
+                                                                   {% if value.selected %}checked{% endif %}
+                                                                   form="{{ form_id }}">
+                                                            
+                                                            <label for="{{ gift_radio_id }}" class="gift-card-label gift-card-label-custom">
+                                                                <div class="gift-card-content">
+                                                                    <div class="gift-card-header">
+                                                                        <div class="gift-card-image">
+                                                                            {% if gift_product.featured_image %}
+                                                                                <img src="{{ gift_product.featured_image | image_url: width: 80 }}" 
+                                                                                     alt="{{ gift_product.title | escape }}" 
+                                                                                     width="80"
+                                                                                     height="80"
+                                                                                     loading="lazy">
+                                                                            {% endif %}
+                                                                        </div>
+                                                                        <div class="gift-card-title-wrapper">
+                                                                            <div class="gift-card-title">
+                                                                              {{ gift_product.title }}
+                                                                              <span>Find your size with ring sizing kit for accurate data.</span>
+                                                                            </div>
+                                                                            {% comment %} {% if gift_product.price == 0 %} {% endcomment %}
+                                                                                <span class="gift-card-badge">FREE</span>
+                                                                            {% comment %} {% else %}
+                                                                                <span class="gift-card-price">{{ gift_product.price | money }}</span>
+                                                                            {% endif %} {% endcomment %}
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    {% if gift_product.description != blank %}
+                                                                        <p class="gift-card-description">{{ gift_product.description | strip_html | truncatewords: 20 }}</p>
+                                                                    {% endif %}
+                                                                    
+                                                                    <ul class="gift-card-features">
+                                                                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg> Perfect ring fit—no guesswork</li>
+                                                                        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg> Yours to keep and share—no returns required</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                {%- else -%}
+                                                    {%- comment -%} 渲染普通选项按钮 {%- endcomment -%}
+                                                    {% capture swatch %}
+                                                        {% if value.swatch.image %}
+                                                            <i aria-hidden="true" class="icon-circle" style="--color: url('{{ value.swatch.image | image_url }}');"></i>
+                                                        {% elsif value.swatch.color %}
+                                                            <i aria-hidden="true" class="icon-circle" style="--color: {{ value.swatch.color }};"></i>
                                                         {% else %}
-                                                            <span>{{ value }}</span>
+                                                            <i aria-hidden="true" class="icon-circle swatch-custom-color-{{ value | handleize }}" style="--color: {{ value | split: ' ' | last }};"></i>
                                                         {% endif %}
-                                                    </label>
-                                                </li>
+                                                    {% endcapture %}
+                                                    <li>
+                                                        <input type="radio"
+                                                               data-product-url="{{ value.product_url }}"
+                                                               data-option-value-id="{{ value.id }}"
+                                                               id="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}"
+                                                               value="{{ value | escape }}"
+                                                               name="options[{{ section.id }}-{{ option.name | escape }}]"
+                                                               title="{{ value }}"
+                                                               {% if value.selected %}checked{% endif %}
+                                                               data-template="{{ section.id }}"
+                                                            {% if is_color %}data-change=".data-change-to-option-{{ section.id }}-{{ forloop.parentloop.index0 }}"{% endif %}
+                                                               form="{{ form_id }}"
+                                                                {% unless value.variant.available or is_color %}
+                                                                    class="disabled"
+                                                                {% endunless %}
+                                                        >
+                                                        <label for="option-{{ section.id }}-{{ forloop.parentloop.index0 }}-{{ forloop.index0 }}">
+                                                            {% if show_images -%}
+                                                                {%- liquid
+                                                                    if value.product_url
+                                                                        if value.variant
+                                                                            assign value_img = value.variant.product.featured_image
+                                                                        else
+                                                                            assign value_product_handle = value.product_url | split: '/' | last
+                                                                            assign value_product = all_products[value_product_handle]
+                                                                            assign value_img = value_product.featured_image
+                                                                        endif
+                                                                    else
+                                                                        assign value_img = value.variant.image
+                                                                    endif
+                                                                -%}
+                                                                {% if value_img %}
+                                                                    <span class="img{% if settings.multiply_product_images == 'multiply' %} img-multiply{% elsif settings.multiply_product_images == 'multiply-bg' %} img-multiply-bg{% endif %}">
+                                                                        <img src="{% if section.settings.fill_images %}{{ value_img | image_url: width: image_width_small, height: image_height_small, crop: 'center' }}{% else %}{{ value_img | image_url: width: image_width_small, height: image_height_small, pad_color: 'fff' }}{% endif %}" alt="{{ value }}" width="30" height="23" loading="lazy">
+                                                                    </span>
+                                                                {% endif %}
+                                                                {% unless is_color %}
+                                                                    <span>{{ value }}</span>
+                                                                {% endunless %}
+                                                            {% elsif is_color %}
+                                                                {{ swatch }}
+                                                            {% else %}
+                                                                <span>{{ value }}</span>
+                                                            {% endif %}
+                                                        </label>
+                                                    </li>
+                                                {%- endif -%}
                                             {%- endfor -%}
                                         </ul>
                                     {% endif %}
@@ -875,7 +1122,7 @@
                                 </div>
                             {%- endfor -%}
                         {% endif %}
-                    </{% if enable_options == false and block.settings.selection_type == 'dropdown' %}p{% else %}div{% endif %}>
+                    </div>
                 {%- when 'inventory' -%}
                     <div class="f8pr-stock margin-content">
                         {%- render 'product-deliverytime',
@@ -1558,6 +1805,11 @@
             <!-- Start of Judge.me code --><div style='clear:both'></div><div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}' data-auto-install='false'>{{ product.metafields.judgeme.widget }}</div><!-- End of Judge.me code -->
         </div>
     </div>
+    
+    {%- comment -%} Product JSON for gift associations script {%- endcomment -%}
+    <script type="application/json" data-product-id="{{ product.id }}">
+    {{ product | json }}
+    </script>
 </article>
 
 {%- comment -%} 移动端吸底加购按钮 {%- endcomment -%}

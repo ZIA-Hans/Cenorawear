@@ -493,3 +493,310 @@ html:not([dir="rtl"]) .f8pr.sticky { position: sticky; top: var(--stick); z-inde
 .l4pr .swiper-pagination-bullet:nth-child(5) .crnt-no { opacity: 1; transform: none; }
 }
 
+/* 赠品关联样式 - 新版卡片设计 */
+.f8pr-gift-card {
+    position: relative;
+    margin-bottom: var(--main_mr);
+}
+
+.f8pr-gift-option {
+    width: 100% !important;
+    margin-bottom: 0;
+}
+
+.f8pr-gift-radio,
+.f8pr-size-radio {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* 赠品卡片label基础样式 */
+.gift-card-label {
+    display: block;
+    position: relative;
+    padding: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.gift-card-label:hover {
+    border-color: #9ca3af;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.f8pr-gift-radio:checked ~ .gift-card-label {
+    border-color: var(--theme_bg, #000);
+    border-width: 2px;
+}
+
+.f8pr-gift-radio:checked ~ .gift-card-label .gift-card-title,
+.f8pr-gift-radio:checked ~ .gift-card-label .gift-card-description,
+.f8pr-gift-radio:checked ~ .gift-card-label .gift-card-features li,
+.f8pr-gift-radio:checked ~ .gift-card-label .gift-card-badge,
+.f8pr-gift-radio:checked ~ .gift-card-label .gift-card-price {
+    color: inherit;
+}
+
+/* 
+   自定义赠品卡片样式
+   用法：在liquid中为label添加此class
+   <label class="gift-card-label gift-card-label-custom">
+*/
+.gift-card-label.gift-card-label-custom {
+    padding: 20px !important;
+    position: relative;
+    color: unset !important;
+    
+    /* 示例：添加更多内边距 */
+    /* padding: 24px; */
+    
+    /* 示例：自定义边框 */
+    /* border-width: 2px; */
+    /* border-color: #custom-color; */
+    
+    /* 示例：自定义背景 */
+    /* background: #fff; */
+}
+
+/* 选中状态下的padding调整 */
+/* .f8pr-gift-radio:checked ~ .gift-card-label.gift-card-label-custom {
+    padding: 19px !important;
+} */
+
+
+.gift-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+	width: 100%;
+}
+
+.gift-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding-right: 55px;
+}
+
+.gift-card-image {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.gift-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gift-card-title-wrapper {
+    flex: 1;
+    min-width: 0;
+    padding-top: 2px;
+}
+
+.gift-card-title {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+    margin: 6px 0 6px;
+    font-size: 1.0625em;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.4;
+}
+
+.gift-card-title span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6b7280;
+    line-height: 1.4;
+}
+
+.gift-card-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    background: #dc2626;
+    color: white;
+    font-size: 0.6875em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+.gift-card-price {
+    color: var(--primary_text);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.gift-card-description {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.875em;
+    line-height: 1.6;
+}
+
+.gift-card-features {
+    margin: 4px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gift-card-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 0.875em;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.gift-card-features li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+    color: #111827;
+}
+
+/* 可折叠的"已知尺寸"部分 */
+.f8pr-know-size-toggle {
+    margin-bottom: var(--main_mr);
+}
+
+.know-size-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border: 2px solid var(--input_bd);
+    border-radius: 8px;
+    background: var(--white);
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--primary_text);
+    transition: all 0.2s ease;
+    margin-bottom: 0;
+}
+
+.know-size-label:hover {
+    border-color: var(--theme_bg);
+}
+
+.f8pr-size-radio:checked ~ .know-size-label {
+    border-color: var(--theme_bg);
+    background: var(--theme_bg_light, rgba(var(--theme_bg_rgb), 0.05));
+}
+
+.know-size-label .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.f8pr-size-radio:checked ~ .know-size-label .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.know-size-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0;
+}
+
+.f8pr-size-radio:checked ~ .know-size-content {
+    max-height: 500px;
+    padding-top: 16px;
+}
+
+.size-dropdown-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--primary_text);
+}
+
+.size-status {
+    color: #6b7280;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}
+
+/* 当赠品选中时，隐藏标准尺寸选择器 */
+.f8pr-gift-radio:checked ~ .f8pr-know-size-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .gift-card-label {
+        padding: 16px;
+    }
+    
+    .f8pr-gift-radio:checked ~ .gift-card-label {
+        padding: 15px;
+    }
+    
+    .gift-card-header {
+        gap: 14px;
+        padding-right: 50px;
+    }
+    
+    .gift-card-image {
+        width: 50px;
+        height: 50px;
+        padding: 6px;
+    }
+    
+    .gift-card-title {
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+    
+    .gift-card-badge {
+        top: 16px;
+        right: 16px;
+        padding: 2px 7px;
+        font-size: 0.65em;
+    }
+    
+    .gift-card-description {
+        font-size: 0.8125em;
+    }
+    
+    .gift-card-features {
+        gap: 8px;
+        margin-top: 3px;
+    }
+    
+    .gift-card-features li {
+        font-size: 0.8125em;
+        gap: 10px;
+    }
+    
+    .gift-card-features li svg {
+        width: 16px;
+        height: 16px;
+    }
+}

@@ -1,0 +1,200 @@
+/* 赠品关联样式 - 新版卡片设计 */
+.f8pr-gift-card {
+    position: relative;
+    margin-bottom: var(--main_mr);
+}
+
+.f8pr-gift-radio,
+.f8pr-size-radio {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.f8pr-gift-card label {
+    display: block;
+    padding: 20px;
+    border: 2px solid var(--input_bd);
+    border-radius: 8px;
+    background: var(--white);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.f8pr-gift-card label:hover {
+    border-color: var(--theme_bg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.gift-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.gift-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.gift-card-image {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--input_bg);
+}
+
+.gift-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gift-card-title-wrapper {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.gift-card-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background: #10b981;
+    color: white;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.gift-card-price {
+    color: var(--primary_text);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.gift-card-description {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.gift-card-features {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gift-card-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.9em;
+    color: var(--primary_text);
+}
+
+.gift-card-features li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: #10b981;
+}
+
+/* 可折叠的"已知尺寸"部分 */
+.f8pr-know-size-toggle {
+    margin-bottom: var(--main_mr);
+}
+
+.know-size-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border: 2px solid var(--input_bd);
+    border-radius: 8px;
+    background: var(--white);
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--primary_text);
+    transition: all 0.2s ease;
+    margin-bottom: 0;
+}
+
+.know-size-label:hover {
+    border-color: var(--theme_bg);
+}
+
+.f8pr-size-radio:checked ~ .know-size-label {
+    border-color: var(--theme_bg);
+    background: var(--theme_bg_light, rgba(var(--theme_bg_rgb), 0.05));
+}
+
+.know-size-label .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.f8pr-size-radio:checked ~ .know-size-label .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.know-size-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0;
+}
+
+.f8pr-size-radio:checked ~ .know-size-content {
+    max-height: 500px;
+    padding-top: 16px;
+}
+
+.size-dropdown-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--primary_text);
+}
+
+.size-status {
+    color: #6b7280;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 760px) {
+    .gift-card-header {
+        gap: 12px;
+    }
+    
+    .gift-card-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .gift-card-title {
+        font-size: 1em;
+    }
+    
+    .gift-card-description {
+        font-size: 0.85em;
+    }
+    
+    .gift-card-features {
+        gap: 6px;
+    }
+    
+    .gift-card-features li {
+        font-size: 0.85em;
+    }
+}
