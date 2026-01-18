@@ -222,7 +222,7 @@
 
 /*#nav-user {}*/
 #nav-user > ul > li.sub.toggle > a:before { transform: rotate(180deg); }
-#nav-user li > ul, #nav-user li > form, .l4dr li > ul, .l4dr form { overflow-x: hidden; overflow-y: auto; position: absolute; left: var(--lar0); right: var(--l0ra); top: calc(100% + 15px); list-style: none; /*min-width: calc(var(--main_fz) * 11);*/ max-height: 40vh; margin: 0; padding: calc(var(--cols_spacing) * 0.5) var(--cols_spacing); box-shadow: 0 20px 60px rgba(0,0,0,.08); border-radius: var(--b2r); background: var(--drop_nav_bg); color: var(--drop_nav_fg); white-space: nowrap; --cols_spacing: var(--rpp); }
+#nav-user li > ul, #nav-user li > form, .l4dr li > ul, .l4dr form { overflow-x: hidden; overflow-y: auto; position: absolute; left: var(--lar0); right: var(--l0ra); top: calc(100% + 15px); list-style: none; /*min-width: calc(var(--main_fz) * 11);*/ max-height: 40vh; margin: 0; padding: calc(var(--cols_spacing) * 0.5) var(--cols_spacing); box-shadow: 0 20px 60px rgba(0,0,0,.08); border-radius: var(--b2r); background: linear-gradient(133deg,#fdf2e9 9%,#fdf6ed 47%,#fdf2e9 86%); color: var(--drop_nav_fg); white-space: nowrap; --cols_spacing: var(--rpp); }
 #nav-user li > form ul { list-style: none; margin: 0; padding: 0; }
 #nav-user li > ul li, #nav-user li > form li, .l4dr ul li { position: relative; z-index: 2; margin: 0; --b2r: 99px; }
 #nav-user li > ul li a, #nav-user li > form li a, .l4dr ul a { display: flex; align-items: center; }

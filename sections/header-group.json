@@ -17,19 +17,18 @@
         "announcement-1": {
           "type": "text",
           "settings": {
-            "text": "Shout out your big announcement here!"
+            "text": "<strong>Free Shipping</strong> on Smart Rings – Starting from <strong>$89.99</strong>"
           }
         }
       },
       "block_order": [
         "announcement-1"
       ],
-      "disabled": true,
       "settings": {
         "color_palette": "scheme-2",
         "height": "s",
         "font": "secondary",
-        "font_size": "16px",
+        "font_size": "14px",
         "enable_slider_arrows": true,
         "enable_slider_autoplay": false,
         "slider_autoplay_seconds": 3
@@ -44,7 +43,7 @@
           "settings": {
             "icon": "bell",
             "image_width": 40,
-            "usp": "<strong>Free exchange</strong> of products within 30 days",
+            "usp": "Black Friday Mega Sale — Cenorawear Smart Ring from $89.99!",
             "link_styling": "underline"
           }
         },

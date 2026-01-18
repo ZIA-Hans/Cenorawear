@@ -626,7 +626,7 @@
             "text_position": "align-end text-start",
             "title": "<h3>Cenora Wear S1 Smart Ring</h3>",
             "title_underline_style": "none",
-            "text": "<p>$149.99</p>",
+            "text": "<p>$119.99</p>",
             "enable_custom_font_styling": true,
             "font_size": "18px",
             "show_link": true,
@@ -648,7 +648,7 @@
             "text_position": "align-end text-start",
             "title": "<h3>Cenora Wear S2 Smart Ring</h3>",
             "title_underline_style": "secondary_font",
-            "text": "<p>$129.99</p>",
+            "text": "<p>$89.99</p>",
             "enable_custom_font_styling": false,
             "font_size": "18px",
             "show_link": true,
@@ -682,59 +682,6 @@
         "layout_mobile": "rows",
         "mobile_height": "16/9",
         "spacing_desktop": 100,
-        "spacing_mobile": 30,
-        "fix_zindex": 0
-      }
-    },
-    "section_logo_list_XMhGRd": {
-      "type": "section-logo-list",
-      "blocks": {
-        "logo_6RiaLF": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/rohs_a_1.png",
-            "link": ""
-          }
-        },
-        "logo_mLcprR": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Conformite_Europeenne__logo.svg",
-            "link": ""
-          }
-        },
-        "logo_Djjbkr": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/FCC.png",
-            "link": ""
-          }
-        },
-        "logo_mTWX9X": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/IP68.png",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_6RiaLF",
-        "logo_mLcprR",
-        "logo_Djjbkr",
-        "logo_mTWX9X"
-      ],
-      "name": "t:sections.logo_list.presets.name",
-      "settings": {
-        "number_of_items": 4,
-        "text_alignment": "start",
-        "title": "<h2>Certified for Quality & Safety</h2>",
-        "title_underline_style": "none",
-        "show_link": true,
-        "link_text": "Button",
-        "link_url": "",
-        "button_style": "primary plain",
-        "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
       }
@@ -833,6 +780,59 @@
         "layout_mobile": "rows",
         "mobile_height": "16/9",
         "spacing_desktop": 20,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_logo_list_XMhGRd": {
+      "type": "section-logo-list",
+      "blocks": {
+        "logo_6RiaLF": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/rohs_a_1.png",
+            "link": ""
+          }
+        },
+        "logo_mLcprR": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Conformite_Europeenne__logo.svg",
+            "link": ""
+          }
+        },
+        "logo_Djjbkr": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/FCC.png",
+            "link": ""
+          }
+        },
+        "logo_mTWX9X": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/IP68.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_6RiaLF",
+        "logo_mLcprR",
+        "logo_Djjbkr",
+        "logo_mTWX9X"
+      ],
+      "name": "t:sections.logo_list.presets.name",
+      "settings": {
+        "number_of_items": 4,
+        "text_alignment": "start",
+        "title": "<h2>Certified for Quality & Safety</h2>",
+        "title_underline_style": "none",
+        "show_link": true,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "spacing_desktop": 50,
         "spacing_mobile": 30,
         "fix_zindex": 0
       }
@@ -1250,12 +1250,12 @@
     "section_flexible_iCTgHc",
     "section_promo_gallery_rFHfEq",
     "section_banner_columns_rQCz6d",
-    "section_logo_list_XMhGRd",
-    "section_featured_products_b88Arj",
     "section_banner_columns_pKQtxg",
-    "section_flexible_yrVCyH",
+    "section_featured_products_b88Arj",
+    "section_banner_columns_MzHpHh",
     "section_masonry_N4ALCd",
     "section_image_with_text_J4GyFa",
-    "section_banner_columns_MzHpHh"
+    "section_logo_list_XMhGRd",
+    "section_flexible_yrVCyH"
   ]
 }

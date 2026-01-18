@@ -57,6 +57,20 @@
             "split_menu": false
           }
         },
+        "customer_support_Q4Y3p3": {
+          "type": "customer_support",
+          "settings": {
+            "title": "Customer service",
+            "title_underline_style": "none",
+            "customer_support_img_width": 165,
+            "customer_support_img_rounded": false,
+            "text": "<p><strong>Company Name: </strong>Guangzhou Back to Earth Technology Co., Ltd.</p><p><strong>Official Address</strong>: Room C1985, 103rd Room, No.137 Heguang Road, Tianhe District, Guangzhou City, Guangdong Province, 510630, China</p>",
+            "show_phone_link": true,
+            "show_mail_link": true,
+            "show_whatsapp_link": false,
+            "enable_follow_on_shop": false
+          }
+        },
         "newsletter_B9NXVy": {
           "type": "newsletter",
           "settings": {
@@ -71,6 +85,7 @@
       },
       "block_order": [
         "29fd4919-250d-4101-b146-11305de34929",
+        "customer_support_Q4Y3p3",
         "newsletter_B9NXVy"
       ],
       "custom_css": [],
@@ -99,11 +114,22 @@
         "spacing_desktop": 0,
         "spacing_mobile": 0
       }
+    },
+    "section_custom_html_kVt8RD": {
+      "type": "section-custom-html",
+      "name": "t:sections.custom_html.presets.name",
+      "settings": {
+        "custom_html": "<div style=\"justify-content:center;text-align: center;margin: 10px 0 10px 0;\">\n<img style=\"display: inline-block;margin: 0 3px;width:38px !important;height:24px !important\" alt=\"\" src=\"https://mds.oceanpayment.com/assets/shopifylogo/svg/visa.svg\"><img style=\"display: inline-block;margin: 0 3px;width:38px !important;height:24px !important\" alt=\"\" src=\"https://mds.oceanpayment.com/assets/shopifylogo/svg/mastercard.svg\"><img style=\"display: inline-block;margin: 0 3px;width:38px !important;height:24px !important\" alt=\"\" src=\"https://mds.oceanpayment.com/assets/shopifylogo/svg/maestro.svg\"><img style=\"display: inline-block;margin: 0 3px;width:38px !important;height:24px !important\" alt=\"\" src=\"https://mds.oceanpayment.com/assets/shopifylogo/svg/diners_club.svg\"><img style=\"display: inline-block;margin: 0 3px;width:38px !important;height:24px !important\" alt=\"\" src=\"https://mds.oceanpayment.com/assets/shopifylogo/svg/discover.svg\"><img style=\"display: inline-block;margin: 0 3px;width:38px !important;height:24px !important\" alt=\"\" src=\"https://mds.oceanpayment.com/assets/shopifylogo/svg/apple_pay.svg\"><img style=\"display: inline-block;margin: 0 3px;width:38px !important;height:24px !important\" alt=\"\" src=\"https://mds.oceanpayment.com/assets/shopifylogo/svg/google_pay.svg\">\n</div>",
+        "spacing_desktop": 20,
+        "spacing_mobile": 10,
+        "fix_zindex": 0
+      }
     }
   },
   "order": [
     "d98b3ac8-7ae9-4216-8ceb-bdc22eabaea6",
     "079a5c12-7037-48f8-a08a-479ffef5391f",
-    "footer"
+    "footer",
+    "section_custom_html_kVt8RD"
   ]
 }

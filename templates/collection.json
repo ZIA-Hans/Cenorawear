@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "breadcrumbs": {
@@ -46,7 +55,9 @@
         "pagination_type": "button",
         "show_amount_of_products_in_collection": true,
         "products_per_row": 3,
+        "enable_secondary_products_per_row": true,
         "secondary_products_per_row": 4,
+        "default_grid": "primary",
         "fill_images": true,
         "fill_not_first": true,
         "images_padding": 0,
@@ -57,6 +68,7 @@
         "enable_collections": true,
         "filters_layout": "drawer",
         "enable_filters_checkboxes": true,
+        "filter_menu": "main-menu",
         "collections_menu": [],
         "main_menu_items_clickable": true,
         "filter_sticky": true,
@@ -66,6 +78,8 @@
         "image_swatches_size": "xs",
         "image_swatches_fill_images": true,
         "image_swatches_show_in_circle": true,
+        "enable_secondary_products_per_row_mobile": true,
+        "default_grid_mobile": "2",
         "fix_zindex": 1
       }
     },
@@ -78,7 +92,11 @@
     },
     "965cc171-3bf5-4f7c-b5de-dcced37badd4": {
       "type": "section-collection-list",
+      "disabled": true,
       "settings": {
+        "collections": [
+          "frontpage"
+        ],
         "custom_image_ratio": 100,
         "show_in_circle": false,
         "fill_images": false,

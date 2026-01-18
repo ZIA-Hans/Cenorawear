@@ -95,7 +95,7 @@
     "product_text_size": "13px",
     "productcard_sale_highlight": true,
     "show_price_varies": false,
-    "productcards_show_tax": true,
+    "productcards_show_tax": false,
     "show_product_rating": false,
     "color_swatches_variant_image": false,
     "enable_free_shipping": true,

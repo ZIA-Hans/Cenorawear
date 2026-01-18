@@ -84,6 +84,23 @@
             "sizechart_html": ""
           }
         },
+        "complementary_products_ijGMKw": {
+          "type": "complementary_products",
+          "settings": {
+            "layout": "accordion",
+            "collapse": false,
+            "title_size": "h2",
+            "title": "Add Charging Case: Longer Lasting, More Convenient",
+            "icon": "star-outline",
+            "header_image_width": 25,
+            "products_show_image": true,
+            "products_show_vendor": false,
+            "products_show_title": true,
+            "products_show_rating": false,
+            "products_show_price": true,
+            "products_show_stock": false
+          }
+        },
         "buy_button": {
           "type": "buy_button",
           "settings": {
@@ -128,6 +145,7 @@
         "price",
         "variant_selection",
         "sizechart_TjW7wd",
+        "complementary_products_ijGMKw",
         "buy_button",
         "content_byJPWH",
         "e56259a8-d9d4-4116-ba68-a3567a075824"

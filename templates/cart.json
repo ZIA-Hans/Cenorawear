@@ -11,6 +11,7 @@
   "sections": {
     "breadcrumbs": {
       "type": "breadcrumbs",
+      "disabled": true,
       "settings": {
         "hide_mobile": false,
         "back_button": false
@@ -26,9 +27,8 @@
         },
         "3624e8f9-a5a3-4b0b-be1f-dae50b6fce40": {
           "type": "usp",
-          "disabled": true,
           "settings": {
-            "usp": "<p>Give your customers more details</p>"
+            "usp": "<p>Use code ' CENORA ' for 10% off!</p>"
           }
         },
         "17a13ba4-a5aa-4b7c-895c-8c47d698ccec": {
