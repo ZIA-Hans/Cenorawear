@@ -726,6 +726,7 @@
                                         endif
                                     -%}
                                     {% if selection_type == 'dropdown' %}
+                                        {% comment %} 基本不会使用dropdown渲染模式，所有特性不用管 {% endcomment %}
                                         {%- comment -%} Dropdown版本：赠品卡片在select之前渲染 {%- endcomment -%}
                                         {%- if current_option_has_gift and current_option_gift_data.option_name == option.name -%}
                                             {%- liquid
@@ -944,6 +945,10 @@
                                                     -%}
                                                     
                                                     <li class="f8pr-gift-option">
+                                                        <div class="f8pr-gift-option-title">
+                                                            <span>Choose your favorite gift—complimentary with your order</span>
+                                                            <svg id="gift-info-icon-{{ section.id }}" class="icon gift-info-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19908" width="24" height="24" style="cursor: pointer;"><path d="M512 26.819048c-268.190476 0-485.180952 216.990476-485.180952 485.180952s216.990476 485.180952 485.180952 485.180952c265.752381 0 485.180952-216.990476 485.180952-485.180952s-216.990476-485.180952-485.180952-485.180952z m60.952381 799.695238h-119.466667v-90.209524h119.466667v90.209524z m53.638095-319.390476c-26.819048 41.447619-53.638095 78.019048-53.638095 131.657142v31.695238h-119.466667v-36.571428c0-36.571429 29.257143-124.342857 75.580953-182.857143 82.895238-107.27619 31.695238-163.352381-75.580953-126.780952-65.828571 21.942857-119.466667 48.761905-119.466666 48.761904v-119.466666s87.771429-58.514286 177.980952-58.514286c160.914286 0 177.980952 119.466667 177.980952 158.476191 2.438095 63.390476-41.447619 119.466667-63.390476 153.6z" fill="#808080" p-id="19909"></path></svg>
+                                                        </div>
                                                         <div class="f8pr-gift-card" 
                                                              data-option-name="{{ option.name }}"
                                                              data-option-value="{{ value }}"
@@ -1788,6 +1793,46 @@
                     {%- endif -%}
                 {%- endcase -%}
             {%- endfor -%}
+            
+            {%- comment -%} Gift information modal - placed at the top level to avoid z-index conflicts {%- endcomment -%}
+            <b-modal id="gift-info-modal-{{ section.id }}" title="How to use the ring sizing kit?" footer-hidden width="600">
+                <div class="gift-modal-content">
+                    <div class="sizing-kit-steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Order your ring and select the Sizing Kit</h4>
+                                <p>When purchasing your ring, make sure to select the free Sizing Kit as your complimentary gift</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Receive your Sizing Kit within standard delivery time</h4>
+                                <p>We'll prioritize shipping your Sizing Kit so you can measure in advance</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Find your perfect ring size with the Sizing Kit</h4>
+                                <p>Try on different sizing rings to find the most comfortable and accurate fit</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Email us your ring size using your order email</h4>
+                                <p>Once you've determined your size, contact us at <a href="mailto:service@cenorawear.com" style="color: #667eea; text-decoration: underline;">service@cenorawear.com</a> via your order email and we'll ship your ring right away</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </b-modal>
+            
             {%- unless variant_selection_block %}
                 <input name="id" value="{{ current_variant.id }}" type="hidden" form="{{ form_id }}" class="f8pr-fallback-id-input">
             {%- endunless -%}
@@ -3633,3 +3678,23 @@
   ]
 }
 {% endschema %}
+
+<script>
+  // Gift information modal handler
+  document.addEventListener('DOMContentLoaded', function() {
+    const giftInfoIcon = document.getElementById('gift-info-icon-{{ section.id }}');
+    const giftInfoModal = document.getElementById('gift-info-modal-{{ section.id }}');
+    
+    if (giftInfoIcon && giftInfoModal) {
+      // Open modal on icon click
+      giftInfoIcon.addEventListener('click', function() {
+        giftInfoModal.open = true;
+      });
+      
+      // Cancel button event
+      giftInfoModal.addEventListener('cancel', function() {
+        giftInfoModal.open = false;
+      });
+    }
+  });
+</script>

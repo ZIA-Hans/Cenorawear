@@ -528,8 +528,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 						form_children = document.querySelectorAll('form > *, fieldset > *, .no-zindex, .no-zindex > *, .has-select, .f8pr > *, .l4cl form p, .f8pr-container > *');
 						if (form_children.length) {
-							Array.from(form_children).forEach(function (el, index) {
-								el.style.zIndex = form_children.length - index;
+							// Filter out b-modal elements before processing
+							var filtered_children = Array.from(form_children).filter(function (el) {
+								// Check both tagName and localName (for custom elements)
+								var tagName = el.tagName ? el.tagName.toLowerCase() : '';
+								var localName = el.localName ? el.localName.toLowerCase() : '';
+								var id = el.id || '';
+								// Exclude b-modal elements by tag name or id
+								return tagName !== 'b-modal' && localName !== 'b-modal' && !id.includes('gift-info-modal');
+							});
+							
+							filtered_children.forEach(function (el, index) {
+								el.style.zIndex = filtered_children.length - index;
 							});
 						}
 					}
