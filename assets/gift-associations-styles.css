@@ -55,6 +55,24 @@
     min-width: 0;
 }
 
+.gift-card-title {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.gift-card-title span {
+    display: block;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.gift-info-modal::part(base) {
+    max-height: 70vh;
+}
+
 
 .gift-card-badge {
     display: inline-block;
@@ -239,6 +257,46 @@
 }
 
 @media only screen and (max-width: 760px) {
+    /* 移动端：赠品项强制换行，占据整行 */
+    .check.box .f8pr-gift-option {
+        flex-basis: 100% !important;
+        width: 100% !important;
+        min-width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* 移动端：如果容器包含赠品项，允许换行 */
+    .check.box:has(.f8pr-gift-option) {
+        flex-wrap: wrap;
+    }
+    
+    /* 移动端：标题容器保持横向布局，不允许换行（SVG 和文字在同一行） */
+    .f8pr-gift-option-title {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    
+    /* 移动端：文字部分可以换行，占据剩余空间，不挤压 SVG */
+    .f8pr-gift-option-title span {
+        flex: 1 1 auto;
+        min-width: 0;
+        word-wrap: break-word;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        padding-right: 8px;
+    }
+    
+    /* 移动端：SVG 图标固定在右侧，不被压缩，不换行 */
+    .f8pr-gift-option-title svg {
+        flex-shrink: 0;
+        flex-grow: 0;
+        align-self: flex-start;
+        width: 20px;
+        height: 20px;
+    }
+    
     .gift-card-header {
         gap: 12px;
     }

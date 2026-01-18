@@ -9123,8 +9123,8 @@ p .check {
 	--input_bg: var(--input_bd);
 }
 
-.check.box input:not([disabled], .disabled):checked~label,
-.check.box input:not([disabled], .disabled):checked~label * {
+.check.box input:not([disabled], .disabled):not(.f8pr-gift-radio):checked~label,
+.check.box input:not([disabled], .disabled):not(.f8pr-gift-radio):checked~label * {
 	/*font-weight: var(--main_fw_strong);*/
 	color: var(--theme_bg);
 }

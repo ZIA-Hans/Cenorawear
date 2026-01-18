@@ -946,8 +946,8 @@
                                                     
                                                     <li class="f8pr-gift-option">
                                                         <div class="f8pr-gift-option-title">
-                                                            <span>Choose your favorite gift—complimentary with your order</span>
-                                                            <svg id="gift-info-icon-{{ section.id }}" class="icon gift-info-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="19908" width="24" height="24" style="cursor: pointer;"><path d="M512 26.819048c-268.190476 0-485.180952 216.990476-485.180952 485.180952s216.990476 485.180952 485.180952 485.180952c265.752381 0 485.180952-216.990476 485.180952-485.180952s-216.990476-485.180952-485.180952-485.180952z m60.952381 799.695238h-119.466667v-90.209524h119.466667v90.209524z m53.638095-319.390476c-26.819048 41.447619-53.638095 78.019048-53.638095 131.657142v31.695238h-119.466667v-36.571428c0-36.571429 29.257143-124.342857 75.580953-182.857143 82.895238-107.27619 31.695238-163.352381-75.580953-126.780952-65.828571 21.942857-119.466667 48.761905-119.466666 48.761904v-119.466666s87.771429-58.514286 177.980952-58.514286c160.914286 0 177.980952 119.466667 177.980952 158.476191 2.438095 63.390476-41.447619 119.466667-63.390476 153.6z" fill="#808080" p-id="19909"></path></svg>
+                                                            <span>Use the Sizing Kit to find the ring size that fits you best.</span>
+                                                            <svg id="gift-info-icon-{{ section.id }}" class="icon gift-info-icon" style="cursor: pointer;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="28671" width="20" height="20"><path d="M983.743 312.704A508.8 508.8 0 0 1 1024 512a510.335 510.335 0 0 1-149.951 362.048A510.207 510.207 0 0 1 512 1023.999a510.207 510.207 0 0 1-362.048-149.951A510.08 510.08 0 0 1 0.001 512a510.335 510.335 0 0 1 149.951-362.048A510.527 510.527 0 0 1 512 0.001a510.4 510.4 0 0 1 362.048 149.951 510.271 510.271 0 0 1 109.695 162.752zM553.472 595.392L576 311.616C576 282.752 543.616 256 513.536 256S448 281.6 448 310.464l25.152 287.616c6.272 30.72 20.48 38.528 38.72 41.92 0 0-14.272 0 0 0 19.264 0 38.784-14.208 41.6-44.608zM512 704a64 64 0 1 0 0 128 64 64 0 0 0 0-128z" fill="#F6A327" p-id="28672"></path></svg>
                                                         </div>
                                                         <div class="f8pr-gift-card" 
                                                              data-option-name="{{ option.name }}"
@@ -1795,7 +1795,12 @@
             {%- endfor -%}
             
             {%- comment -%} Gift information modal - placed at the top level to avoid z-index conflicts {%- endcomment -%}
-            <b-modal id="gift-info-modal-{{ section.id }}" title="How to use the ring sizing kit?" footer-hidden width="600">
+            <b-modal 
+              id="gift-info-modal-{{ section.id }}" 
+              class="gift-info-modal"
+              title="How to use the ring sizing kit?" 
+              footer-hidden width="600"
+            >
                 <div class="gift-modal-content">
                     <div class="sizing-kit-steps">
                         <div class="step-item">

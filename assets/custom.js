@@ -533,9 +533,9 @@ document.addEventListener('DOMContentLoaded', function () {
 								// Check both tagName and localName (for custom elements)
 								var tagName = el.tagName ? el.tagName.toLowerCase() : '';
 								var localName = el.localName ? el.localName.toLowerCase() : '';
-								var id = el.id || '';
+								var id = (el.id && typeof el.id === 'string') ? el.id : '';
 								// Exclude b-modal elements by tag name or id
-								return tagName !== 'b-modal' && localName !== 'b-modal' && !id.includes('gift-info-modal');
+								return tagName !== 'b-modal' && localName !== 'b-modal' && (id === '' || id.indexOf('gift-info-modal') === -1);
 							});
 							
 							filtered_children.forEach(function (el, index) {
