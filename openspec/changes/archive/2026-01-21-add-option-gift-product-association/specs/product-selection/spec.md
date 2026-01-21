@@ -9,6 +9,34 @@
 
 ---
 
+## ADDED
+
+### Liquid模板渲染逻辑
+- 在 `sections/main-product.liquid` 中添加赠品关联metafield解析
+- 添加赠品产品行渲染（包含复选框、图片、标题、价格）
+- 添加关联选项值从标准选项控件的过滤逻辑
+- 添加必要的数据属性（data-option-name, data-option-value, data-gift-variant-id）
+
+### CSS样式
+- 在 `assets/gift-associations-styles.css` 中添加赠品卡片样式
+- 添加移动端响应式布局样式
+- 添加选中/未选中状态样式
+
+### JavaScript选择逻辑
+- 在 `assets/custom-async.js` 中添加赠品复选框事件处理器
+- 添加赠品选择与选项值同步逻辑
+- 添加变体解析时包含赠品设置的选项值
+- 添加AJAX变体更新时的赠品状态保留
+
+---
+
+## MODIFIED
+
+### 产品选项渲染
+- 修改标准选项控件渲染逻辑以排除赠品关联的选项值
+
+---
+
 ## 新增需求
 
 ### 需求：通过产品Metafield配置

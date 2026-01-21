@@ -1,6 +1,9 @@
 {%- comment -%}
   移动端吸底加购按钮
-
+  
+  核心设计原则：从产品 JSON 数据源读取 variant 信息，而不是从 DOM 抓取
+  参考主加购按钮的简洁逻辑，避免复杂的 DOM 同步
+  
   参数:
   - product: 产品对象
   - current_variant: 当前选中的变体
@@ -11,8 +14,8 @@
 
 {%- liquid
   assign sticky_form_id = form_id | append: '-sticky'
-  assign sticky_form_class = 'margin-0 f8pr-buy-button'
-  if current_variant == null
+  assign sticky_form_class = 'margin-0 f8pr f8pr-buy-button'
+  if current_variant == null or current_variant.available == false
     assign sticky_form_class = sticky_form_class | append: ' unavailable'
   endif
 -%}
@@ -21,15 +24,16 @@
 <div
   id="product-buy-button-sticky-{{ section.id }}"
   class="product-buy-button-sticky mobile-only"
+  data-product-id="{{ product.id }}"
   style="display: none;"
 >
   {%- form 'product', product, id: sticky_form_id, class: sticky_form_class, autocomplete: 'off' -%}
-    {%- comment -%} 关键：必须有 variant ID 才能加购 {%- endcomment -%}
+    {%- comment -%} 必须明确指定 variant ID {%- endcomment -%}
     <input type="hidden" name="id" value="{{ current_variant.id }}">
     <input type="hidden" name="quantity" value="1">
     
     <div class="sticky-buy-content">
-      {%- comment -%} 左侧：购买信息（variant信息和选中的options） {%- endcomment -%}
+      {%- comment -%} 左侧：购买信息 {%- endcomment -%}
       <div class="sticky-buy-info">
         <div class="sticky-product-title">{{ product.title }}</div>
         {%- if current_variant and current_variant.title != 'Default Title' -%}
@@ -39,7 +43,6 @@
 
       {%- comment -%} 右侧：价格和加购按钮 {%- endcomment -%}
       <div class="sticky-buy-action">
-        {%- comment -%} 价格 {%- endcomment -%}
         <div class="sticky-price">
           {%- if current_variant.compare_at_price > current_variant.price -%}
             <span class="sticky-price-sale">{{ current_variant.price | money }}</span>
@@ -49,7 +52,7 @@
           {%- endif -%}
         </div>
 
-        {%- comment -%} 加购按钮 {%- endcomment -%}
+        {%- comment -%} 参考主按钮逻辑 {%- endcomment -%}
         {%- if current_variant.available -%}
           <button type="submit" class="sticky-add-button overlay-buy_button {{ buy_button_block.settings.button_style }}">
             <span class="sticky-button-text">{{ 'product.form.add_to_cart' | t }}</span>
@@ -57,15 +60,10 @@
               <svg class="sticky-spinner" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="60" stroke-dashoffset="15" stroke-linecap="round"></circle>
               </svg>
-              <span>Adding...</span>
             </span>
           </button>
         {%- else -%}
-          <button
-            type="submit"
-            class="sticky-add-button disabled overlay-unavailable_buy_button {{ buy_button_block.settings.button_style }}"
-            disabled
-          >
+          <button type="submit" class="sticky-add-button disabled overlay-unavailable_buy_button {{ buy_button_block.settings.button_style }}" disabled>
             {{ 'product.form.not_in_stock' | t }}
           </button>
         {%- endif -%}
@@ -75,7 +73,6 @@
 </div>
 
 <style>
-  {%- comment -%} 吸底按钮样式 - 紧凑型布局 {%- endcomment -%}
   @media only screen and (max-width: 760px) {
       .product-buy-button-sticky {
           position: fixed;
@@ -86,9 +83,7 @@
           z-index: 99;
           background: linear-gradient(133deg, #fdf2e9 9%, #fdf6ed 47%, #fdf2e9 86%);
           padding: 16px;
-          box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
-                      rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
-                      rgba(0, 0, 0, 0.1) 0px 6px 30px -4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 30px -4px;
           border-top: 1px solid var(--input_bd, #e0e0e0);
           border-radius: 8px 8px 0 0;
           transform: translateY(100%);
@@ -99,7 +94,6 @@
           transform: translateY(0);
       }
 
-      {%- comment -%} 内容容器 - 左右布局 {%- endcomment -%}
       .sticky-buy-content {
           display: flex;
           align-items: center;
@@ -108,7 +102,6 @@
           height: 44px;
       }
 
-      {%- comment -%} 左侧信息区域 {%- endcomment -%}
       .sticky-buy-info {
           flex: 1;
           min-width: 0;
@@ -137,7 +130,6 @@
           text-overflow: ellipsis;
       }
 
-      {%- comment -%} 右侧操作区域 {%- endcomment -%}
       .sticky-buy-action {
           display: flex;
           align-items: center;
@@ -145,7 +137,6 @@
           flex-shrink: 0;
       }
 
-      {%- comment -%} 价格显示 {%- endcomment -%}
       .sticky-price {
           display: flex;
           flex-direction: column;
@@ -174,7 +165,6 @@
           text-decoration: line-through;
       }
 
-      {%- comment -%} 加购按钮 - 继承主题样式 {%- endcomment -%}
       .sticky-add-button {
           height: 44px;
           padding: 0 20px;
@@ -186,7 +176,6 @@
           border-radius: 4px;
           transition: all 0.2s ease;
           background: #000;
-          position: relative;
       }
 
       .sticky-add-button:disabled {
@@ -194,7 +183,6 @@
           opacity: 0.6;
       }
 
-      {%- comment -%} Loading 状态 {%- endcomment -%}
       .sticky-add-button.loading {
           cursor: wait;
           pointer-events: none;
@@ -216,7 +204,6 @@
           display: flex !important;
       }
 
-      {%- comment -%} Spinner 动画 {%- endcomment -%}
       .sticky-spinner {
           width: 16px;
           height: 16px;
@@ -224,17 +211,12 @@
       }
 
       @keyframes sticky-spin {
-          0% {
-              transform: rotate(0deg);
-          }
-          100% {
-              transform: rotate(360deg);
-          }
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
       }
 
-      {%- comment -%} 为页面底部添加内边距，避免内容被遮挡 {%- endcomment -%}
       html.product-buy-button-sticky-active {
-          padding-bottom: calc(44px + 8px + 8px + 1px);
+          padding-bottom: calc(44px + 16px + 16px + 1px);
       }
   }
 </style>
@@ -243,14 +225,213 @@
   (function () {
     'use strict';
 
-    // 等待 DOM 加载完成
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initStickyBuyButton);
-    } else {
-      initStickyBuyButton();
+    // ========== 1. 获取产品数据 ==========
+    var productData = null;
+    var productJsonScript = document.querySelector('script[type="application/json"][data-product-id="{{ product.id }}"]');
+    if (productJsonScript) {
+      try {
+        productData = JSON.parse(productJsonScript.textContent);
+        console.log('[Sticky Button] Product data loaded:', productData);
+      } catch (e) {
+        console.error('[Sticky Button] Failed to parse product JSON:', e);
+      }
     }
 
-    function initStickyBuyButton() {
+    if (!productData) {
+      console.error('[Sticky Button] Product data not found');
+      return;
+    }
+
+    // ========== 2. 格式化价格函数（参考 Shopify money filter）==========
+    function formatMoney(cents, format) {
+      if (typeof cents === 'string') {
+        cents = cents.replace('.', '');
+      }
+      var value = '';
+      var placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
+      var formatString = format || '${{amount}}';
+
+      function formatWithDelimiters(number, precision, thousands, decimal) {
+        precision = precision || 2;
+        thousands = thousands || ',';
+        decimal = decimal || '.';
+
+        if (isNaN(number) || number == null) {
+          return 0;
+        }
+
+        number = (number / 100.0).toFixed(precision);
+
+        var parts = number.split('.');
+        var dollars = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + thousands);
+        var cents = parts[1] ? (decimal + parts[1]) : '';
+
+        return dollars + cents;
+      }
+
+      switch (formatString.match(placeholderRegex)[1]) {
+        case 'amount':
+          value = formatWithDelimiters(cents, 2);
+          break;
+        case 'amount_no_decimals':
+          value = formatWithDelimiters(cents, 0);
+          break;
+        case 'amount_with_comma_separator':
+          value = formatWithDelimiters(cents, 2, '.', ',');
+          break;
+        case 'amount_no_decimals_with_comma_separator':
+          value = formatWithDelimiters(cents, 0, '.', ',');
+          break;
+        case 'amount_no_decimals_with_space_separator':
+          value = formatWithDelimiters(cents, 0, ' ');
+          break;
+        case 'amount_with_apostrophe_separator':
+          value = formatWithDelimiters(cents, 2, "'");
+          break;
+      }
+
+      return formatString.replace(placeholderRegex, value);
+    }
+
+    // Shopify money format (从 theme settings 获取，或使用默认值)
+    var moneyFormat = window.theme && window.theme.moneyFormat ? window.theme.moneyFormat : '${{amount}}';
+
+    // ========== 3. 更新吸底按钮显示函数（核心逻辑）==========
+    function updateStickyButton(variantId) {
+      console.log('[Sticky Button] Updating for variant:', variantId);
+      
+      var stickyButton = document.getElementById('product-buy-button-sticky-{{ section.id }}');
+      var stickyForm = document.getElementById('{{ sticky_form_id }}');
+      
+      if (!stickyButton || !stickyForm) {
+        console.error('[Sticky Button] Elements not found');
+        return;
+      }
+
+      // 从产品数据中找到对应的 variant
+      var variant = null;
+      if (productData && productData.variants) {
+        variant = productData.variants.find(function(v) {
+          return v.id == variantId;
+        });
+      }
+
+      if (!variant) {
+        console.error('[Sticky Button] Variant not found:', variantId);
+        return;
+      }
+
+      console.log('[Sticky Button] Found variant:', variant);
+
+      // 1. 更新表单的 variant ID（关键！）
+      var variantInput = stickyForm.querySelector('input[name="id"]');
+      if (variantInput) {
+        variantInput.value = variant.id;
+      }
+
+      // 2. 更新 variant options 显示
+      var variantOptionsEl = stickyButton.querySelector('.sticky-variant-options');
+      if (variantOptionsEl) {
+        if (variant.title && variant.title !== 'Default Title') {
+          variantOptionsEl.textContent = variant.title.replace(/ \/ /g, ' / ');
+          variantOptionsEl.style.display = '';
+        } else {
+          variantOptionsEl.style.display = 'none';
+        }
+      }
+
+      // 3. 更新价格显示
+      var priceContainer = stickyButton.querySelector('.sticky-price');
+      if (priceContainer) {
+        var regularPriceEl = priceContainer.querySelector('.sticky-price-regular');
+        var salePriceEl = priceContainer.querySelector('.sticky-price-sale');
+        var comparePriceEl = priceContainer.querySelector('.sticky-price-compare');
+
+        var hasComparePrice = variant.compare_at_price && variant.compare_at_price > variant.price;
+
+        if (hasComparePrice) {
+          // 显示促销价
+          if (salePriceEl) {
+            salePriceEl.textContent = formatMoney(variant.price, moneyFormat);
+            salePriceEl.style.display = '';
+          }
+          if (comparePriceEl) {
+            comparePriceEl.textContent = formatMoney(variant.compare_at_price, moneyFormat);
+            comparePriceEl.style.display = '';
+          }
+          if (regularPriceEl) {
+            regularPriceEl.style.display = 'none';
+          }
+        } else {
+          // 显示常规价
+          if (regularPriceEl) {
+            regularPriceEl.textContent = formatMoney(variant.price, moneyFormat);
+            regularPriceEl.style.display = '';
+          }
+          if (salePriceEl) {
+            salePriceEl.style.display = 'none';
+          }
+          if (comparePriceEl) {
+            comparePriceEl.style.display = 'none';
+          }
+        }
+      }
+
+      // 4. 更新按钮状态（参考主按钮逻辑）
+      var addButton = stickyButton.querySelector('.sticky-add-button');
+      var buttonText = addButton ? addButton.querySelector('.sticky-button-text') : null;
+
+      if (addButton && buttonText) {
+        if (variant.available) {
+          addButton.disabled = false;
+          addButton.classList.remove('disabled');
+          addButton.className = addButton.className.replace(/overlay-unavailable_buy_button/g, 'overlay-buy_button');
+          buttonText.textContent = '{{ 'product.form.add_to_cart' | t }}';
+        } else {
+          addButton.disabled = true;
+          addButton.classList.add('disabled');
+          addButton.className = addButton.className.replace(/overlay-buy_button/g, 'overlay-unavailable_buy_button');
+          buttonText.textContent = '{{ 'product.form.not_in_stock' | t }}';
+        }
+
+        // 移除 loading 状态
+        addButton.classList.remove('loading');
+      }
+
+      console.log('[Sticky Button] Update complete');
+    }
+
+    // ========== 4. 监听 variant 更新事件 ==========
+    window.addEventListener('themeVariantUpdated', function() {
+      console.log('[Sticky Button] themeVariantUpdated event received');
+      
+      // 显示 loading 状态
+      var stickyButton = document.getElementById('product-buy-button-sticky-{{ section.id }}');
+      var addButton = stickyButton ? stickyButton.querySelector('.sticky-add-button') : null;
+      if (addButton) {
+        addButton.classList.add('loading');
+      }
+
+      // 延迟获取 variant ID，确保 DOM 已更新
+      setTimeout(function() {
+        // 从 .f8pr-variant-selection 的 data-current-variant 属性获取当前 variant ID
+        var variantSelection = document.querySelector('#shopify-section-{{ section.id }} .f8pr-variant-selection');
+        var variantId = variantSelection ? variantSelection.getAttribute('data-current-variant') : null;
+
+        if (variantId) {
+          updateStickyButton(variantId);
+        } else {
+          console.error('[Sticky Button] Could not get current variant ID');
+          // 移除 loading 状态
+          if (addButton) {
+            addButton.classList.remove('loading');
+          }
+        }
+      }, 150);
+    });
+
+    // ========== 5. 初始化显隐逻辑（IntersectionObserver）==========
+    function initStickyButtonVisibility() {
       var buyButton = document.getElementById('product-buy-button-{{ section.id }}');
       var stickyButton = document.getElementById('product-buy-button-sticky-{{ section.id }}');
 
@@ -258,113 +439,21 @@
         return;
       }
 
-      // 确定目标父元素：优先使用 #root，不存在则使用 body
-      var rootElement = document.getElementById('root');
-      var targetParent = rootElement || document.body;
-
-      // 将吸底按钮移到目标父元素最后，确保不受任何层叠上下文影响
-      if (stickyButton.parentNode !== targetParent) {
-        targetParent.appendChild(stickyButton);
-      }
-
-      // 处理加购按钮的 loading 状态
-      var stickyForm = document.getElementById('{{ sticky_form_id }}');
-      var stickyAddButton = stickyButton.querySelector('.sticky-add-button');
-
-      if (stickyForm && stickyAddButton) {
-        stickyForm.addEventListener('submit', function(event) {
-          // 显示 loading 状态
-          stickyAddButton.classList.add('loading');
-          stickyAddButton.disabled = true;
-
-          // 监听加购完成事件
-          var handleCartUpdate = function() {
-            // 恢复按钮状态
-            setTimeout(function() {
-              stickyAddButton.classList.remove('loading');
-              stickyAddButton.disabled = false;
-            }, 500);
-            
-            // 移除监听器
-            document.removeEventListener('cart:updated', handleCartUpdate);
-          };
-
-          document.addEventListener('cart:updated', handleCartUpdate);
-
-          // 备用方案：2秒后自动恢复（防止事件未触发）
-          setTimeout(function() {
-            if (stickyAddButton.classList.contains('loading')) {
-              stickyAddButton.classList.remove('loading');
-              stickyAddButton.disabled = false;
-            }
-          }, 2000);
-        });
-      }
-
       // 只在移动端启用
       if (window.innerWidth > 760) {
         return;
       }
 
-      // 同步 variant ID（当用户切换变体时）
-      var originalForm = document.getElementById('{{ form_id }}');
-      var stickyForm = document.getElementById('{{ sticky_form_id }}');
-      
-      if (originalForm && stickyForm) {
-        // 方法1: 监听原表单的 variant ID 变化（使用 MutationObserver）
-        var variantObserver = new MutationObserver(function() {
-          var originalIdInput = originalForm.querySelector('input[name="id"]');
-          var stickyIdInput = stickyForm.querySelector('input[name="id"]');
-          
-          if (originalIdInput && stickyIdInput && originalIdInput.value) {
-            var newVariantId = originalIdInput.value;
-            if (stickyIdInput.value !== newVariantId) {
-              stickyIdInput.value = newVariantId;
-            }
-          }
-        });
-        
-        // 开始观察原表单的 DOM 变化
-        variantObserver.observe(originalForm, {
-          childList: true,
-          subtree: true,
-          attributes: true,
-          attributeFilter: ['value']
-        });
-        
-        // 方法2: 监听 Shopify 的 variant change 事件（如果主题使用）
-        document.addEventListener('variant:change', function(event) {
-          if (event.detail && event.detail.variant) {
-            var stickyIdInput = stickyForm.querySelector('input[name="id"]');
-            if (stickyIdInput) {
-              stickyIdInput.value = event.detail.variant.id;
-            }
-          }
-        });
-        
-        // 方法3: 定期检查同步（备用方案）
-        setInterval(function() {
-          var originalIdInput = originalForm.querySelector('input[name="id"]');
-          var stickyIdInput = stickyForm.querySelector('input[name="id"]');
-          
-          if (originalIdInput && stickyIdInput && originalIdInput.value) {
-            if (stickyIdInput.value !== originalIdInput.value) {
-              stickyIdInput.value = originalIdInput.value;
-            }
-          }
-        }, 500);
+      // 将吸底按钮移到 body 最后
+      var rootElement = document.getElementById('root');
+      var targetParent = rootElement || document.body;
+      if (stickyButton.parentNode !== targetParent) {
+        targetParent.appendChild(stickyButton);
       }
 
-      // 检查按钮是否在视口内的函数
-      function checkButtonVisibility() {
-        var rect = buyButton.getBoundingClientRect();
-        return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
-      }
-
-      // 显示吸底按钮
+      // 显示/隐藏函数
       function showStickyButton() {
         stickyButton.style.display = 'block';
-        // 确保按钮在目标父元素下
         if (stickyButton.parentNode !== targetParent) {
           targetParent.appendChild(stickyButton);
         }
@@ -374,7 +463,6 @@
         }, 10);
       }
 
-      // 隐藏吸底按钮
       function hideStickyButton() {
         stickyButton.classList.remove('show');
         document.documentElement.classList.remove('product-buy-button-sticky-active');
@@ -385,15 +473,13 @@
         }, 300);
       }
 
-      // 使用 IntersectionObserver 检测原按钮是否在视口内
+      // IntersectionObserver 监听主按钮
       var observer = new IntersectionObserver(
         function (entries) {
           entries.forEach(function (entry) {
             if (!entry.isIntersecting) {
-              // 原按钮不在视口内，显示吸底按钮
               showStickyButton();
             } else {
-              // 原按钮在视口内，隐藏吸底按钮
               hideStickyButton();
             }
           });
@@ -404,38 +490,81 @@
         }
       );
 
-      // 开始观察原按钮
       observer.observe(buyButton);
 
-      // 初始检查一次（应对页面直接滚动到中间的情况）
+      // 初始检查
       setTimeout(function () {
-        if (!checkButtonVisibility()) {
+        var rect = buyButton.getBoundingClientRect();
+        var isVisible = rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+        if (!isVisible) {
           showStickyButton();
         }
       }, 500);
 
-      // 处理窗口大小变化
+      // 响应窗口大小变化
       var resizeTimer;
       window.addEventListener('resize', function () {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(function () {
           if (window.innerWidth > 760) {
-            // 桌面端隐藏吸底按钮
             stickyButton.style.display = 'none';
             stickyButton.classList.remove('show');
             document.documentElement.classList.remove('product-buy-button-sticky-active');
             observer.disconnect();
           } else {
-            // 移动端重新开始观察
             observer.observe(buyButton);
-
-            // 重新检查一次
-            if (!checkButtonVisibility()) {
+            var rect = buyButton.getBoundingClientRect();
+            var isVisible = rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+            if (!isVisible) {
               showStickyButton();
             }
           }
         }, 250);
       });
+    }
+
+    // ========== 6. 处理加购 loading 状态 ==========
+    function initFormSubmitHandler() {
+      var stickyForm = document.getElementById('{{ sticky_form_id }}');
+      var stickyButton = document.getElementById('product-buy-button-sticky-{{ section.id }}');
+      var addButton = stickyButton ? stickyButton.querySelector('.sticky-add-button') : null;
+
+      if (stickyForm && addButton) {
+        stickyForm.addEventListener('submit', function() {
+          addButton.classList.add('loading');
+          addButton.disabled = true;
+
+          // 监听加购完成事件
+          var handleCartUpdate = function() {
+            setTimeout(function() {
+              addButton.classList.remove('loading');
+              addButton.disabled = false;
+            }, 500);
+            document.removeEventListener('cart:updated', handleCartUpdate);
+          };
+
+          document.addEventListener('cart:updated', handleCartUpdate);
+
+          // 备用方案：2秒后自动恢复
+          setTimeout(function() {
+            if (addButton.classList.contains('loading')) {
+              addButton.classList.remove('loading');
+              addButton.disabled = false;
+            }
+          }, 2000);
+        });
+      }
+    }
+
+    // ========== 7. 启动 ==========
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() {
+        initStickyButtonVisibility();
+        initFormSubmitHandler();
+      });
+    } else {
+      initStickyButtonVisibility();
+      initFormSubmitHandler();
     }
   })();
 </script>

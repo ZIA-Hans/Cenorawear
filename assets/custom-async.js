@@ -4141,7 +4141,13 @@ var ajaxCart = (function(module) {
 			// 查找所有form属性匹配当前表单ID的赠品radio
 			var allGiftRadios = document.querySelectorAll('.f8pr-gift-radio:checked');
 			allGiftRadios.forEach(function(radio) {
-				if (radio.getAttribute('form') === formId) {
+				var radioFormId = radio.getAttribute('form');
+				// 原有逻辑：精确匹配
+				if (radioFormId === formId) {
+					selectedGiftRadios.push(radio);
+				}
+				// 扩展逻辑：仅针对吸底表单，匹配其原始表单 ID
+				else if (formId.endsWith('-sticky') && radioFormId === formId.replace('-sticky', '')) {
 					selectedGiftRadios.push(radio);
 				}
 			});
@@ -5209,9 +5215,9 @@ var productVariantsAsync = function() {
 	if (inputs.length) {
 		new_css('form-validation-css', a_css_validation);
 		Array.from(inputs).forEach(function (el) {
-			el.classList.add('listening');
-			el.addEventListener('change', function() {
-				setTimeout(function (token) {
+		el.classList.add('listening');
+		el.addEventListener('change', function() {
+			setTimeout(function (token) {
 					var productFormTemplate = el.dataset.template,
 						productFormId = el.getAttribute('form'),
 						productFormSection = document.querySelector('.m6pr-'+ productFormTemplate),
@@ -5444,9 +5450,9 @@ var productVariantsAsync = function() {
 							if (hasSticky && (productFormTemplate.endsWith('main-product')) && (!isQuickshop) ) {
 								stickyAddtoCartAsync();
 							}
-							window.sals();
-							window.dispatchEvent(new CustomEvent("themeVariantUpdated"));
-							if (general.template == 'product' && (productFormTemplate.endsWith('main-product')) && (!isQuickshop) ) {
+					window.sals();
+					window.dispatchEvent(new CustomEvent("themeVariantUpdated"));
+						if (general.template == 'product' && (productFormTemplate.endsWith('main-product')) && (!isQuickshop) ) {
 								window.history.replaceState({}, '', `${newUrl}${selected_variant_id ? `?variant=${selected_variant_id}` : ''}`);
 							}
 						})
