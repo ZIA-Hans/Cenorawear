@@ -227,29 +227,48 @@
 
     // ========== 1. 获取产品数据 ==========
     var productData = null;
-    var productJsonScript = document.querySelector('script[type="application/json"][data-product-id="{{ product.id }}"]');
-    if (productJsonScript) {
-      try {
-        productData = JSON.parse(productJsonScript.textContent);
-        console.log('[Sticky Button] Product data loaded:', productData);
-      } catch (e) {
-        console.error('[Sticky Button] Failed to parse product JSON:', e);
+    
+    function loadProductData() {
+      if (productData) return productData;
+      
+      var productJsonScript = document.querySelector('script[type="application/json"][data-product-id="{{ product.id }}"]');
+      if (productJsonScript) {
+        try {
+          productData = JSON.parse(productJsonScript.textContent);
+          console.log('[Sticky Button] Product data loaded');
+        } catch (e) {
+          console.error('[Sticky Button] Failed to parse product JSON:', e);
+        }
       }
+      
+      if (!productData) {
+        console.warn('[Sticky Button] Product data not found, will retry on event');
+      }
+      
+      return productData;
     }
-
-    if (!productData) {
-      console.error('[Sticky Button] Product data not found');
-      return;
-    }
+    
+    // 尝试立即加载（可能成功，取决于 DOM 解析顺序）
+    loadProductData();
 
     // ========== 2. 格式化价格函数（参考 Shopify money filter）==========
     function formatMoney(cents, format) {
       if (typeof cents === 'string') {
         cents = cents.replace('.', '');
       }
-      var value = '';
+      
+      // 确保 cents 是数字
+      cents = parseInt(cents, 10) || 0;
+      
       var placeholderRegex = /\{\{\s*(\w+)\s*\}\}/;
       var formatString = format || '${{amount}}';
+      
+      // 检查格式字符串是否有效
+      var match = formatString.match(placeholderRegex);
+      if (!match) {
+        // 如果格式无效，直接返回简单格式的价格
+        return '$' + (cents / 100).toFixed(2);
+      }
 
       function formatWithDelimiters(number, precision, thousands, decimal) {
         precision = precision || 2;
@@ -257,19 +276,20 @@
         decimal = decimal || '.';
 
         if (isNaN(number) || number == null) {
-          return 0;
+          return '0';
         }
 
         number = (number / 100.0).toFixed(precision);
 
         var parts = number.split('.');
         var dollars = parts[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, '$1' + thousands);
-        var cents = parts[1] ? (decimal + parts[1]) : '';
+        var centsStr = parts[1] ? (decimal + parts[1]) : '';
 
-        return dollars + cents;
+        return dollars + centsStr;
       }
 
-      switch (formatString.match(placeholderRegex)[1]) {
+      var value = '';
+      switch (match[1]) {
         case 'amount':
           value = formatWithDelimiters(cents, 2);
           break;
@@ -288,6 +308,8 @@
         case 'amount_with_apostrophe_separator':
           value = formatWithDelimiters(cents, 2, "'");
           break;
+        default:
+          value = formatWithDelimiters(cents, 2);
       }
 
       return formatString.replace(placeholderRegex, value);
@@ -308,6 +330,11 @@
         return;
       }
 
+      // 确保产品数据已加载
+      if (!productData) {
+        loadProductData();
+      }
+
       // 从产品数据中找到对应的 variant
       var variant = null;
       if (productData && productData.variants) {
@@ -317,11 +344,13 @@
       }
 
       if (!variant) {
-        console.error('[Sticky Button] Variant not found:', variantId);
+        console.error('[Sticky Button] Variant not found:', variantId, '- falling back to DOM sync');
+        // Fallback: 从 DOM 同步基本信息
+        fallbackDOMSync(stickyButton, stickyForm);
         return;
       }
 
-      console.log('[Sticky Button] Found variant:', variant);
+      console.log('[Sticky Button] Found variant:', variant.title);
 
       // 1. 更新表单的 variant ID（关键！）
       var variantInput = stickyForm.querySelector('input[name="id"]');
@@ -399,6 +428,91 @@
       }
 
       console.log('[Sticky Button] Update complete');
+    }
+
+    // ========== 3.5 Fallback: DOM 同步（当产品 JSON 不可用时）==========
+    function fallbackDOMSync(stickyButton, stickyForm) {
+      console.log('[Sticky Button] Using fallback DOM sync');
+      
+      var originalForm = document.getElementById('{{ form_id }}');
+      if (!originalForm) {
+        console.error('[Sticky Button] Original form not found');
+        return;
+      }
+      
+      // 1. 同步 variant ID
+      var originalVariantInput = originalForm.querySelector('input[name="id"]');
+      var stickyVariantInput = stickyForm.querySelector('input[name="id"]');
+      if (originalVariantInput && stickyVariantInput) {
+        stickyVariantInput.value = originalVariantInput.value;
+      }
+      
+      // 2. 同步选项文本（从 .f8pr-variant-selection 获取）
+      var variantSelection = document.querySelector('#shopify-section-{{ section.id }} .f8pr-variant-selection');
+      var variantOptionsEl = stickyButton.querySelector('.sticky-variant-options');
+      if (variantSelection && variantOptionsEl) {
+        var radios = variantSelection.querySelectorAll('input[type="radio"]:checked:not([name="id"])');
+        var optionValues = [];
+        radios.forEach(function(radio) {
+          optionValues.push(radio.title || radio.value);
+        });
+        if (optionValues.length > 0) {
+          variantOptionsEl.textContent = optionValues.join(' / ');
+          variantOptionsEl.style.display = '';
+        }
+      }
+      
+      // 3. 同步价格（从主表单抓取）
+      var mainPriceContainer = originalForm.querySelector('.s1pr');
+      var priceContainer = stickyButton.querySelector('.sticky-price');
+      if (mainPriceContainer && priceContainer) {
+        var regularPriceEl = priceContainer.querySelector('.sticky-price-regular');
+        var salePriceEl = priceContainer.querySelector('.sticky-price-sale');
+        var comparePriceEl = priceContainer.querySelector('.sticky-price-compare');
+        
+        var mainPriceSale = mainPriceContainer.querySelector('.s1bx');
+        var mainPriceCompare = mainPriceContainer.querySelector('.old');
+        
+        if (mainPriceSale && mainPriceCompare) {
+          if (salePriceEl) {
+            salePriceEl.textContent = mainPriceSale.textContent.trim();
+            salePriceEl.style.display = '';
+          }
+          if (comparePriceEl) {
+            comparePriceEl.textContent = mainPriceCompare.textContent.trim();
+            comparePriceEl.style.display = '';
+          }
+          if (regularPriceEl) regularPriceEl.style.display = 'none';
+        } else {
+          var priceText = mainPriceContainer.textContent.trim().split('\n')[0].trim();
+          if (regularPriceEl) {
+            regularPriceEl.textContent = priceText;
+            regularPriceEl.style.display = '';
+          }
+          if (salePriceEl) salePriceEl.style.display = 'none';
+          if (comparePriceEl) comparePriceEl.style.display = 'none';
+        }
+      }
+      
+      // 4. 同步按钮状态
+      var mainButton = originalForm.querySelector('button[type="submit"]');
+      var addButton = stickyButton.querySelector('.sticky-add-button');
+      var buttonText = addButton ? addButton.querySelector('.sticky-button-text') : null;
+      
+      if (mainButton && addButton && buttonText) {
+        if (mainButton.disabled) {
+          addButton.disabled = true;
+          addButton.classList.add('disabled');
+          buttonText.textContent = '{{ 'product.form.not_in_stock' | t }}';
+        } else {
+          addButton.disabled = false;
+          addButton.classList.remove('disabled');
+          buttonText.textContent = '{{ 'product.form.add_to_cart' | t }}';
+        }
+        addButton.classList.remove('loading');
+      }
+      
+      console.log('[Sticky Button] Fallback sync complete');
     }
 
     // ========== 4. 监听 variant 更新事件 ==========
